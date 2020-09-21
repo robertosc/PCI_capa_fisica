@@ -1,4 +1,4 @@
-module probador_recirc(input [31:0] data_out,
+module probador_demux_8_32(input [31:0] data_out,
 						input valid_out,
 						output reg valid,
 						output reg [7:0] data_in,

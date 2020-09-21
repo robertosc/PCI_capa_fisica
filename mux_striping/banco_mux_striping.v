@@ -3,6 +3,7 @@
 `include "probador_mux_striping.v"
 `include "mux_striping.v"
 `include "mux_striping_sintetizado.v"
+`include "cmos_cells.v"
 
 module banco_mux_striping;
 	wire [31:0] data_output, lane_0, lane_1, data_output_sintetizado;
@@ -22,8 +23,8 @@ module banco_mux_striping;
 	
 	mux_striping_sintetizado sintetizado(/*AUTOINST*/
 			  // Outputs
-			  .data_output		(data_output_sintetizado[31:0]),
-			  .valid_out		(valid_out_sintetizado),
+			  .data_output	(data_output_sintetizado[31:0]),
+			  .valid_out	(valid_out_sintetizado),
 			  // Inputs
 			  .clk_2f		(clk_2f),
 			  .lane_0		(lane_0[31:0]),

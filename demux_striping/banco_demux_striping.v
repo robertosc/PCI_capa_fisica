@@ -3,6 +3,7 @@
 `include "probador_demux_striping.v"
 `include "demux_striping.v"
 `include "demux_striping_sintetizado.v" 
+`include "cmos_cells.v"
 
 module banco_demux_striping;
 	wire [31:0] data_input, lane_0, lane_1, lane_sintetizado0, lane_sintetizado1;
