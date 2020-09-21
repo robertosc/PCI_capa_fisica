@@ -1,51 +1,43 @@
 module probador_demux_striping( input [31:0] lane_0,
                         input [31:0] lane_1,
 						input valid_out0,
-                        input valid_out1,
-						output reg valid_0,  
-						output reg valid_1,
+                        input valid_out1, 
+						output reg valid_in,
 						output reg clk_2f,
 						output reg [31:0] data_input);
 	initial begin
 	$dumpfile("demux_striping.vcd");
 	$dumpvars;
 
-	{valid_0,valid_1} <= 0;
+	{valid_in} <= 0;
 	{data_input} <= 32'h00000000;
 	
 	@(posedge clk_2f);
-	valid_0 <= 0;
-    valid_1 <= 0;
+    valid_in <= 0;
 	data_input <= 32'hFFFFFFFF;
 
 	@(posedge clk_2f);
-	valid_0 <= 1;
-    valid_1 <= 1;
+    valid_in <= 1;
 	data_input <= 32'hAAAAAAAA;
 
 	@(posedge clk_2f);
-	valid_0 <= 1;
-    valid_1 <= 1;
+    valid_in <= 1;
 	data_input <= 32'hEEEEEEEE;
 
 	@(posedge clk_2f);
-	valid_0 <= 1;
-    valid_1 <= 1;
+    valid_in <= 1;
 	data_input <= 32'hCCCCCCCCCC;
 
 	@(posedge clk_2f);
-	valid_0 <= 1;
-    valid_1 <= 1;
+    valid_in <= 1;
 	data_input <= 32'hAAAAAAAA;
 
 	@(posedge clk_2f);
-	valid_0 <= 1;
-    valid_1 <= 1;
+	valid_in <= 1;
 	data_input <= 32'h11111111;
 
 	@(posedge clk_2f);
-	valid_0 <= 1;
-    valid_1 <= 1;
+	valid_in <= 1;
 	data_input <= 32'h99999999;
 
 	@(posedge clk_2f);
