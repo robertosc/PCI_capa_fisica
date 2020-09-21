@@ -2,7 +2,7 @@ yosys:
 	yosys -s script.ys
 
 sed:
-	sed -i '5 s/mux2a1_2b_desc_conductual/sintetizado2a1_2b/' sintetizado2a1_2b.v
+	sed -i '5 s/mux_striping/mux_striping_sintetizado/' mux_striping_sintetizado.v
 
 iverilog:
 	iverilog -o striping banco_mux_striping.v cmos_cells.v
