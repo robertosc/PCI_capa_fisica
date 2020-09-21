@@ -4,7 +4,7 @@ module demux_striping(
 	input valid_in,
 	output reg [31:0] lane_0,
 	output reg [31:0] lane_1,
-    output reg  valid_out0,
+    output reg valid_out0,
     output reg valid_out1
     );
     reg sel= 0;

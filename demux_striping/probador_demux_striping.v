@@ -1,7 +1,12 @@
-module probador_demux_striping( input [31:0] lane_0,
+module probador_demux_striping( 
+						input [31:0] lane_0,
                         input [31:0] lane_1,
+						input [31:0] lane_sintetizado0,
+                        input [31:0] lane_sintetizado1,
 						input valid_out0,
-                        input valid_out1, 
+                        input valid_out1,
+						input valid_out_sintetizado0,
+                        input valid_out_sintetizado1,  
 						output reg valid_in,
 						output reg clk_2f,
 						output reg [31:0] data_input);
@@ -26,7 +31,7 @@ module probador_demux_striping( input [31:0] lane_0,
 
 	@(posedge clk_2f);
     valid_in <= 1;
-	data_input <= 32'hCCCCCCCCCC;
+	data_input <= 32'hCCCCCCCC;
 
 	@(posedge clk_2f);
     valid_in <= 1;

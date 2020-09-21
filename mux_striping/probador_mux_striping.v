@@ -1,5 +1,8 @@
-module probador_mux_striping( input [31:0] data_output,
+module probador_mux_striping( 
+						input [31:0] data_output,
 						input valid_out,
+						input [31:0] data_output_sintetizado,
+						input valid_out_sintetizado,
 						output reg valid_0,  
 						output reg valid_1,
 						output reg clk_2f,
