@@ -5,15 +5,18 @@ module probador_demux_8_32(input [31:0] data_out,
 						output reg valid,
 						output reg [7:0] data_in,
 						output reg clk_4f,
-						output reg clk_2f);
+						output reg clk_2f,
+						output reg reset);
 	initial begin
 	$dumpfile("demux_8_32.vcd");
 	$dumpvars;
 
-	{valid} <= 0;
+	{valid, reset} <= 0;
 	{data_in} <= 8'h00;
+
 	
 	@(posedge clk_4f);
+	reset <= 1;
 	valid <= 1;
 	data_in <= 8'hEE;
 

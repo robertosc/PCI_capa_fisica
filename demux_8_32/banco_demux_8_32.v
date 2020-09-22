@@ -16,14 +16,16 @@ module banco_demux_8_32;
 		.data_in  ( data_in[7:0]),
 		.valid    ( valid    ),
 		.data_out ( data_out [31:0]),
-		.valid_out ( valid_out )
+		.valid_out ( valid_out ),
+		.reset (reset)
 	);
 	sintetizado8a32_cmos u_sintetizado8a32_cmos(
 		.clk_4f               ( clk_4f               ),
 		.data_in              ( data_in [7:0]        ),
 		.valid                ( valid                ),
 		.data_out_estructural ( data_out_estructural [31:0] ),
-		.valid_out_estructural ( valid_out_estructural )
+		.valid_out_estructural ( valid_out_estructural ),
+		.reset (reset)
 	);
 
 	probador_demux_8_32 u_probador_recirc(
@@ -34,7 +36,8 @@ module banco_demux_8_32;
 		.valid      ( valid      ),
 		.data_in ( data_in [7:0] ),
 		.clk_4f     ( clk_4f     ),
-		.clk_2f     ( clk_2f     )
+		.clk_2f     ( clk_2f     ),
+		.reset (reset)
 	);
 
 endmodule
