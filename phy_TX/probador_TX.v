@@ -18,12 +18,12 @@ module probador(input [31:0] lane_0,
 
 	
 	@(posedge clk_2f);
-	reset <= 1;
 	active <= 1;
-	valid <= 0;
+	valid <= 1;
 	data_input <= 32'hFFFFEEEE;
 
 	@(posedge clk_2f);
+	reset <= 1;
 	active <= 1;
 	valid <= 1;
 	data_input <= 32'hFFEEEEEE;
@@ -35,7 +35,7 @@ module probador(input [31:0] lane_0,
 
 	@(posedge clk_2f);
 	active <= 1;
-	valid <= 0;
+	valid <= 1;
 	data_input <= 32'hCCEEEEEE;
 
 	@(posedge clk_2f);
@@ -44,12 +44,12 @@ module probador(input [31:0] lane_0,
 	data_input <= 32'hAAAA1234;
 
 	@(posedge clk_2f);
-	active <= 0;
+	active <= 1;
 	valid <= 1;
 	data_input <= 32'h12345678;
 
 	@(posedge clk_2f);
-	active <= 0;
+	active <= 1;
 	valid <= 1;
 	data_input <= 32'hBBBBAAAA;
 
@@ -59,9 +59,9 @@ module probador(input [31:0] lane_0,
 	$finish;
 	end
 	
-	initial clk_f <= 0;
-	initial clk_2f <= 0;
-	initial clk_4f <= 0;
+	initial clk_f <= 1;
+	initial clk_2f <= 1;
+	initial clk_4f <= 1;
 
 	always #4 clk_f <= ~clk_f;
 	always #2 clk_2f <= ~clk_2f;
