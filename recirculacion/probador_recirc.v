@@ -1,12 +1,15 @@
 module probador_recirc(input [31:0] demux_0,
 						input [31:0] demux_1_probador,
+						input [31:0] demux_0_estructural,
+						input [31:0] demux_1_probador_estructural,
 						input valid_out,
+						input valid_out_estructural,
 						output reg active,
 						output reg valid,
 						output reg [31:0] data_input,
 						output reg clk_2f);
 	initial begin
-	$dumpfile("recirculacion.vcd");
+	$dumpfile("recirculador.vcd");
 	$dumpvars;
 
 	{valid, active} <= 0;
