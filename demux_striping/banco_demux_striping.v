@@ -7,7 +7,7 @@
 
 module banco_demux_striping;
 	wire [31:0] data_input, lane_0, lane_1, lane_sintetizado0, lane_sintetizado1;
-	wire clk_2f, valid_out0, valid_out_sintetizado0, valid_out1, valid_out_sintetizado1, valid_in;
+	wire clk_2f, valid_out0, valid_out_sintetizado0, valid_out1, valid_out_sintetizado1, valid_in, reset;
 
 
 	demux_striping demuxs(/*AUTOINST*/
@@ -19,7 +19,8 @@ module banco_demux_striping;
 			      // Inputs
 			      .clk_2f		(clk_2f),
 			      .data_input	(data_input[31:0]),
-			      .valid_in		(valid_in));
+			      .valid_in		(valid_in),
+				  .reset 		(reset));
 	demux_striping_sintetizado sintetizado (/*AUTOINST*/
 						// Outputs
 						.lane_0		(lane_sintetizado0[31:0]),
@@ -29,7 +30,8 @@ module banco_demux_striping;
 						// Inputs
 						.clk_2f		(clk_2f),
 						.data_input	(data_input[31:0]),
-						.valid_in	(valid_in));
+						.valid_in	(valid_in),
+						.reset		(reset));
 
 
 	probador_demux_striping probador(/*AUTOINST*/
@@ -45,7 +47,8 @@ module banco_demux_striping;
 					 .valid_out0		(valid_out0),
 					 .valid_out1		(valid_out1),
 					 .valid_out_sintetizado0 (valid_out_sintetizado0),
-					 .valid_out_sintetizado1 (valid_out_sintetizado1));
+					 .valid_out_sintetizado1 (valid_out_sintetizado1),
+					 .reset (reset));
 
 
 endmodule

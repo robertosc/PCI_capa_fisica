@@ -9,15 +9,17 @@ module probador_demux_striping(
                         input valid_out_sintetizado1,  
 						output reg valid_in,
 						output reg clk_2f,
+						output reg reset,
 						output reg [31:0] data_input);
 	initial begin
 	$dumpfile("demux_striping.vcd");
 	$dumpvars;
 
-	{valid_in} <= 0;
+	{valid_in, reset} <= 0;
 	{data_input} <= 32'h00000000;
 	
 	@(posedge clk_2f);
+	reset<=1;
     valid_in <= 0;
 	data_input <= 32'hFFFFFFFF;
 
