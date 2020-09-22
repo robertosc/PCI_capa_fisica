@@ -1,5 +1,13 @@
 $date
+<<<<<<< HEAD
 	Tue Sep 22 12:30:43 2020
+=======
+<<<<<<< HEAD
+	Tue Sep 22 00:56:18 2020
+=======
+	Tue Sep 22 10:01:04 2020
+>>>>>>> 99da5f786255393fabc16f697c39abb1ea28c539
+>>>>>>> 3608eaa1b26a93f03fed758558bee07ffdedc59e
 $end
 $version
 	Icarus Verilog
