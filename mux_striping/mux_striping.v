@@ -4,12 +4,17 @@ module mux_striping(
 	input [31:0] lane_1,
 	input valid_0,
     input valid_1,
+	input reset,
 	output reg [31:0] data_output,
     output reg  valid_out
     );
-    reg sel= 0;
+    reg sel;
 
 	always @(posedge clk_2f) begin
+		if (reset==0)begin
+			sel=0;
+		end
+
 		if(valid_0 == 1 && sel == 0 ) begin
 			data_output<= lane_0;
 			sel <= 1;
