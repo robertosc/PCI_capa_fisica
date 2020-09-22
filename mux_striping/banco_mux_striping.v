@@ -7,7 +7,7 @@
 
 module banco_mux_striping;
 	wire [31:0] data_output, lane_0, lane_1, data_output_sintetizado;
-	wire clk_2f, valid_out, valid_0, valid_1, valid_out_sintetizado;
+	wire clk_2f, valid_out, valid_0, valid_1, valid_out_sintetizado, reset;
 
 
 	mux_striping muxs(/*AUTOINST*/
@@ -19,7 +19,8 @@ module banco_mux_striping;
 			  .lane_0		(lane_0[31:0]),
 			  .lane_1		(lane_1[31:0]),
 			  .valid_0		(valid_0),
-			  .valid_1		(valid_1));
+			  .valid_1		(valid_1),
+			  .reset 		(reset));
 	
 	mux_striping_sintetizado sintetizado(/*AUTOINST*/
 			  // Outputs
@@ -30,7 +31,8 @@ module banco_mux_striping;
 			  .lane_0		(lane_0[31:0]),
 			  .lane_1		(lane_1[31:0]),
 			  .valid_0		(valid_0),
-			  .valid_1		(valid_1));
+			  .valid_1		(valid_1),
+			  .reset		(reset));
 
 
 	probador_mux_striping probador(/*AUTOINST*/
@@ -44,7 +46,8 @@ module banco_mux_striping;
 				       .data_output	(data_output[31:0]),
 				       .valid_out	(valid_out),
 					   .data_output_sintetizado	(data_output_sintetizado[31:0]),
-				       .valid_out_sintetizado	(valid_out_sintetizado));
+				       .valid_out_sintetizado	(valid_out_sintetizado),
+					   .reset 					(reset));
 
 
 endmodule

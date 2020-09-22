@@ -6,6 +6,7 @@ module probador_mux_striping(
 						output reg valid_0,  
 						output reg valid_1,
 						output reg clk_2f,
+						output reg reset,
 						output reg [31:0] lane_0,
 						output reg [31:0] lane_1
 						);
@@ -15,10 +16,11 @@ module probador_mux_striping(
 	$dumpfile("mux_striping.vcd");
 	$dumpvars;
 
-	{valid_0,valid_1} <= 0;
+	{valid_0,valid_1,reset} <= 0;
 	{lane_0,lane_1} <= 32'h00000000;
 	
 	@(posedge clk_2f);
+	reset <=1;
 	valid_0 <= 0;
     valid_1 <= 0;
 	lane_0 <= 32'hAAAAAAAA;
