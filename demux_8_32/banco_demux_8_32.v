@@ -26,10 +26,11 @@ module banco_demux_8_32;
 		.valid_out_estructural ( valid_out_estructural )
 	);
 
-
-	probador_recirc u_probador_recirc(
+	probador_demux_8_32 u_probador_recirc(
 		.data_out   ( data_out [31:0]   ),
 		.valid_out  ( valid_out  ),
+		.data_out_estructural (data_out_estructural[31:0]),
+		.valid_out_estructural (valid_out_estructural),
 		.valid      ( valid      ),
 		.data_in ( data_in [7:0] ),
 		.clk_4f     ( clk_4f     ),
