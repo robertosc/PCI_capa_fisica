@@ -12,7 +12,7 @@ module mux_striping(
 
 	always @(posedge clk_2f) begin
 		if(reset == 0)begin
-			sel<=0;
+			sel <=0 ;
 			valid_out <= 0;
 		end
 		else begin
@@ -37,7 +37,6 @@ module mux_striping(
 					sel <= 0;
 					valid_out<=0;
 				end
-
 			end	
 
 		end
