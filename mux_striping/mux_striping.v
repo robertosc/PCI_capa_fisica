@@ -11,28 +11,35 @@ module mux_striping(
     reg sel;
 
 	always @(posedge clk_2f) begin
-		if (reset==0)begin
-			sel=0;
+		if(reset == 0)begin
+			sel<=0;
+			valid_out <= 0;
 		end
+		else begin
+			if (sel==0) begin
+				if (valid_0==1)begin
+					data_output<=lane_0 ;
+					sel <= 1;
+					valid_out<=1;
+				end
+				else begin
+					sel <= 0;
+					valid_out<=0;
+				end
+			end
+			else begin
+				if (valid_1==1) begin
+					data_output<=lane_1 ;
+					sel <= 0;
+					valid_out<=1;
+				end
+				else begin
+					sel <= 0;
+					valid_out<=0;
+				end
 
-		if(valid_0 == 1 && sel == 0 ) begin
-			data_output<= lane_0;
-			sel <= 1;
-            valid_out<=1;
-		end
+			end	
 
-		if(valid_1 == 1 && sel == 1) begin
-			data_output<= lane_1;
-			sel <= 0;
-            valid_out<=1;
-		end
-		if (valid_0 == 0 && sel == 0) begin
-			valid_out<=0;
-			sel <= 1;
-		end
-		if (valid_1 == 0 && sel == 1) begin
-			valid_out<=0;
-			sel <= 0;
 		end
 	end
 
