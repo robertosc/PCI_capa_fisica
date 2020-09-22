@@ -3,7 +3,7 @@
 `include "../demux_striping/demux_striping.v"
 `include "../demux_32_8/demux32_8.v"
 
-module PHY_TX(input [31:0] data_input,
+module phy_TX(input [31:0] data_input,
 			input valid,
 			input active,
 			input reset,

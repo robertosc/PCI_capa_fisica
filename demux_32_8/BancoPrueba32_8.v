@@ -24,8 +24,8 @@ module BancoPrueba32_8;
 
 	sintetizado32a8_cmos demuxsint(/*AUTOINST*/
 		    // Outputs
-		    .data_out		(data_out_sint[7:0]),
-		    .valid_out		(valid_out_sint),
+		    .data_out_estructural		(data_out_sint[7:0]),
+		    .valid_out_estructural		(valid_out_sint),
 		    // Inputs
 			.reset 		(reset),
 		    .clk_4f		(clk_4f),

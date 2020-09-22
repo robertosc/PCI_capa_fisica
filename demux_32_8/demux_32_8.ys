@@ -1,6 +1,6 @@
-read_verilog demux_8_32.v 
+read_verilog demux32_8.v 
 
-hierarchy -check -top demux_8_32
+hierarchy -check -top demux32_8
 
 proc; opt; memory; opt; fsm; opt;
 
@@ -12,4 +12,4 @@ abc -liberty ../lib/cmos_cells.lib
 
 clean
 
-write_verilog sintetizado8a32_cmos.v
+write_verilog sintetizado32a8_cmos.v
