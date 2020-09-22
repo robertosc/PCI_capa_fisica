@@ -20,6 +20,7 @@ module banco_demux_striping;
 			      .clk_2f		(clk_2f),
 			      .data_input	(data_input[31:0]),
 			      .valid_in		(valid_in));
+
 	demux_striping_sintetizado sintetizado (/*AUTOINST*/
 						// Outputs
 						.lane_0		(lane_sintetizado0[31:0]),
