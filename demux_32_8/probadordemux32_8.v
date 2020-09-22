@@ -1,5 +1,8 @@
 module probadordemux32_8(input [7:0] data_out,
+                        input [7:0] data_out_sint,
                         input valid_out,
+                        input valid_out_sint,
+                        output reg reset,
                         output reg clk_f,
                         output reg clk_4f,
                         output reg [31:0] lane_0,
@@ -7,11 +10,12 @@ module probadordemux32_8(input [7:0] data_out,
     initial begin
         $dumpfile("demux_32_8.vcd");
 	    $dumpvars;
-        
+        {reset}<=0;
         {valid_0}<=0;
         {lane_0}<=32'h00000000;
 
         @(posedge clk_f);
+        reset <= 1;
         valid_0 <=1;
         lane_0 <= 32'hAABBAABB;
         
