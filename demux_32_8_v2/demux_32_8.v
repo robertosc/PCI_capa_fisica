@@ -5,10 +5,10 @@ module demux_32_8(input clk_4f,
 				output reg [7:0] data_out,
 				output reg valid_out); //tiene que ser reg para poder ser l-value
 
-	reg [1:0] selector;
+	reg [1:0] selector = 2'b00;
 
 	always @(posedge clk_4f) begin
-		if(reset == 0) begin
+		if(reset == 0 || valid == 0) begin
 			selector [1:0] <= 2'b00;
 			valid_out <= 0;
 		end
@@ -34,10 +34,6 @@ module demux_32_8(input clk_4f,
 					valid_out <= valid;
 					selector <= 2'b00;
 				end
-			end
-			else begin
-				valid_out <= 0;
-				selector <= 2'b00;
 			end
 		end
 	end

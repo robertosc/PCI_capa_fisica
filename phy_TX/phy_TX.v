@@ -1,7 +1,7 @@
 `include "../recirculador/recirculador.v"
 //`include "../lib/cmos_cell.v"
 `include "../demux_striping/demux_striping.v"
-`include "../demux_32_8/demux32_8.v"
+`include "../demux_32_8_v2/demux_32_8.v"
 
 module phy_TX(input [31:0] data_input,
 			input valid,
@@ -18,7 +18,6 @@ module phy_TX(input [31:0] data_input,
 
 	wire [31:0] data_input, demux_0, demux_1_probador, lane_0, lane_1;
 	wire clk_2f, clk_f, clk_4f, valid, active, valid_out, reset, valid_demux_striping_0, valid_demux_striping_1;
-
 
 	recirculador recirculador_inicial(
 		.clk_2f           ( clk_2f           ),
@@ -41,23 +40,22 @@ module phy_TX(input [31:0] data_input,
 		.valid_out1 ( valid_demux_striping_1  )
 	);
 
-	demux32_8 demux_lane_0(
+	demux_32_8 demux_lane_0(
 		.data_out  ( data_out_0 [7:0]),
 		.valid_out ( valid_out0 ),
 		.reset     ( reset     ),
 		.clk_4f    ( clk_4f    ),
-		.lane_0    ( lane_0[31:0]    ),
-		.valid_0   ( valid_demux_striping_0 )
+		.data_in    ( lane_0[31:0]    ),
+		.valid   ( valid_demux_striping_0 )
 	);
 	
-	demux32_8 demux_lane_1(
+	demux_32_8 demux_lane_1(
 		.data_out  ( data_out_1 [7:0]),
 		.valid_out ( valid_out1 ),
 		.reset     ( reset     ),
 		.clk_4f    ( clk_4f    ),
-		.lane_0    ( lane_1[31:0]    ),
-		.valid_0   ( valid_demux_striping_1 )
+		.data_in    ( lane_1[31:0]    ),
+		.valid   ( valid_demux_striping_1 )
 	);
-
 
 endmodule
