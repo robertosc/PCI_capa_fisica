@@ -3,7 +3,7 @@
 `include "demux_8_32.v"
 `include "probador_demux_8_32.v"
 `include "sintetizado8a32_cmos.v"
-`include "cmos_cells.v"
+`include "../lib/cmos_cells.v"
 
 module banco_demux_8_32;
 
