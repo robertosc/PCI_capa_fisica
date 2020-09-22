@@ -1,5 +1,5 @@
-module probador(input [31:0] lane_0,
-						input [31:0] lane_1,
+module probador(input [7:0] data_out_0,
+						input [7:0] data_out_1,
 						input valid_0,
 						input valid_1,
 						output reg active,
