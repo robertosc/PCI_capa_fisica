@@ -3,9 +3,9 @@
 (* top =  1  *)
 (* src = "sintetizado32a8_cmos.v:1" *)
 module sintetizado32a8_cmos(data_out_estructural, valid_out_estructural, reset, clk_4f, lane_0, valid_0);
-  (* src = "sintetizado32a8_cmos.v:10" *)
+  (* src = "sintetizado32a8_cmos.v:9" *)
   wire [7:0] _000_;
-  (* src = "sintetizado32a8_cmos.v:10" *)
+  (* src = "sintetizado32a8_cmos.v:9" *)
   wire _001_;
   wire _002_;
   wire _003_;
@@ -952,55 +952,55 @@ module sintetizado32a8_cmos(data_out_estructural, valid_out_estructural, reset, 
     .D(_004_),
     .Q(counter1[3])
   );
-  (* src = "sintetizado32a8_cmos.v:10" *)
+  (* src = "sintetizado32a8_cmos.v:9" *)
   DFF _313_ (
     .C(clk_4f),
     .D(_000_[0]),
     .Q(data_out_estructural[0])
   );
-  (* src = "sintetizado32a8_cmos.v:10" *)
+  (* src = "sintetizado32a8_cmos.v:9" *)
   DFF _314_ (
     .C(clk_4f),
     .D(_000_[1]),
     .Q(data_out_estructural[1])
   );
-  (* src = "sintetizado32a8_cmos.v:10" *)
+  (* src = "sintetizado32a8_cmos.v:9" *)
   DFF _315_ (
     .C(clk_4f),
     .D(_000_[2]),
     .Q(data_out_estructural[2])
   );
-  (* src = "sintetizado32a8_cmos.v:10" *)
+  (* src = "sintetizado32a8_cmos.v:9" *)
   DFF _316_ (
     .C(clk_4f),
     .D(_000_[3]),
     .Q(data_out_estructural[3])
   );
-  (* src = "sintetizado32a8_cmos.v:10" *)
+  (* src = "sintetizado32a8_cmos.v:9" *)
   DFF _317_ (
     .C(clk_4f),
     .D(_000_[4]),
     .Q(data_out_estructural[4])
   );
-  (* src = "sintetizado32a8_cmos.v:10" *)
+  (* src = "sintetizado32a8_cmos.v:9" *)
   DFF _318_ (
     .C(clk_4f),
     .D(_000_[5]),
     .Q(data_out_estructural[5])
   );
-  (* src = "sintetizado32a8_cmos.v:10" *)
+  (* src = "sintetizado32a8_cmos.v:9" *)
   DFF _319_ (
     .C(clk_4f),
     .D(_000_[6]),
     .Q(data_out_estructural[6])
   );
-  (* src = "sintetizado32a8_cmos.v:10" *)
+  (* src = "sintetizado32a8_cmos.v:9" *)
   DFF _320_ (
     .C(clk_4f),
     .D(_000_[7]),
     .Q(data_out_estructural[7])
   );
-  (* src = "sintetizado32a8_cmos.v:10" *)
+  (* src = "sintetizado32a8_cmos.v:9" *)
   DFF _321_ (
     .C(clk_4f),
     .D(_001_),
