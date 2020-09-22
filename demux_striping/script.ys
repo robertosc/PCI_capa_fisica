@@ -8,14 +8,6 @@ dfflibmap -liberty ./cmos_cells.lib
 
 abc -liberty ./cmos_cells.lib
 
-<<<<<<< HEAD
-=======
-opt
-
-show
-
-#cleanup
->>>>>>> d0efed8518d3eea0ab900b780b6c58e0f4b06ab5
 clean
 
 write_verilog demux_striping_sintetizado.v
