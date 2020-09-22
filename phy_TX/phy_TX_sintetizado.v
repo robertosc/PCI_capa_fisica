@@ -961,7 +961,7 @@ endmodule
 
 (* cells_not_processed =  1  *)
 (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:1" *)
-module demux_striping_sintetizado(clk_2f, data_input, valid_in, reset, lane_0, lane_1, valid_out0, valid_out1);
+module demux_striping_sintetizado(clk_2f, data_input, valid_in, reset, lane_0, lane_1, valid_out0_sintetizado, valid_out1_sintetizado);
   (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
   wire [31:0] _000_;
   (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
@@ -1126,9 +1126,9 @@ module demux_striping_sintetizado(clk_2f, data_input, valid_in, reset, lane_0, l
   (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:4" *)
   input valid_in;
   (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:8" *)
-  output valid_out0;
+  output valid_out0_sintetizado;
   (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:9" *)
-  output valid_out1;
+  output valid_out1_sintetizado;
   NAND _144_ (
     .A(data_input[0]),
     .B(_077_),
@@ -2126,7 +2126,7 @@ module demux_striping_sintetizado(clk_2f, data_input, valid_in, reset, lane_0, l
     .Y(_001_[31])
   );
   NAND _344_ (
-    .A(valid_out1),
+    .A(valid_out1_sintetizado),
     .B(_008_),
     .Y(_076_)
   );
@@ -2146,7 +2146,7 @@ module demux_striping_sintetizado(clk_2f, data_input, valid_in, reset, lane_0, l
     .Y(_078_)
   );
   NAND _348_ (
-    .A(valid_out0),
+    .A(valid_out0_sintetizado),
     .B(_007_),
     .Y(_079_)
   );
@@ -2351,13 +2351,13 @@ module demux_striping_sintetizado(clk_2f, data_input, valid_in, reset, lane_0, l
   DFF _382_ (
     .C(clk_2f),
     .D(_003_),
-    .Q(valid_out0)
+    .Q(valid_out0_sintetizado)
   );
   (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
   DFF _383_ (
     .C(clk_2f),
     .D(_004_),
-    .Q(valid_out1)
+    .Q(valid_out1_sintetizado)
   );
   (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
   DFF _384_ (
@@ -2561,7 +2561,7 @@ endmodule
 
 (* cells_not_processed =  1  *)
 (* src = "phy_TX_sintetizado.v:6" *)
-module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4f, data_out_0, data_out_1, valid_out0, valid_out1);
+module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4f, data_out_0_sintetizado, data_out_1_sintetizado, valid_out0_sintetizado, valid_out1_sintetizado);
   (* src = "phy_TX_sintetizado.v:8" *)
   input active;
   (* src = "phy_TX_sintetizado.v:10" *)
@@ -2573,9 +2573,9 @@ module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4
   (* src = "phy_TX_sintetizado.v:6" *)
   input [31:0] data_input;
   (* src = "phy_TX_sintetizado.v:13" *)
-  output [7:0] data_out_0;
+  output [7:0] data_out_0_sintetizado;
   (* src = "phy_TX_sintetizado.v:14" *)
-  output [7:0] data_out_1;
+  output [7:0] data_out_1_sintetizado;
   (* src = "phy_TX_sintetizado.v:19" *)
   wire [31:0] demux_0;
   (* src = "phy_TX_sintetizado.v:19" *)
@@ -2596,28 +2596,28 @@ module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4
   (* src = "phy_TX_sintetizado.v:20" *)
   wire valid_out;
   (* src = "phy_TX_sintetizado.v:15" *)
-  output valid_out0;
+  output valid_out0_sintetizado;
   (* src = "phy_TX_sintetizado.v:16" *)
-  output valid_out1;
+  output valid_out1_sintetizado;
   (* module_not_derived = 32'd1 *)
   (* src = "phy_TX_sintetizado.v:44" *)
   demux32_8_sintetizado demux_lane_0 (
     .clk_4f(clk_4f),
-    .data_out(data_out_0),
+    .data_out(data_out_0_sintetizado),
     .lane_0(lane_0),
     .reset(reset),
     .valid_0(valid_demux_striping_sintetizado_0),
-    .valid_out(valid_out0)
+    .valid_out(valid_out0_sintetizado)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "phy_TX_sintetizado.v:53" *)
   demux32_8_sintetizado demux_lane_1 (
     .clk_4f(clk_4f),
-    .data_out(data_out_1),
+    .data_out(data_out_1_sintetizado),
     .lane_0(lane_1),
     .reset(reset),
     .valid_0(valid_demux_striping_sintetizado_1),
-    .valid_out(valid_out1)
+    .valid_out(valid_out1_sintetizado)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "phy_TX_sintetizado.v:23" *)
@@ -2639,8 +2639,8 @@ module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4
     .lane_1(lane_1),
     .reset(reset),
     .valid_in(valid_out),
-    .valid_out0(valid_demux_striping_sintetizado_0),
-    .valid_out1(valid_demux_striping_sintetizado_1)
+    .valid_out0_sintetizado(valid_demux_striping_sintetizado_0),
+    .valid_out1_sintetizado(valid_demux_striping_sintetizado_1)
   );
 endmodule
 

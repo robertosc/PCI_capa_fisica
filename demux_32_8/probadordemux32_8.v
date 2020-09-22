@@ -15,11 +15,11 @@ module probadordemux32_8(input [7:0] data_out,
         {lane_0}<=32'h00000000;
 
         @(posedge clk_f);
-        reset <= 1;
         valid_0 <=1;
         lane_0 <= 32'hAABBAABB;
         
         @(posedge clk_f);
+        reset <= 1;
         valid_0 <=1;
         lane_0 <= 32'hFFCCFFCC;
 

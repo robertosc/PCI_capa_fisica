@@ -29,10 +29,10 @@ module BancoPrubas_PHY;
 		.clk_2f     ( clk_2f     ),
 		.clk_f      ( clk_f      ),
 		.clk_4f		(clk_4f),
-		.data_out_0 (data_out_0_sintetizado[7:0]),
-		.data_out_1 (data_out_1_sintetizado[7:0]),
-		.valid_out0 ( valid_out0_sintetizado ),
-		.valid_out1  ( valid_out1_sintetizado  )
+		.data_out_0_sintetizado (data_out_0_sintetizado[7:0]),
+		.data_out_1_sintetizado (data_out_1_sintetizado[7:0]),
+		.valid_out0_sintetizado ( valid_out0_sintetizado ),
+		.valid_out1_sintetizado  ( valid_out1_sintetizado  )
 	);
 
 	probador u_probador(

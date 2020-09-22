@@ -13,7 +13,6 @@ module demux32_8(output reg [7:0] data_out,
             valid_out<=0;
         end
         else begin
-
             if(valid_0 == 1)begin
                 if(counter1 == 2'b00) begin
                     data_out <= lane_0[31:24];
