@@ -12,7 +12,7 @@ module demux_striping(
 
 	always @(posedge clk_2f) begin
 		if(reset == 0)begin
-			sel=0;
+			sel<=0;
 			valid_out0 <= 0;
 			valid_out1 <= 0;
 		end
@@ -30,11 +30,11 @@ module demux_striping(
 			end
 
 			else if (valid_in == 0 && sel == 0) begin
-				sel <= 1;
+				sel <= 0;
 				valid_out0<=0;
 			end
 			else if (valid_in == 0 && sel == 1) begin
-				sel <= 0;
+				sel <= 1;
 				valid_out1<=0;
 			end
 		end

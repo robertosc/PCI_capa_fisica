@@ -35,7 +35,7 @@ module probador(input [7:0] data_out_0,
 	reset <= 1;
 	active <= 1;
 	valid <= 1;
-	data_input <= 32'hFFEEEEEE;
+	data_input <= 32'h3FE115E6;
 
 	@(posedge clk_2f);
 	active <= 1;
@@ -44,16 +44,16 @@ module probador(input [7:0] data_out_0,
 
 	@(posedge clk_2f);
 	active <= 1;
-	valid <= 1;
+	valid <= 0;
 	data_input <= 32'hAAAA1234;
 
 	@(posedge clk_2f);
 	active <= 1;
-	valid <= 1;
+	valid <= 0;
 	data_input <= 32'h12345678;
 
 	@(posedge clk_2f);
-	active <= 1;
+	active <= 0;
 	valid <= 1;
 	data_input <= 32'hBBBBAAAA;
 

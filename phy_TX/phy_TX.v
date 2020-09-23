@@ -25,6 +25,7 @@ module phy_TX(input [31:0] data_input,
 		.valid            ( valid            ),
 		.active           ( active           ),
 		.demux_0          ( demux_0  [31:0]  ),
+		.reset      ( reset      ),
 		.demux_1_probador ( demux_1_probador[31:0]),
 		.valid_out        ( valid_out        )
 	);

@@ -34,7 +34,7 @@ module mux_striping(
 					valid_out<=1;
 				end
 				else begin
-					sel <= 0;
+					sel <= 1;
 					valid_out<=0;
 				end
 			end	

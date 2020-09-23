@@ -7,28 +7,30 @@ module probador_recirc(input [31:0] demux_0,
 						output reg active,
 						output reg valid,
 						output reg [31:0] data_input,
-						output reg clk_2f);
+						output reg clk_2f,
+						output reg reset);
 	initial begin
 	$dumpfile("recirculador.vcd");
 	$dumpvars;
 
-	{valid, active} <= 0;
+	{valid, active, reset} <= 0;
 	{data_input} <= 32'h00000000;
 	
 	@(posedge clk_2f);
+	reset <= 1;
 	active <= 1;
 	valid <= 0;
-	data_input <= 32'hFFFFEEEE;
+	data_input <= 32'hFFFFEE9E;
 
 	@(posedge clk_2f);
 	active <= 1;
 	valid <= 1;
-	data_input <= 32'hFFEEEEEE;
+	data_input <= 32'h13EEE7EE;
 
 	@(posedge clk_2f);
 	active <= 1;
 	valid <= 1;
-	data_input <= 32'hFFEEEEEE;
+	data_input <= 32'h5FEE23EE;
 
 	@(posedge clk_2f);
 	active <= 1;

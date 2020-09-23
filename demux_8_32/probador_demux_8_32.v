@@ -45,8 +45,12 @@ module probador_demux_8_32(input [31:0] data_out,
 	data_in <= 8'hBB;
 
 	@(posedge clk_4f);
-
 	@(posedge clk_4f);
+	data_in <= 8'h00;
+	valid <= 0;
+	@(posedge clk_4f);
+	@(posedge clk_4f);
+
 	$finish;
 	end
 	
