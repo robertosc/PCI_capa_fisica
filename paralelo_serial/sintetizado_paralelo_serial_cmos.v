@@ -2,26 +2,22 @@
 
 (* top =  1  *)
 (* src = "sintetizado_paralelo_serial_cmos.v:1" *)
-module sintetizado_paralelo_serial_cmos(clk_4f, clk_32f, data_in, valid_in, reset, data2send_estructural, data_out_estructural);
-  (* src = "sintetizado_paralelo_serial_cmos.v:11" *)
+module sintetizado_paralelo_serial_cmos(clk_4f, clk_32f, data_in, valid_in, reset, data_out_estructural);
+  (* src = "sintetizado_paralelo_serial_cmos.v:12" *)
+  (* unused_bits = "0 1 2 3 4 5 6" *)
   wire [7:0] _00_;
-  (* src = "sintetizado_paralelo_serial_cmos.v:21" *)
+  (* src = "sintetizado_paralelo_serial_cmos.v:22" *)
   wire _01_;
   wire _02_;
   wire _03_;
   wire _04_;
-  wire _05_;
-  wire _06_;
-  wire _07_;
-  wire _08_;
-  wire _09_;
-  wire _10_;
   (* src = "sintetizado_paralelo_serial_cmos.v:2" *)
   input clk_32f;
   (* src = "sintetizado_paralelo_serial_cmos.v:1" *)
   input clk_4f;
-  (* src = "sintetizado_paralelo_serial_cmos.v:6" *)
-  output [7:0] data2send_estructural;
+  (* src = "sintetizado_paralelo_serial_cmos.v:10" *)
+  (* unused_bits = "0 1 2 3 4 5 6" *)
+  wire [7:0] data2send;
   (* src = "sintetizado_paralelo_serial_cmos.v:3" *)
   input [7:0] data_in;
   (* src = "sintetizado_paralelo_serial_cmos.v:7" *)
@@ -32,140 +28,40 @@ module sintetizado_paralelo_serial_cmos(clk_4f, clk_32f, data_in, valid_in, rese
   wire [2:0] selector;
   (* src = "sintetizado_paralelo_serial_cmos.v:4" *)
   input valid_in;
-  NOT _11_ (
-    .A(valid_in),
-    .Y(_02_)
-  );
-  NOT _12_ (
-    .A(data_in[2]),
+  NOT _05_ (
+    .A(reset),
     .Y(_03_)
   );
-  NOT _13_ (
-    .A(data_in[3]),
+  NAND _06_ (
+    .A(data2send[7]),
+    .B(reset),
     .Y(_04_)
   );
-  NOT _14_ (
-    .A(data_in[4]),
-    .Y(_05_)
-  );
-  NOT _15_ (
-    .A(data_in[5]),
-    .Y(_06_)
-  );
-  NOR _16_ (
-    .A(data_in[7]),
-    .B(_02_),
-    .Y(_07_)
-  );
-  NOT _17_ (
-    .A(_07_),
-    .Y(_00_[7])
-  );
-  NAND _18_ (
-    .A(reset),
-    .B(_07_),
+  NOT _07_ (
+    .A(_04_),
     .Y(_01_)
   );
-  NAND _19_ (
-    .A(data_in[0]),
-    .B(valid_in),
-    .Y(_08_)
+  NOR _08_ (
+    .A(_03_),
+    .B(data_in[7]),
+    .Y(_02_)
   );
-  NOT _20_ (
-    .A(_08_),
-    .Y(_00_[0])
-  );
-  NAND _21_ (
+  NAND _09_ (
     .A(valid_in),
-    .B(data_in[1]),
-    .Y(_09_)
+    .B(_02_),
+    .Y(_00_[7])
   );
-  NOT _22_ (
-    .A(_09_),
-    .Y(_00_[1])
-  );
-  NAND _23_ (
-    .A(valid_in),
-    .B(_03_),
-    .Y(_00_[2])
-  );
-  NAND _24_ (
-    .A(valid_in),
-    .B(_04_),
-    .Y(_00_[3])
-  );
-  NAND _25_ (
-    .A(valid_in),
-    .B(_05_),
-    .Y(_00_[4])
-  );
-  NAND _26_ (
-    .A(valid_in),
-    .B(_06_),
-    .Y(_00_[5])
-  );
-  NAND _27_ (
-    .A(valid_in),
-    .B(data_in[6]),
-    .Y(_10_)
-  );
-  NOT _28_ (
-    .A(_10_),
-    .Y(_00_[6])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:21" *)
-  DFF _29_ (
+  (* src = "sintetizado_paralelo_serial_cmos.v:22" *)
+  DFF _10_ (
     .C(clk_32f),
     .D(_01_),
     .Q(data_out_estructural)
   );
-  (* src = "sintetizado_paralelo_serial_cmos.v:11" *)
-  DFF _30_ (
-    .C(clk_4f),
-    .D(_00_[0]),
-    .Q(data2send_estructural[0])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:11" *)
-  DFF _31_ (
-    .C(clk_4f),
-    .D(_00_[1]),
-    .Q(data2send_estructural[1])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:11" *)
-  DFF _32_ (
-    .C(clk_4f),
-    .D(_00_[2]),
-    .Q(data2send_estructural[2])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:11" *)
-  DFF _33_ (
-    .C(clk_4f),
-    .D(_00_[3]),
-    .Q(data2send_estructural[3])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:11" *)
-  DFF _34_ (
-    .C(clk_4f),
-    .D(_00_[4]),
-    .Q(data2send_estructural[4])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:11" *)
-  DFF _35_ (
-    .C(clk_4f),
-    .D(_00_[5]),
-    .Q(data2send_estructural[5])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:11" *)
-  DFF _36_ (
-    .C(clk_4f),
-    .D(_00_[6]),
-    .Q(data2send_estructural[6])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:11" *)
-  DFF _37_ (
+  (* src = "sintetizado_paralelo_serial_cmos.v:12" *)
+  DFF _11_ (
     .C(clk_4f),
     .D(_00_[7]),
-    .Q(data2send_estructural[7])
+    .Q(data2send[7])
   );
-  assign selector = 3'h0;
+  assign selector = 3'h7;
 endmodule

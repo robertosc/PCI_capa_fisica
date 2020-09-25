@@ -1,6 +1,4 @@
-module probador_paralelo_serial(input [7:0] data2send,
-								input [7:0] data2send_estructural,
-						        input data_out,
+module probador_paralelo_serial(input data_out,
 								input data_out_estructural,
 								output reg reset,
 								output reg valid_in,
@@ -21,37 +19,37 @@ module probador_paralelo_serial(input [7:0] data2send,
 	reset <= 0;
 
 	@(posedge clk_4f);
-	valid_in <= 1;
+	valid_in <= 0;
 	data_in <= 8'hCC;
+	@(posedge clk_4f);
 	reset <=1;
-	@(posedge clk_4f);
 	valid_in <= 1;
-	data_in <= 8'hAA;
+	data_in <= 8'hAB;
 
 	@(posedge clk_4f);
 	valid_in <= 1;
-	data_in <= 8'hCC;
+	data_in <= 8'hCA;
 
 	@(posedge clk_4f);
 	valid_in <= 1;
-	data_in <= 8'hAA;
+	data_in <= 8'h12;
 
 	@(posedge clk_4f);
 	valid_in <= 0;
-	data_in <= 8'hCC;
+	data_in <= 8'hDC;
 
 	@(posedge clk_4f);
 	valid_in <= 1;
-	data_in <= 8'hAA;
+	data_in <= 8'hFA;
 
 	@(posedge clk_4f);
 	valid_in <= 1;
-	data_in <= 8'hCC;
+	data_in <= 8'h33;
 	@(posedge clk_4f);
 	$finish;
 	end
 	
-	initial clk_4f <= 0;
+	initial clk_4f <= 1;
 	always #8 clk_4f <= ~clk_4f;
 
 	initial clk_32f <= 1;
