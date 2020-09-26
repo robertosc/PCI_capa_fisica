@@ -14,6 +14,7 @@ module mux_striping(
 		if(reset == 0)begin
 			sel <=0 ;
 			valid_out <= 0;
+			data_output<=0;
 		end
 		else begin
 			if (sel==0) begin

@@ -20,18 +20,17 @@ module probador_mux_striping(
 	{lane_0,lane_1} <= 32'h00000000;
 	
 	@(posedge clk_2f);
-	reset <=1;
 	valid_0 <= 0;
     valid_1 <= 0;
 	lane_0 <= 32'hAAAAAAAA;
 
 	@(posedge clk_2f);
-	reset <=1;
 	valid_0 <= 1;
     valid_1 <= 1;
 	lane_1 <= 32'hEEEEEEEE;
 
 	@(posedge clk_2f);
+	reset <=1;
 	valid_0 <= 1;
     valid_1 <= 1;
 	lane_0 <= 32'hCCCCCCCC;
