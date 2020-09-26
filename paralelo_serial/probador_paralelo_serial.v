@@ -1,4 +1,6 @@
-module probador_paralelo_serial(input data_out,
+module probador_paralelo_serial(input [7:0] data2send,
+								input [7:0] data2send_estructural,
+						        input data_out,
 								input data_out_estructural,
 								output reg reset,
 								output reg valid_in,
