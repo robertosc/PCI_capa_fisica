@@ -19,7 +19,6 @@ module probador_demux_striping(
 	{data_input} <= 32'h00000000;
 	
 	@(posedge clk_2f);
-	reset<=1;
     valid_in <= 0;
 	data_input <= 32'hFFFFFFFF;
 
@@ -32,6 +31,7 @@ module probador_demux_striping(
 	data_input <= 32'hEEEEEEEE;
 
 	@(posedge clk_2f);
+	reset<=1;
     valid_in <= 1;
 	data_input <= 32'hCCCCCCCC;
 

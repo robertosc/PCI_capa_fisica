@@ -15,6 +15,8 @@ module demux_striping(
 			sel<=0;
 			valid_out0 <= 0;
 			valid_out1 <= 0;
+			lane_1 <= 0;
+			lane_0<= 0;
 		end
 		else begin
 			if(valid_in == 1 && sel == 0 ) begin
