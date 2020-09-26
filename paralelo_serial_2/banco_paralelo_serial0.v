@@ -1,21 +1,19 @@
 `timescale 1ms/100ps
 
 `include "paralelo_serial.v"
-`include "paralelo_serial0.v"
-`include "paralelo_serial1.v"
 `include "probador_paralelo_serial0.v"
 
     module banco_paralelo_serial0;
         wire [7:0] data_in, data2send;
-        wire clk_4f, clk_32f, valid_in, data_out;
+        wire clk_4f, clk_32f, valid_in, data_out, data_out_fin, reset;
 
         paralelo_serial paraleloserial(
-                                        .data_out(data_out),
+                                        .data_out_fin(data_out_fin),
                                         .data_in(data_in),
                                         .valid_in(valid_in),
+                                        .reset (reset),
                                         .clk_32f(clk_32f),
-                                        .clk_4f(clk_4f),
-        );
+                                        .clk_4f(clk_4f));
 
         paralelo_serial0 paraleloserial0(/*AUTOINST*/
 					 // Outputs

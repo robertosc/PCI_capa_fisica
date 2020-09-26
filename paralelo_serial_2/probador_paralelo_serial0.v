@@ -1,5 +1,6 @@
 module probador_paralelo_serial0(input [7:0] data2send,
                                 input data_out,
+								input data_out_fin,
 								output reg reset,
 								output reg valid_in,
 						        output reg [7:0] data_in,
