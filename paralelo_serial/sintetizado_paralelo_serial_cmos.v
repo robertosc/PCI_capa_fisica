@@ -2,11 +2,11 @@
 
 (* top =  1  *)
 (* src = "sintetizado_paralelo_serial_cmos.v:1" *)
-module sintetizado_paralelo_serial_cmos(clk_4f, clk_32f, data_in, valid_in, reset, data2send_estructural, data_out_estructural);
-  (* src = "sintetizado_paralelo_serial_cmos.v:12" *)
-  wire [7:0] _00_;
-  (* src = "sintetizado_paralelo_serial_cmos.v:22" *)
-  wire _01_;
+module sintetizado_paralelo_serial_cmos(clk_4f, clk_32f, data_in, valid_in, reset, data_out_estructural);
+  (* src = "sintetizado_paralelo_serial_cmos.v:10" *)
+  wire _00_;
+  (* src = "sintetizado_paralelo_serial_cmos.v:10" *)
+  wire [2:0] _01_;
   wire _02_;
   wire _03_;
   wire _04_;
@@ -17,161 +17,289 @@ module sintetizado_paralelo_serial_cmos(clk_4f, clk_32f, data_in, valid_in, rese
   wire _09_;
   wire _10_;
   wire _11_;
+  wire _12_;
+  wire _13_;
+  wire _14_;
+  wire _15_;
+  wire _16_;
+  wire _17_;
+  wire _18_;
+  wire _19_;
+  wire _20_;
+  wire _21_;
+  wire _22_;
+  wire _23_;
+  wire _24_;
+  wire _25_;
+  wire _26_;
+  wire _27_;
+  wire _28_;
+  wire _29_;
+  wire _30_;
+  wire _31_;
+  wire _32_;
+  wire _33_;
+  wire _34_;
+  wire _35_;
+  wire _36_;
+  wire _37_;
+  wire _38_;
+  wire _39_;
+  wire _40_;
+  wire _41_;
+  wire _42_;
   (* src = "sintetizado_paralelo_serial_cmos.v:2" *)
   input clk_32f;
   (* src = "sintetizado_paralelo_serial_cmos.v:1" *)
   input clk_4f;
-  (* src = "sintetizado_paralelo_serial_cmos.v:6" *)
-  output [7:0] data2send_estructural;
   (* src = "sintetizado_paralelo_serial_cmos.v:3" *)
   input [7:0] data_in;
-  (* src = "sintetizado_paralelo_serial_cmos.v:7" *)
+  (* src = "sintetizado_paralelo_serial_cmos.v:6" *)
   output data_out_estructural;
   (* src = "sintetizado_paralelo_serial_cmos.v:5" *)
   input reset;
-  (* src = "sintetizado_paralelo_serial_cmos.v:9" *)
+  (* src = "sintetizado_paralelo_serial_cmos.v:8" *)
   wire [2:0] selector;
   (* src = "sintetizado_paralelo_serial_cmos.v:4" *)
   input valid_in;
-  NOT _12_ (
-    .A(data_out_estructural),
+  NOT _43_ (
+    .A(selector[1]),
     .Y(_02_)
   );
-  NOT _13_ (
-    .A(data_in[0]),
+  NOT _44_ (
+    .A(selector[2]),
     .Y(_03_)
   );
-  NOT _14_ (
-    .A(data_in[1]),
+  NOT _45_ (
+    .A(selector[0]),
     .Y(_04_)
   );
-  NOT _15_ (
-    .A(data_in[6]),
+  NOT _46_ (
+    .A(valid_in),
     .Y(_05_)
   );
-  NOR _16_ (
+  NOT _47_ (
     .A(reset),
-    .B(_02_),
-    .Y(_01_)
-  );
-  NAND _17_ (
-    .A(reset),
-    .B(valid_in),
     .Y(_06_)
   );
-  NOR _18_ (
-    .A(_03_),
-    .B(_06_),
-    .Y(_00_[0])
-  );
-  NOR _19_ (
-    .A(_04_),
-    .B(_06_),
-    .Y(_00_[1])
-  );
-  NOR _20_ (
-    .A(data_in[2]),
-    .B(_06_),
+  NOT _48_ (
+    .A(data_in[4]),
     .Y(_07_)
   );
-  NOT _21_ (
-    .A(_07_),
-    .Y(_00_[2])
-  );
-  NOR _22_ (
-    .A(data_in[3]),
-    .B(_06_),
+  NOT _49_ (
+    .A(data_in[5]),
     .Y(_08_)
   );
-  NOT _23_ (
-    .A(_08_),
-    .Y(_00_[3])
-  );
-  NOR _24_ (
-    .A(data_in[4]),
-    .B(_06_),
+  NOT _50_ (
+    .A(data_in[1]),
     .Y(_09_)
   );
-  NOT _25_ (
-    .A(_09_),
-    .Y(_00_[4])
-  );
-  NOR _26_ (
-    .A(data_in[5]),
-    .B(_06_),
+  NOR _51_ (
+    .A(selector[1]),
+    .B(_04_),
     .Y(_10_)
   );
-  NOT _27_ (
-    .A(_10_),
-    .Y(_00_[5])
-  );
-  NOR _28_ (
-    .A(_05_),
-    .B(_06_),
-    .Y(_00_[6])
-  );
-  NOR _29_ (
-    .A(data_in[7]),
-    .B(_06_),
+  NAND _52_ (
+    .A(data_in[2]),
+    .B(_10_),
     .Y(_11_)
   );
-  NOT _30_ (
-    .A(_11_),
-    .Y(_00_[7])
+  NAND _53_ (
+    .A(selector[1]),
+    .B(_04_),
+    .Y(_12_)
   );
-  (* src = "sintetizado_paralelo_serial_cmos.v:22" *)
-  DFF _31_ (
+  NOR _54_ (
+    .A(_09_),
+    .B(_12_),
+    .Y(_13_)
+  );
+  NOR _55_ (
+    .A(_02_),
+    .B(_04_),
+    .Y(_14_)
+  );
+  NAND _56_ (
+    .A(selector[1]),
+    .B(selector[0]),
+    .Y(_15_)
+  );
+  NAND _57_ (
+    .A(data_in[0]),
+    .B(_14_),
+    .Y(_16_)
+  );
+  NOR _58_ (
+    .A(selector[1]),
+    .B(selector[0]),
+    .Y(_17_)
+  );
+  NAND _59_ (
+    .A(data_in[3]),
+    .B(_17_),
+    .Y(_18_)
+  );
+  NAND _60_ (
+    .A(_11_),
+    .B(_16_),
+    .Y(_19_)
+  );
+  NOR _61_ (
+    .A(_03_),
+    .B(_13_),
+    .Y(_20_)
+  );
+  NAND _62_ (
+    .A(_18_),
+    .B(_20_),
+    .Y(_21_)
+  );
+  NOR _63_ (
+    .A(_19_),
+    .B(_21_),
+    .Y(_22_)
+  );
+  NAND _64_ (
+    .A(data_in[6]),
+    .B(_10_),
+    .Y(_23_)
+  );
+  NAND _65_ (
+    .A(_03_),
+    .B(_23_),
+    .Y(_24_)
+  );
+  NAND _66_ (
+    .A(data_in[7]),
+    .B(_17_),
+    .Y(_25_)
+  );
+  NOR _67_ (
+    .A(_07_),
+    .B(_15_),
+    .Y(_26_)
+  );
+  NOR _68_ (
+    .A(_08_),
+    .B(_12_),
+    .Y(_27_)
+  );
+  NOR _69_ (
+    .A(_26_),
+    .B(_27_),
+    .Y(_28_)
+  );
+  NAND _70_ (
+    .A(_25_),
+    .B(_28_),
+    .Y(_29_)
+  );
+  NOR _71_ (
+    .A(_24_),
+    .B(_29_),
+    .Y(_30_)
+  );
+  NOR _72_ (
+    .A(_22_),
+    .B(_30_),
+    .Y(_31_)
+  );
+  NOR _73_ (
+    .A(_05_),
+    .B(_31_),
+    .Y(_32_)
+  );
+  NOR _74_ (
+    .A(selector[2]),
+    .B(_10_),
+    .Y(_33_)
+  );
+  NOT _75_ (
+    .A(_33_),
+    .Y(_34_)
+  );
+  NOR _76_ (
+    .A(selector[1]),
+    .B(_03_),
+    .Y(_35_)
+  );
+  NOR _77_ (
+    .A(valid_in),
+    .B(_35_),
+    .Y(_36_)
+  );
+  NAND _78_ (
+    .A(_34_),
+    .B(_36_),
+    .Y(_37_)
+  );
+  NAND _79_ (
+    .A(reset),
+    .B(_37_),
+    .Y(_38_)
+  );
+  NOR _80_ (
+    .A(_32_),
+    .B(_38_),
+    .Y(_00_)
+  );
+  NOR _81_ (
+    .A(selector[0]),
+    .B(_06_),
+    .Y(_01_[0])
+  );
+  NAND _82_ (
+    .A(reset),
+    .B(_15_),
+    .Y(_39_)
+  );
+  NOR _83_ (
+    .A(_17_),
+    .B(_39_),
+    .Y(_01_[1])
+  );
+  NOR _84_ (
+    .A(_03_),
+    .B(_15_),
+    .Y(_40_)
+  );
+  NAND _85_ (
+    .A(_03_),
+    .B(_15_),
+    .Y(_41_)
+  );
+  NAND _86_ (
+    .A(reset),
+    .B(_41_),
+    .Y(_42_)
+  );
+  NOR _87_ (
+    .A(_40_),
+    .B(_42_),
+    .Y(_01_[2])
+  );
+  (* src = "sintetizado_paralelo_serial_cmos.v:10" *)
+  DFF _88_ (
     .C(clk_32f),
-    .D(_01_),
+    .D(_01_[0]),
+    .Q(selector[0])
+  );
+  (* src = "sintetizado_paralelo_serial_cmos.v:10" *)
+  DFF _89_ (
+    .C(clk_32f),
+    .D(_01_[1]),
+    .Q(selector[1])
+  );
+  (* src = "sintetizado_paralelo_serial_cmos.v:10" *)
+  DFF _90_ (
+    .C(clk_32f),
+    .D(_01_[2]),
+    .Q(selector[2])
+  );
+  (* src = "sintetizado_paralelo_serial_cmos.v:10" *)
+  DFF _91_ (
+    .C(clk_32f),
+    .D(_00_),
     .Q(data_out_estructural)
   );
-  (* src = "sintetizado_paralelo_serial_cmos.v:12" *)
-  DFF _32_ (
-    .C(clk_4f),
-    .D(_00_[0]),
-    .Q(data2send_estructural[0])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:12" *)
-  DFF _33_ (
-    .C(clk_4f),
-    .D(_00_[1]),
-    .Q(data2send_estructural[1])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:12" *)
-  DFF _34_ (
-    .C(clk_4f),
-    .D(_00_[2]),
-    .Q(data2send_estructural[2])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:12" *)
-  DFF _35_ (
-    .C(clk_4f),
-    .D(_00_[3]),
-    .Q(data2send_estructural[3])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:12" *)
-  DFF _36_ (
-    .C(clk_4f),
-    .D(_00_[4]),
-    .Q(data2send_estructural[4])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:12" *)
-  DFF _37_ (
-    .C(clk_4f),
-    .D(_00_[5]),
-    .Q(data2send_estructural[5])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:12" *)
-  DFF _38_ (
-    .C(clk_4f),
-    .D(_00_[6]),
-    .Q(data2send_estructural[6])
-  );
-  (* src = "sintetizado_paralelo_serial_cmos.v:12" *)
-  DFF _39_ (
-    .C(clk_4f),
-    .D(_00_[7]),
-    .Q(data2send_estructural[7])
-  );
-  assign selector = 3'h7;
 endmodule

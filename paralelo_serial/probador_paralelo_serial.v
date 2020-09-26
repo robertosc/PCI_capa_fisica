@@ -1,11 +1,9 @@
-module probador_paralelo_serial(input [7:0] data2send,
-								input [7:0] data2send_estructural,
-						        input data_out,
+module probador_paralelo_serial(input data_out,
 								input data_out_estructural,
+								output reg clk_4f,
 								output reg reset,
 								output reg valid_in,
 						        output reg [7:0] data_in,
-						        output reg clk_4f,
 						        output reg clk_32f);
 	initial begin
 	$dumpfile("paraleloserial.vcd");
@@ -23,8 +21,9 @@ module probador_paralelo_serial(input [7:0] data2send,
 	@(posedge clk_4f);
 	valid_in <= 0;
 	data_in <= 8'hCC;
-	@(posedge clk_4f);
 	reset <=1;
+	
+	@(posedge clk_4f);
 	valid_in <= 1;
 	data_in <= 8'hAB;
 
