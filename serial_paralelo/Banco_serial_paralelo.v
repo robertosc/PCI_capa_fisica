@@ -4,7 +4,7 @@
 `include "probador_serial_paralelo.v"
 `include "../lib/cmos_cells.v"
 
-    module banco_paralelo_serial;
+    module Banco_serial_paralelo;
 		wire [7:0] data2send;
         wire [7:0] data_out;
 		wire clk_4f, clk_32f, valid, valid_out, data_in, reset, active;

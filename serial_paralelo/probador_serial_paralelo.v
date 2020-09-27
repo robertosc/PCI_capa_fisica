@@ -9,12 +9,11 @@ module probador_serial_paralelo(input [7:0] data2send,
 	$dumpfile("serialparalelo.vcd");
 	$dumpvars;
 
-	{valid} <= 0;
+	{valid} <= 1;
 	data_in <= 0;
 	reset <=0;
 	
 	@(posedge clk_4f);
-	valid <= 0;
 	reset <= 0;
 	data_in<=1;
 	@(posedge clk_32f)
@@ -34,7 +33,41 @@ module probador_serial_paralelo(input [7:0] data2send,
 
 
 	@(posedge clk_4f);
-	valid <= 0;
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+
+	@(posedge clk_4f);
+	reset <=1;
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+
+	@(posedge clk_4f);
 	data_in<=1;
 	reset <=1;
 	@(posedge clk_32f)
@@ -53,8 +86,6 @@ module probador_serial_paralelo(input [7:0] data2send,
 	data_in<=0;
 
 	@(posedge clk_4f);
-	reset <=1;
-	valid <= 1;
 	data_in<=1;
 	@(posedge clk_32f)
 	data_in<=0;
@@ -72,7 +103,6 @@ module probador_serial_paralelo(input [7:0] data2send,
 	data_in<=0;
 
 	@(posedge clk_4f);
-	valid <= 1;
 	data_in<=1;
 	@(posedge clk_32f)
 	data_in<=0;
@@ -90,7 +120,6 @@ module probador_serial_paralelo(input [7:0] data2send,
 	data_in<=0;
 
 	@(posedge clk_4f);
-	valid <= 1;
 	data_in<=1;
 	@(posedge clk_32f)
 	data_in<=0;
@@ -108,17 +137,56 @@ module probador_serial_paralelo(input [7:0] data2send,
 	data_in<=0;
 
 	@(posedge clk_4f);
-	valid <= 0;
-	data_in <= 0;
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
 
 	@(posedge clk_4f);
-	valid <= 1;
-	data_in <= 0;
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
 
 	@(posedge clk_4f);
-	valid <= 1;
-	data_in <= 0;
-	@(posedge clk_4f);
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+
 	$finish;
 	end
 	
