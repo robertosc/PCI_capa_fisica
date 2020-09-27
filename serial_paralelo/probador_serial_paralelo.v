@@ -172,6 +172,7 @@ module probador_serial_paralelo(input [7:0] data2send,
 
 	@(posedge clk_4f);
 	data_in<=1;
+	valid<=0;
 	@(posedge clk_32f)
 	data_in<=1;
 	@(posedge clk_32f)
@@ -186,7 +187,25 @@ module probador_serial_paralelo(input [7:0] data2send,
 	data_in<=0;
 	@(posedge clk_32f)
 	data_in<=0;
-
+	
+	@(posedge clk_4f);
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=0;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_32f)
+	data_in<=1;
+	@(posedge clk_4f);
+	data_in<=1;
 	$finish;
 	end
 	
