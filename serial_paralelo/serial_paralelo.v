@@ -16,20 +16,22 @@ module serial_paralelo(
 	always @(posedge clk_32f) begin
 		if (reset==0)begin
 			data2send [7:0]<= 8'b00000000;
+			data_out [7:0]<= 8'b00000000;
 			valid_out <= 0;
 			active <= 0;
-			data_out [7:0]<= 8'b00000000;
 			selector <= 0;
 			BC_counter <= 0;
 			dataout_on <= 0;
 		end
-		else begin
+		else if (reset==1) begin
 			if (valid==1) begin
 				case (selector)
         	    	0: begin
 						data2send[7:7] <= data_in;
+						//data2send[6:0] <= 7'b0000000;
 						if (dataout_on==1) begin
 							data_out[7:7] <= data_in;
+							//data_out[6:0] <= 7'b0000000;
 						end
 						else begin
 							data_out[7:7] <= 0;
@@ -102,7 +104,7 @@ module serial_paralelo(
 					end
 				endcase
 			end
-			else begin
+			else if (valid==0)begin
 				case (selector)
         	    	0: begin
 						data2send[7:7] <= 1;
@@ -140,10 +142,10 @@ module serial_paralelo(
 				endcase
 				
 			end
-			
+			selector <= selector+1;
 			if (selector==7) begin
 				selector <= 0;
-				if (data2send[7:0]==8'hBC) begin
+				if (data2send[7:0]==8'b10111100) begin
 					BC_counter<= BC_counter+1;
 					valid_out<=0;
 				end
