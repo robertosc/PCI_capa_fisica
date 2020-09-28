@@ -57,13 +57,19 @@ module probador(		input data_out_0,
 	@(posedge clk_2f);
 
 	@(posedge clk_2f);
+
+	@(posedge clk_2f);
+
+	@(posedge clk_2f);
+
+	@(posedge clk_2f);
 	$finish;
 	end
 	
 	initial clk_f <= 1;
 	initial clk_2f <= 1;
 	initial clk_4f <= 1;
-	initial clk_32f <= 0;
+	initial clk_32f <= 1;
 
 	always #16 clk_f <= ~clk_f;
 	always #8 clk_2f <= ~clk_2f;
