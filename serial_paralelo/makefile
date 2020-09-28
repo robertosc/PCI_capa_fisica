@@ -1,8 +1,8 @@
 yosys:
-	yosys -s script.ys
+	yosys -s serial_paralelo.ys
 
 sed:
-	sed -i "s/demux_striping/demux_striping_sintetizado/g" demux_striping_sintetizado.v
+	sed -i "s/serial_paralelo/sintetizado_serial_paralelo/g" sintetizado_serial_paralelo.v
 
 iverilog:
 	iverilog -o serialparalelo Banco_serial_paralelo.v 
@@ -10,4 +10,4 @@ iverilog:
 gtkwave:
 	gtkwave serialparalelo.vcd
 
-all: iverilog gtkwave
+all: yosys sed iverilog gtkwave
