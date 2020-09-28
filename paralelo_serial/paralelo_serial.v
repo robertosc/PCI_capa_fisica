@@ -6,11 +6,14 @@ module paralelo_serial(input clk_4f,
                         output reg data_out);
 
     reg [2:0] selector;
+    reg [2:0] selector_2;
 
     always @(posedge clk_32f) begin
+
         if (reset == 1) begin
             if(valid_in == 1) begin
-                case (selector)
+                selector <= 0;
+                case (selector_2)
                     0: data_out <= data_in[7];
                     1: data_out <= data_in[6];
                     2: data_out <= data_in[5];
@@ -20,11 +23,13 @@ module paralelo_serial(input clk_4f,
                     6: data_out <= data_in[1];
                     7: begin
                         data_out <= data_in[0];
-                        selector <= 0;
+                        selector_2 <= 0;
                     end
                 endcase
+                selector_2 <= selector_2 + 1;
             end
             else begin
+                selector_2 <= 0;
                 case (selector)
                     0: data_out <= 1;
                     1: data_out <= 0;
@@ -38,13 +43,13 @@ module paralelo_serial(input clk_4f,
                         selector <= 0;
                     end
                 endcase
+                selector <= selector + 1;
             end
-            selector <= selector + 1;
         end
         
         else begin
             data_out <= 0;
-            selector <= 0;
+            {selector, selector_2} <= 0;
         end
     end
 endmodule
