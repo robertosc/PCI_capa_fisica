@@ -2518,404 +2518,404 @@ module demux_striping_sintetizado(clk_2f, data_input, valid_in, reset, lane_0, l
   (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
   DFF _540_ (
     .C(clk_2f),
-    .D(_001_[0]),
-    .Q(lane_1[0])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _541_ (
-    .C(clk_2f),
-    .D(_001_[1]),
-    .Q(lane_1[1])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _542_ (
-    .C(clk_2f),
-    .D(_001_[2]),
-    .Q(lane_1[2])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _543_ (
-    .C(clk_2f),
-    .D(_001_[3]),
-    .Q(lane_1[3])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _544_ (
-    .C(clk_2f),
-    .D(_001_[4]),
-    .Q(lane_1[4])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _545_ (
-    .C(clk_2f),
-    .D(_001_[5]),
-    .Q(lane_1[5])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _546_ (
-    .C(clk_2f),
-    .D(_001_[6]),
-    .Q(lane_1[6])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _547_ (
-    .C(clk_2f),
-    .D(_001_[7]),
-    .Q(lane_1[7])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _548_ (
-    .C(clk_2f),
-    .D(_001_[8]),
-    .Q(lane_1[8])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _549_ (
-    .C(clk_2f),
-    .D(_001_[9]),
-    .Q(lane_1[9])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _550_ (
-    .C(clk_2f),
-    .D(_001_[10]),
-    .Q(lane_1[10])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _551_ (
-    .C(clk_2f),
-    .D(_001_[11]),
-    .Q(lane_1[11])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _552_ (
-    .C(clk_2f),
-    .D(_001_[12]),
-    .Q(lane_1[12])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _553_ (
-    .C(clk_2f),
-    .D(_001_[13]),
-    .Q(lane_1[13])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _554_ (
-    .C(clk_2f),
-    .D(_001_[14]),
-    .Q(lane_1[14])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _555_ (
-    .C(clk_2f),
-    .D(_001_[15]),
-    .Q(lane_1[15])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _556_ (
-    .C(clk_2f),
-    .D(_001_[16]),
-    .Q(lane_1[16])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _557_ (
-    .C(clk_2f),
-    .D(_001_[17]),
-    .Q(lane_1[17])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _558_ (
-    .C(clk_2f),
-    .D(_001_[18]),
-    .Q(lane_1[18])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _559_ (
-    .C(clk_2f),
-    .D(_001_[19]),
-    .Q(lane_1[19])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _560_ (
-    .C(clk_2f),
-    .D(_001_[20]),
-    .Q(lane_1[20])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _561_ (
-    .C(clk_2f),
-    .D(_001_[21]),
-    .Q(lane_1[21])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _562_ (
-    .C(clk_2f),
-    .D(_001_[22]),
-    .Q(lane_1[22])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _563_ (
-    .C(clk_2f),
-    .D(_001_[23]),
-    .Q(lane_1[23])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _564_ (
-    .C(clk_2f),
-    .D(_001_[24]),
-    .Q(lane_1[24])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _565_ (
-    .C(clk_2f),
-    .D(_001_[25]),
-    .Q(lane_1[25])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _566_ (
-    .C(clk_2f),
-    .D(_001_[26]),
-    .Q(lane_1[26])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _567_ (
-    .C(clk_2f),
-    .D(_001_[27]),
-    .Q(lane_1[27])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _568_ (
-    .C(clk_2f),
-    .D(_001_[28]),
-    .Q(lane_1[28])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _569_ (
-    .C(clk_2f),
-    .D(_001_[29]),
-    .Q(lane_1[29])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _570_ (
-    .C(clk_2f),
-    .D(_001_[30]),
-    .Q(lane_1[30])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _571_ (
-    .C(clk_2f),
-    .D(_001_[31]),
-    .Q(lane_1[31])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _572_ (
-    .C(clk_2f),
-    .D(_004_),
-    .Q(valid_out1)
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _573_ (
-    .C(clk_2f),
-    .D(_002_),
-    .Q(sel)
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _574_ (
-    .C(clk_2f),
-    .D(_000_[0]),
-    .Q(lane_0[0])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _575_ (
-    .C(clk_2f),
-    .D(_000_[1]),
-    .Q(lane_0[1])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _576_ (
-    .C(clk_2f),
-    .D(_000_[2]),
-    .Q(lane_0[2])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _577_ (
-    .C(clk_2f),
-    .D(_000_[3]),
-    .Q(lane_0[3])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _578_ (
-    .C(clk_2f),
-    .D(_000_[4]),
-    .Q(lane_0[4])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _579_ (
-    .C(clk_2f),
-    .D(_000_[5]),
-    .Q(lane_0[5])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _580_ (
-    .C(clk_2f),
-    .D(_000_[6]),
-    .Q(lane_0[6])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _581_ (
-    .C(clk_2f),
-    .D(_000_[7]),
-    .Q(lane_0[7])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _582_ (
-    .C(clk_2f),
-    .D(_000_[8]),
-    .Q(lane_0[8])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _583_ (
-    .C(clk_2f),
-    .D(_000_[9]),
-    .Q(lane_0[9])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _584_ (
-    .C(clk_2f),
-    .D(_000_[10]),
-    .Q(lane_0[10])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _585_ (
-    .C(clk_2f),
-    .D(_000_[11]),
-    .Q(lane_0[11])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _586_ (
-    .C(clk_2f),
-    .D(_000_[12]),
-    .Q(lane_0[12])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _587_ (
-    .C(clk_2f),
-    .D(_000_[13]),
-    .Q(lane_0[13])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _588_ (
-    .C(clk_2f),
-    .D(_000_[14]),
-    .Q(lane_0[14])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _589_ (
-    .C(clk_2f),
-    .D(_000_[15]),
-    .Q(lane_0[15])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _590_ (
-    .C(clk_2f),
-    .D(_000_[16]),
-    .Q(lane_0[16])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _591_ (
-    .C(clk_2f),
-    .D(_000_[17]),
-    .Q(lane_0[17])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _592_ (
-    .C(clk_2f),
-    .D(_000_[18]),
-    .Q(lane_0[18])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _593_ (
-    .C(clk_2f),
-    .D(_000_[19]),
-    .Q(lane_0[19])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _594_ (
-    .C(clk_2f),
-    .D(_000_[20]),
-    .Q(lane_0[20])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _595_ (
-    .C(clk_2f),
-    .D(_000_[21]),
-    .Q(lane_0[21])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _596_ (
-    .C(clk_2f),
-    .D(_000_[22]),
-    .Q(lane_0[22])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _597_ (
-    .C(clk_2f),
-    .D(_000_[23]),
-    .Q(lane_0[23])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _598_ (
-    .C(clk_2f),
-    .D(_000_[24]),
-    .Q(lane_0[24])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _599_ (
-    .C(clk_2f),
-    .D(_000_[25]),
-    .Q(lane_0[25])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _600_ (
-    .C(clk_2f),
-    .D(_000_[26]),
-    .Q(lane_0[26])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _601_ (
-    .C(clk_2f),
-    .D(_000_[27]),
-    .Q(lane_0[27])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _602_ (
-    .C(clk_2f),
-    .D(_000_[28]),
-    .Q(lane_0[28])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _603_ (
-    .C(clk_2f),
-    .D(_000_[29]),
-    .Q(lane_0[29])
-  );
-  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _604_ (
-    .C(clk_2f),
     .D(_000_[30]),
     .Q(lane_0[30])
   );
   (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _605_ (
+  DFF _541_ (
     .C(clk_2f),
     .D(_000_[31]),
     .Q(lane_0[31])
   );
   (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
-  DFF _606_ (
+  DFF _542_ (
     .C(clk_2f),
     .D(_003_),
     .Q(valid_out0)
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _543_ (
+    .C(clk_2f),
+    .D(_001_[0]),
+    .Q(lane_1[0])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _544_ (
+    .C(clk_2f),
+    .D(_001_[1]),
+    .Q(lane_1[1])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _545_ (
+    .C(clk_2f),
+    .D(_001_[2]),
+    .Q(lane_1[2])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _546_ (
+    .C(clk_2f),
+    .D(_001_[3]),
+    .Q(lane_1[3])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _547_ (
+    .C(clk_2f),
+    .D(_001_[4]),
+    .Q(lane_1[4])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _548_ (
+    .C(clk_2f),
+    .D(_001_[5]),
+    .Q(lane_1[5])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _549_ (
+    .C(clk_2f),
+    .D(_001_[6]),
+    .Q(lane_1[6])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _550_ (
+    .C(clk_2f),
+    .D(_001_[7]),
+    .Q(lane_1[7])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _551_ (
+    .C(clk_2f),
+    .D(_001_[8]),
+    .Q(lane_1[8])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _552_ (
+    .C(clk_2f),
+    .D(_001_[9]),
+    .Q(lane_1[9])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _553_ (
+    .C(clk_2f),
+    .D(_001_[10]),
+    .Q(lane_1[10])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _554_ (
+    .C(clk_2f),
+    .D(_001_[11]),
+    .Q(lane_1[11])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _555_ (
+    .C(clk_2f),
+    .D(_001_[12]),
+    .Q(lane_1[12])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _556_ (
+    .C(clk_2f),
+    .D(_001_[13]),
+    .Q(lane_1[13])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _557_ (
+    .C(clk_2f),
+    .D(_001_[14]),
+    .Q(lane_1[14])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _558_ (
+    .C(clk_2f),
+    .D(_001_[15]),
+    .Q(lane_1[15])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _559_ (
+    .C(clk_2f),
+    .D(_001_[16]),
+    .Q(lane_1[16])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _560_ (
+    .C(clk_2f),
+    .D(_001_[17]),
+    .Q(lane_1[17])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _561_ (
+    .C(clk_2f),
+    .D(_001_[18]),
+    .Q(lane_1[18])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _562_ (
+    .C(clk_2f),
+    .D(_001_[19]),
+    .Q(lane_1[19])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _563_ (
+    .C(clk_2f),
+    .D(_001_[20]),
+    .Q(lane_1[20])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _564_ (
+    .C(clk_2f),
+    .D(_001_[21]),
+    .Q(lane_1[21])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _565_ (
+    .C(clk_2f),
+    .D(_001_[22]),
+    .Q(lane_1[22])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _566_ (
+    .C(clk_2f),
+    .D(_001_[23]),
+    .Q(lane_1[23])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _567_ (
+    .C(clk_2f),
+    .D(_001_[24]),
+    .Q(lane_1[24])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _568_ (
+    .C(clk_2f),
+    .D(_001_[25]),
+    .Q(lane_1[25])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _569_ (
+    .C(clk_2f),
+    .D(_001_[26]),
+    .Q(lane_1[26])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _570_ (
+    .C(clk_2f),
+    .D(_001_[27]),
+    .Q(lane_1[27])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _571_ (
+    .C(clk_2f),
+    .D(_001_[28]),
+    .Q(lane_1[28])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _572_ (
+    .C(clk_2f),
+    .D(_001_[29]),
+    .Q(lane_1[29])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _573_ (
+    .C(clk_2f),
+    .D(_001_[30]),
+    .Q(lane_1[30])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _574_ (
+    .C(clk_2f),
+    .D(_001_[31]),
+    .Q(lane_1[31])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _575_ (
+    .C(clk_2f),
+    .D(_004_),
+    .Q(valid_out1)
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _576_ (
+    .C(clk_2f),
+    .D(_002_),
+    .Q(sel)
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _577_ (
+    .C(clk_2f),
+    .D(_000_[0]),
+    .Q(lane_0[0])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _578_ (
+    .C(clk_2f),
+    .D(_000_[1]),
+    .Q(lane_0[1])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _579_ (
+    .C(clk_2f),
+    .D(_000_[2]),
+    .Q(lane_0[2])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _580_ (
+    .C(clk_2f),
+    .D(_000_[3]),
+    .Q(lane_0[3])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _581_ (
+    .C(clk_2f),
+    .D(_000_[4]),
+    .Q(lane_0[4])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _582_ (
+    .C(clk_2f),
+    .D(_000_[5]),
+    .Q(lane_0[5])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _583_ (
+    .C(clk_2f),
+    .D(_000_[6]),
+    .Q(lane_0[6])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _584_ (
+    .C(clk_2f),
+    .D(_000_[7]),
+    .Q(lane_0[7])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _585_ (
+    .C(clk_2f),
+    .D(_000_[8]),
+    .Q(lane_0[8])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _586_ (
+    .C(clk_2f),
+    .D(_000_[9]),
+    .Q(lane_0[9])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _587_ (
+    .C(clk_2f),
+    .D(_000_[10]),
+    .Q(lane_0[10])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _588_ (
+    .C(clk_2f),
+    .D(_000_[11]),
+    .Q(lane_0[11])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _589_ (
+    .C(clk_2f),
+    .D(_000_[12]),
+    .Q(lane_0[12])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _590_ (
+    .C(clk_2f),
+    .D(_000_[13]),
+    .Q(lane_0[13])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _591_ (
+    .C(clk_2f),
+    .D(_000_[14]),
+    .Q(lane_0[14])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _592_ (
+    .C(clk_2f),
+    .D(_000_[15]),
+    .Q(lane_0[15])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _593_ (
+    .C(clk_2f),
+    .D(_000_[16]),
+    .Q(lane_0[16])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _594_ (
+    .C(clk_2f),
+    .D(_000_[17]),
+    .Q(lane_0[17])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _595_ (
+    .C(clk_2f),
+    .D(_000_[18]),
+    .Q(lane_0[18])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _596_ (
+    .C(clk_2f),
+    .D(_000_[19]),
+    .Q(lane_0[19])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _597_ (
+    .C(clk_2f),
+    .D(_000_[20]),
+    .Q(lane_0[20])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _598_ (
+    .C(clk_2f),
+    .D(_000_[21]),
+    .Q(lane_0[21])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _599_ (
+    .C(clk_2f),
+    .D(_000_[22]),
+    .Q(lane_0[22])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _600_ (
+    .C(clk_2f),
+    .D(_000_[23]),
+    .Q(lane_0[23])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _601_ (
+    .C(clk_2f),
+    .D(_000_[24]),
+    .Q(lane_0[24])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _602_ (
+    .C(clk_2f),
+    .D(_000_[25]),
+    .Q(lane_0[25])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _603_ (
+    .C(clk_2f),
+    .D(_000_[26]),
+    .Q(lane_0[26])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _604_ (
+    .C(clk_2f),
+    .D(_000_[27]),
+    .Q(lane_0[27])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _605_ (
+    .C(clk_2f),
+    .D(_000_[28]),
+    .Q(lane_0[28])
+  );
+  (* src = "../demux_striping_sintetizado/demux_striping_sintetizado.v:13" *)
+  DFF _606_ (
+    .C(clk_2f),
+    .D(_000_[29]),
+    .Q(lane_0[29])
   );
 endmodule
 
@@ -2976,10 +2976,6 @@ module paralelo_serial_sintetizado(clk_4f, clk_32f, data_in, valid_in, reset, da
   wire _048_;
   wire _049_;
   wire _050_;
-  wire _051_;
-  wire _052_;
-  wire _053_;
-  wire _054_;
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:2" *)
   input clk_32f;
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:1" *)
@@ -2996,326 +2992,310 @@ module paralelo_serial_sintetizado(clk_4f, clk_32f, data_in, valid_in, reset, da
   wire [2:0] selector_2;
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:4" *)
   input valid_in;
-  NOT _055_ (
-    .A(selector_2[1]),
+  NOT _051_ (
+    .A(selector_2[0]),
     .Y(_003_)
   );
-  NOT _056_ (
-    .A(selector_2[2]),
+  NOT _052_ (
+    .A(selector_2[1]),
     .Y(_004_)
   );
-  NOT _057_ (
-    .A(selector_2[0]),
+  NOT _053_ (
+    .A(selector_2[2]),
     .Y(_005_)
   );
-  NOT _058_ (
+  NOT _054_ (
     .A(valid_in),
     .Y(_006_)
   );
-  NOT _059_ (
-    .A(data_in[4]),
-    .Y(_007_)
-  );
-  NOT _060_ (
-    .A(data_in[7]),
-    .Y(_008_)
-  );
-  NOT _061_ (
-    .A(data_in[5]),
-    .Y(_009_)
-  );
-  NOT _062_ (
-    .A(data_in[0]),
-    .Y(_010_)
-  );
-  NAND _063_ (
+  NAND _055_ (
     .A(_006_),
     .B(reset),
+    .Y(_007_)
+  );
+  NOR _056_ (
+    .A(selector[0]),
+    .B(_007_),
+    .Y(_001_[0])
+  );
+  NAND _057_ (
+    .A(selector[0]),
+    .B(selector[1]),
+    .Y(_008_)
+  );
+  NOT _058_ (
+    .A(_008_),
+    .Y(_009_)
+  );
+  NOR _059_ (
+    .A(selector[0]),
+    .B(selector[1]),
+    .Y(_010_)
+  );
+  NOR _060_ (
+    .A(_007_),
+    .B(_010_),
     .Y(_011_)
+  );
+  NAND _061_ (
+    .A(_008_),
+    .B(_011_),
+    .Y(_012_)
+  );
+  NOT _062_ (
+    .A(_012_),
+    .Y(_001_[1])
+  );
+  NOR _063_ (
+    .A(selector[2]),
+    .B(_009_),
+    .Y(_013_)
   );
   NAND _064_ (
     .A(selector[2]),
     .B(selector[1]),
-    .Y(_012_)
-  );
-  NOT _065_ (
-    .A(_012_),
-    .Y(_013_)
-  );
-  NOR _066_ (
-    .A(_011_),
-    .B(_013_),
     .Y(_014_)
   );
-  NOR _067_ (
-    .A(selector[2]),
-    .B(selector[1]),
+  NOT _065_ (
+    .A(_014_),
     .Y(_015_)
   );
-  NAND _068_ (
-    .A(selector[0]),
+  NOR _066_ (
+    .A(_007_),
     .B(_015_),
     .Y(_016_)
   );
-  NAND _069_ (
-    .A(_014_),
+  NOR _067_ (
+    .A(_001_[0]),
     .B(_016_),
     .Y(_017_)
   );
-  NOR _070_ (
-    .A(_003_),
-    .B(selector_2[0]),
+  NOR _068_ (
+    .A(_013_),
+    .B(_017_),
+    .Y(_001_[2])
+  );
+  NAND _069_ (
+    .A(valid_in),
+    .B(reset),
     .Y(_018_)
   );
-  NAND _071_ (
-    .A(selector_2[1]),
-    .B(_005_),
+  NOR _070_ (
+    .A(selector_2[0]),
+    .B(_018_),
+    .Y(_002_[0])
+  );
+  NOR _071_ (
+    .A(_003_),
+    .B(_004_),
     .Y(_019_)
   );
-  NOR _072_ (
-    .A(_009_),
-    .B(_019_),
+  NAND _072_ (
+    .A(selector_2[0]),
+    .B(selector_2[1]),
     .Y(_020_)
   );
   NOR _073_ (
-    .A(selector_2[1]),
-    .B(_005_),
+    .A(selector_2[0]),
+    .B(selector_2[1]),
     .Y(_021_)
   );
-  NAND _074_ (
-    .A(data_in[6]),
+  NOR _074_ (
+    .A(_018_),
     .B(_021_),
     .Y(_022_)
   );
   NAND _075_ (
-    .A(selector_2[1]),
-    .B(selector_2[0]),
+    .A(_020_),
+    .B(_022_),
     .Y(_023_)
   );
   NOT _076_ (
     .A(_023_),
+    .Y(_002_[1])
+  );
+  NAND _077_ (
+    .A(selector_2[2]),
+    .B(_019_),
     .Y(_024_)
   );
-  NOR _077_ (
-    .A(_007_),
-    .B(_023_),
+  NAND _078_ (
+    .A(_005_),
+    .B(_020_),
     .Y(_025_)
   );
-  NOR _078_ (
-    .A(selector_2[1]),
-    .B(selector_2[0]),
+  NAND _079_ (
+    .A(_024_),
+    .B(_025_),
     .Y(_026_)
   );
-  NOT _079_ (
-    .A(_026_),
+  NOR _080_ (
+    .A(_018_),
+    .B(_026_),
+    .Y(_002_[2])
+  );
+  NOR _081_ (
+    .A(selector[2]),
+    .B(selector[1]),
     .Y(_027_)
   );
-  NOR _080_ (
-    .A(_008_),
+  NAND _082_ (
+    .A(selector[0]),
     .B(_027_),
     .Y(_028_)
   );
-  NOR _081_ (
-    .A(_020_),
-    .B(_025_),
+  NAND _083_ (
+    .A(_016_),
+    .B(_028_),
     .Y(_029_)
   );
-  NAND _082_ (
-    .A(_004_),
-    .B(_022_),
+  NAND _084_ (
+    .A(data_in[4]),
+    .B(_019_),
     .Y(_030_)
   );
-  NOR _083_ (
-    .A(_028_),
-    .B(_030_),
+  NAND _085_ (
+    .A(data_in[7]),
+    .B(_021_),
     .Y(_031_)
   );
-  NAND _084_ (
-    .A(_029_),
-    .B(_031_),
+  NOT _086_ (
+    .A(_031_),
     .Y(_032_)
   );
-  NAND _085_ (
-    .A(data_in[3]),
-    .B(_026_),
+  NOR _087_ (
+    .A(_003_),
+    .B(selector_2[1]),
     .Y(_033_)
   );
-  NOR _086_ (
-    .A(_010_),
-    .B(_023_),
+  NAND _088_ (
+    .A(data_in[6]),
+    .B(_033_),
     .Y(_034_)
   );
-  NAND _087_ (
-    .A(data_in[2]),
-    .B(_021_),
+  NOR _089_ (
+    .A(selector_2[0]),
+    .B(_004_),
     .Y(_035_)
   );
-  NAND _088_ (
-    .A(data_in[1]),
-    .B(_018_),
+  NAND _090_ (
+    .A(data_in[5]),
+    .B(_035_),
     .Y(_036_)
   );
-  NAND _089_ (
-    .A(_033_),
-    .B(_036_),
+  NAND _091_ (
+    .A(_030_),
+    .B(_034_),
     .Y(_037_)
   );
-  NOR _090_ (
-    .A(_004_),
-    .B(_034_),
+  NOR _092_ (
+    .A(selector_2[2]),
+    .B(_032_),
     .Y(_038_)
   );
-  NAND _091_ (
-    .A(_035_),
+  NAND _093_ (
+    .A(_036_),
     .B(_038_),
     .Y(_039_)
   );
-  NOR _092_ (
+  NOR _094_ (
     .A(_037_),
     .B(_039_),
     .Y(_040_)
   );
-  NAND _093_ (
-    .A(valid_in),
-    .B(reset),
+  NAND _095_ (
+    .A(data_in[2]),
+    .B(_033_),
     .Y(_041_)
   );
-  NOR _094_ (
-    .A(_040_),
-    .B(_041_),
+  NAND _096_ (
+    .A(data_in[1]),
+    .B(_035_),
     .Y(_042_)
   );
-  NAND _095_ (
-    .A(_032_),
-    .B(_042_),
+  NAND _097_ (
+    .A(data_in[3]),
+    .B(_021_),
     .Y(_043_)
   );
-  NAND _096_ (
-    .A(_017_),
-    .B(_043_),
-    .Y(_000_)
-  );
-  NOR _097_ (
-    .A(selector[0]),
-    .B(_011_),
-    .Y(_001_[0])
-  );
   NAND _098_ (
-    .A(selector[0]),
-    .B(selector[1]),
+    .A(data_in[0]),
+    .B(_019_),
     .Y(_044_)
   );
-  NOT _099_ (
-    .A(_044_),
+  NAND _099_ (
+    .A(selector_2[2]),
+    .B(_043_),
     .Y(_045_)
   );
-  NOR _100_ (
-    .A(selector[0]),
-    .B(selector[1]),
+  NAND _100_ (
+    .A(_041_),
+    .B(_044_),
     .Y(_046_)
   );
   NOR _101_ (
-    .A(_011_),
+    .A(_045_),
     .B(_046_),
     .Y(_047_)
   );
   NAND _102_ (
-    .A(_044_),
+    .A(_042_),
     .B(_047_),
     .Y(_048_)
   );
-  NOT _103_ (
-    .A(_048_),
-    .Y(_001_[1])
-  );
-  NOR _104_ (
-    .A(selector[2]),
-    .B(_045_),
+  NOR _103_ (
+    .A(_018_),
+    .B(_040_),
     .Y(_049_)
   );
-  NOR _105_ (
-    .A(_014_),
-    .B(_001_[0]),
+  NAND _104_ (
+    .A(_048_),
+    .B(_049_),
     .Y(_050_)
   );
-  NOR _106_ (
-    .A(_049_),
+  NAND _105_ (
+    .A(_029_),
     .B(_050_),
-    .Y(_001_[2])
-  );
-  NOR _107_ (
-    .A(selector_2[0]),
-    .B(_041_),
-    .Y(_002_[0])
-  );
-  NAND _108_ (
-    .A(_023_),
-    .B(_027_),
-    .Y(_051_)
-  );
-  NOR _109_ (
-    .A(_041_),
-    .B(_051_),
-    .Y(_002_[1])
-  );
-  NAND _110_ (
-    .A(selector_2[2]),
-    .B(_024_),
-    .Y(_052_)
-  );
-  NAND _111_ (
-    .A(_004_),
-    .B(_023_),
-    .Y(_053_)
-  );
-  NAND _112_ (
-    .A(_052_),
-    .B(_053_),
-    .Y(_054_)
-  );
-  NOR _113_ (
-    .A(_041_),
-    .B(_054_),
-    .Y(_002_[2])
+    .Y(_000_)
   );
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:11" *)
-  DFF _114_ (
+  DFF _106_ (
     .C(clk_32f),
     .D(_000_),
     .Q(data_out)
   );
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:11" *)
-  DFF _115_ (
+  DFF _107_ (
     .C(clk_32f),
     .D(_001_[0]),
     .Q(selector[0])
   );
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:11" *)
-  DFF _116_ (
+  DFF _108_ (
     .C(clk_32f),
     .D(_001_[1]),
     .Q(selector[1])
   );
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:11" *)
-  DFF _117_ (
+  DFF _109_ (
     .C(clk_32f),
     .D(_001_[2]),
     .Q(selector[2])
   );
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:11" *)
-  DFF _118_ (
+  DFF _110_ (
     .C(clk_32f),
     .D(_002_[0]),
     .Q(selector_2[0])
   );
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:11" *)
-  DFF _119_ (
+  DFF _111_ (
     .C(clk_32f),
     .D(_002_[1]),
     .Q(selector_2[1])
   );
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:11" *)
-  DFF _120_ (
+  DFF _112_ (
     .C(clk_32f),
     .D(_002_[2]),
     .Q(selector_2[2])
@@ -3323,26 +3303,24 @@ module paralelo_serial_sintetizado(clk_4f, clk_32f, data_in, valid_in, reset, da
 endmodule
 
 (* cells_not_processed =  1  *)
-(* src = "phy_TX_sintetizado.v:7" *)
-module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4f, clk_32f, data_out_0_sintetizado, data_out_1_sintetizado);
-  (* src = "phy_TX_sintetizado.v:9" *)
+(* src = "phy_TX_sintetizado.v:8" *)
+module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4f, clk_32f, data_out_sp1_sintetizado);
+  (* src = "phy_TX_sintetizado.v:10" *)
   input active;
-  (* src = "phy_TX_sintetizado.v:11" *)
-  input clk_2f;
-  (* src = "phy_TX_sintetizado.v:14" *)
-  input clk_32f;
-  (* src = "phy_TX_sintetizado.v:13" *)
-  input clk_4f;
   (* src = "phy_TX_sintetizado.v:12" *)
-  input clk_f;
-  (* src = "phy_TX_sintetizado.v:7" *)
-  input [31:0] data_input;
+  input clk_2f;
   (* src = "phy_TX_sintetizado.v:15" *)
-  output data_out_0_sintetizado;
+  input clk_32f;
+  (* src = "phy_TX_sintetizado.v:14" *)
+  input clk_4f;
+  (* src = "phy_TX_sintetizado.v:13" *)
+  input clk_f;
+  (* src = "phy_TX_sintetizado.v:8" *)
+  input [31:0] data_input;
+  (* src = "phy_TX_sintetizado.v:22" *)
+  wire data_out_ps1;
   (* src = "phy_TX_sintetizado.v:16" *)
-  output data_out_1_sintetizado;
-  (* src = "phy_TX_sintetizado.v:20" *)
-  wire [7:0] demux0_paraleloserial;
+  output data_out_sp1_sintetizado;
   (* src = "phy_TX_sintetizado.v:20" *)
   wire [7:0] demux1_paraleloserial;
   (* src = "phy_TX_sintetizado.v:19" *)
@@ -3351,35 +3329,28 @@ module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4
   (* unused_bits = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31" *)
   wire [31:0] demux_1_probador;
   (* src = "phy_TX_sintetizado.v:19" *)
+  (* unused_bits = "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31" *)
   wire [31:0] lane_0;
   (* src = "phy_TX_sintetizado.v:19" *)
   wire [31:0] lane_1;
-  (* src = "phy_TX_sintetizado.v:10" *)
+  (* src = "phy_TX_sintetizado.v:11" *)
   input reset;
-  (* src = "phy_TX_sintetizado.v:8" *)
+  (* src = "phy_TX_sintetizado.v:9" *)
   input valid;
-  (* src = "phy_TX_sintetizado.v:21" *)
+  (* src = "phy_TX_sintetizado.v:22" *)
+  (* unused_bits = "0" *)
   wire valid_demux_striping_sintetizado_0;
-  (* src = "phy_TX_sintetizado.v:21" *)
+  (* src = "phy_TX_sintetizado.v:22" *)
   wire valid_demux_striping_sintetizado_1;
   (* src = "phy_TX_sintetizado.v:21" *)
   wire valid_out;
-  (* src = "phy_TX_sintetizado.v:21" *)
-  wire valid_out0;
-  (* src = "phy_TX_sintetizado.v:21" *)
+  (* src = "phy_TX_sintetizado.v:22" *)
   wire valid_out1;
+  (* src = "phy_TX_sintetizado.v:22" *)
+  (* unused_bits = "0" *)
+  wire valid_out_sp1;
   (* module_not_derived = 32'd1 *)
-  (* src = "phy_TX_sintetizado.v:45" *)
-  demux_32_8_sintetizado demux_lane_0 (
-    .clk_4f(clk_4f),
-    .data_in(lane_0),
-    .data_out(demux0_paraleloserial),
-    .reset(reset),
-    .valid(valid_demux_striping_sintetizado_0),
-    .valid_out(valid_out0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "phy_TX_sintetizado.v:63" *)
+  (* src = "phy_TX_sintetizado.v:64" *)
   demux_32_8_sintetizado demux_lane_1 (
     .clk_4f(clk_4f),
     .data_in(lane_1),
@@ -3389,27 +3360,17 @@ module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4
     .valid_out(valid_out1)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "phy_TX_sintetizado.v:54" *)
-  paralelo_serial_sintetizado paralelo_serial_sintetizado0 (
-    .clk_32f(clk_32f),
-    .clk_4f(clk_4f),
-    .data_in(demux0_paraleloserial),
-    .data_out(data_out_0_sintetizado),
-    .reset(reset),
-    .valid_in(valid_out0)
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "phy_TX_sintetizado.v:72" *)
+  (* src = "phy_TX_sintetizado.v:73" *)
   paralelo_serial_sintetizado paralelo_serial_sintetizado1 (
     .clk_32f(clk_32f),
     .clk_4f(clk_4f),
     .data_in(demux1_paraleloserial),
-    .data_out(data_out_1_sintetizado),
+    .data_out(data_out_ps1),
     .reset(reset),
     .valid_in(valid_out1)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "phy_TX_sintetizado.v:23" *)
+  (* src = "phy_TX_sintetizado.v:24" *)
   recirculador_sintetizado recirculador_sintetizado_inicial (
     .active(active),
     .clk_2f(clk_2f),
@@ -3421,7 +3382,17 @@ module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4
     .valid_out(valid_out)
   );
   (* module_not_derived = 32'd1 *)
-  (* src = "phy_TX_sintetizado.v:34" *)
+  (* src = "phy_TX_sintetizado.v:81" *)
+  serial_paralelo_sintetizado serial_paralelo_sintetizado1 (
+    .clk_32f(clk_32f),
+    .clk_4f(clk_4f),
+    .data_in(data_out_ps1),
+    .data_out(data_out_sp1_sintetizado),
+    .reset(reset),
+    .valid_out(valid_out_sp1)
+  );
+  (* module_not_derived = 32'd1 *)
+  (* src = "phy_TX_sintetizado.v:35" *)
   demux_striping_sintetizado u_demux_striping_sintetizado (
     .clk_2f(clk_2f),
     .data_input(demux_0),
@@ -4957,5 +4928,967 @@ module recirculador_sintetizado(clk_2f, data_input, valid, active, reset, demux_
     .C(clk_2f),
     .D(_000_[31]),
     .Q(demux_0[31])
+  );
+endmodule
+
+(* cells_not_processed =  1  *)
+(* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:1" *)
+module serial_paralelo_sintetizado(reset, clk_4f, clk_32f, data_in, data2send, active, valid_out, data_out);
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  wire [2:0] _000_;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  wire _001_;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  wire [7:0] _002_;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  wire [7:0] _003_;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  wire _004_;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  wire [2:0] _005_;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  wire _006_;
+  wire _007_;
+  wire _008_;
+  wire _009_;
+  wire _010_;
+  wire _011_;
+  wire _012_;
+  wire _013_;
+  wire _014_;
+  wire _015_;
+  wire _016_;
+  wire _017_;
+  wire _018_;
+  wire _019_;
+  wire _020_;
+  wire _021_;
+  wire _022_;
+  wire _023_;
+  wire _024_;
+  wire _025_;
+  wire _026_;
+  wire _027_;
+  wire _028_;
+  wire _029_;
+  wire _030_;
+  wire _031_;
+  wire _032_;
+  wire _033_;
+  wire _034_;
+  wire _035_;
+  wire _036_;
+  wire _037_;
+  wire _038_;
+  wire _039_;
+  wire _040_;
+  wire _041_;
+  wire _042_;
+  wire _043_;
+  wire _044_;
+  wire _045_;
+  wire _046_;
+  wire _047_;
+  wire _048_;
+  wire _049_;
+  wire _050_;
+  wire _051_;
+  wire _052_;
+  wire _053_;
+  wire _054_;
+  wire _055_;
+  wire _056_;
+  wire _057_;
+  wire _058_;
+  wire _059_;
+  wire _060_;
+  wire _061_;
+  wire _062_;
+  wire _063_;
+  wire _064_;
+  wire _065_;
+  wire _066_;
+  wire _067_;
+  wire _068_;
+  wire _069_;
+  wire _070_;
+  wire _071_;
+  wire _072_;
+  wire _073_;
+  wire _074_;
+  wire _075_;
+  wire _076_;
+  wire _077_;
+  wire _078_;
+  wire _079_;
+  wire _080_;
+  wire _081_;
+  wire _082_;
+  wire _083_;
+  wire _084_;
+  wire _085_;
+  wire _086_;
+  wire _087_;
+  wire _088_;
+  wire _089_;
+  wire _090_;
+  wire _091_;
+  wire _092_;
+  wire _093_;
+  wire _094_;
+  wire _095_;
+  wire _096_;
+  wire _097_;
+  wire _098_;
+  wire _099_;
+  wire _100_;
+  wire _101_;
+  wire _102_;
+  wire _103_;
+  wire _104_;
+  wire _105_;
+  wire _106_;
+  wire _107_;
+  wire _108_;
+  wire _109_;
+  wire _110_;
+  wire _111_;
+  wire _112_;
+  wire _113_;
+  wire _114_;
+  wire _115_;
+  wire _116_;
+  wire _117_;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:12" *)
+  wire [2:0] BC_counter;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:7" *)
+  output active;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:4" *)
+  input clk_32f;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:3" *)
+  input clk_4f;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:6" *)
+  output [7:0] data2send;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:5" *)
+  input data_in;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:9" *)
+  output [7:0] data_out;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:13" *)
+  wire dataout_on;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:2" *)
+  input reset;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:11" *)
+  wire [2:0] selector;
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:8" *)
+  output valid_out;
+  NOT _118_ (
+    .A(selector[2]),
+    .Y(_077_)
+  );
+  NOT _119_ (
+    .A(selector[0]),
+    .Y(_078_)
+  );
+  NOT _120_ (
+    .A(selector[1]),
+    .Y(_079_)
+  );
+  NOT _121_ (
+    .A(BC_counter[0]),
+    .Y(_080_)
+  );
+  NOT _122_ (
+    .A(BC_counter[1]),
+    .Y(_081_)
+  );
+  NOT _123_ (
+    .A(reset),
+    .Y(_082_)
+  );
+  NOT _124_ (
+    .A(data_in),
+    .Y(_083_)
+  );
+  NOT _125_ (
+    .A(data_out[2]),
+    .Y(_084_)
+  );
+  NOT _126_ (
+    .A(data2send[2]),
+    .Y(_085_)
+  );
+  NOT _127_ (
+    .A(BC_counter[2]),
+    .Y(_086_)
+  );
+  NAND _128_ (
+    .A(_078_),
+    .B(selector[1]),
+    .Y(_087_)
+  );
+  NOR _129_ (
+    .A(_077_),
+    .B(_087_),
+    .Y(_088_)
+  );
+  NAND _130_ (
+    .A(data_in),
+    .B(dataout_on),
+    .Y(_089_)
+  );
+  NOR _131_ (
+    .A(data_out[1]),
+    .B(_088_),
+    .Y(_090_)
+  );
+  NAND _132_ (
+    .A(_088_),
+    .B(_089_),
+    .Y(_091_)
+  );
+  NAND _133_ (
+    .A(reset),
+    .B(_091_),
+    .Y(_092_)
+  );
+  NOR _134_ (
+    .A(_090_),
+    .B(_092_),
+    .Y(_003_[1])
+  );
+  NAND _135_ (
+    .A(selector[0]),
+    .B(selector[1]),
+    .Y(_093_)
+  );
+  NOR _136_ (
+    .A(_077_),
+    .B(_093_),
+    .Y(_094_)
+  );
+  NOR _137_ (
+    .A(data_out[0]),
+    .B(_094_),
+    .Y(_095_)
+  );
+  NAND _138_ (
+    .A(_089_),
+    .B(_094_),
+    .Y(_096_)
+  );
+  NAND _139_ (
+    .A(reset),
+    .B(_096_),
+    .Y(_097_)
+  );
+  NOR _140_ (
+    .A(_095_),
+    .B(_097_),
+    .Y(_003_[0])
+  );
+  NOR _141_ (
+    .A(data2send[0]),
+    .B(_094_),
+    .Y(_098_)
+  );
+  NAND _142_ (
+    .A(_083_),
+    .B(_094_),
+    .Y(_099_)
+  );
+  NAND _143_ (
+    .A(reset),
+    .B(_099_),
+    .Y(_100_)
+  );
+  NOR _144_ (
+    .A(_098_),
+    .B(_100_),
+    .Y(_002_[0])
+  );
+  NOR _145_ (
+    .A(data2send[1]),
+    .B(_088_),
+    .Y(_101_)
+  );
+  NAND _146_ (
+    .A(_083_),
+    .B(_088_),
+    .Y(_102_)
+  );
+  NAND _147_ (
+    .A(reset),
+    .B(_102_),
+    .Y(_103_)
+  );
+  NOR _148_ (
+    .A(_101_),
+    .B(_103_),
+    .Y(_002_[1])
+  );
+  NOR _149_ (
+    .A(_078_),
+    .B(selector[1]),
+    .Y(_104_)
+  );
+  NAND _150_ (
+    .A(selector[0]),
+    .B(_079_),
+    .Y(_105_)
+  );
+  NAND _151_ (
+    .A(selector[2]),
+    .B(_104_),
+    .Y(_106_)
+  );
+  NOT _152_ (
+    .A(_106_),
+    .Y(_107_)
+  );
+  NAND _153_ (
+    .A(_089_),
+    .B(_107_),
+    .Y(_108_)
+  );
+  NAND _154_ (
+    .A(_084_),
+    .B(_106_),
+    .Y(_109_)
+  );
+  NAND _155_ (
+    .A(_108_),
+    .B(_109_),
+    .Y(_110_)
+  );
+  NOR _156_ (
+    .A(_082_),
+    .B(_110_),
+    .Y(_003_[2])
+  );
+  NOR _157_ (
+    .A(_083_),
+    .B(_106_),
+    .Y(_111_)
+  );
+  NOR _158_ (
+    .A(_085_),
+    .B(_107_),
+    .Y(_112_)
+  );
+  NOR _159_ (
+    .A(_111_),
+    .B(_112_),
+    .Y(_113_)
+  );
+  NOR _160_ (
+    .A(_082_),
+    .B(_113_),
+    .Y(_002_[2])
+  );
+  NOR _161_ (
+    .A(selector[0]),
+    .B(selector[1]),
+    .Y(_114_)
+  );
+  NAND _162_ (
+    .A(_078_),
+    .B(_079_),
+    .Y(_115_)
+  );
+  NOR _163_ (
+    .A(_077_),
+    .B(_115_),
+    .Y(_116_)
+  );
+  NOR _164_ (
+    .A(data_out[3]),
+    .B(_116_),
+    .Y(_117_)
+  );
+  NAND _165_ (
+    .A(_089_),
+    .B(_116_),
+    .Y(_007_)
+  );
+  NAND _166_ (
+    .A(reset),
+    .B(_007_),
+    .Y(_008_)
+  );
+  NOR _167_ (
+    .A(_117_),
+    .B(_008_),
+    .Y(_003_[3])
+  );
+  NOR _168_ (
+    .A(data2send[3]),
+    .B(_116_),
+    .Y(_009_)
+  );
+  NAND _169_ (
+    .A(_083_),
+    .B(_116_),
+    .Y(_010_)
+  );
+  NAND _170_ (
+    .A(reset),
+    .B(_010_),
+    .Y(_011_)
+  );
+  NOR _171_ (
+    .A(_009_),
+    .B(_011_),
+    .Y(_002_[3])
+  );
+  NOR _172_ (
+    .A(selector[2]),
+    .B(_093_),
+    .Y(_012_)
+  );
+  NOR _173_ (
+    .A(data_out[4]),
+    .B(_012_),
+    .Y(_013_)
+  );
+  NAND _174_ (
+    .A(_089_),
+    .B(_012_),
+    .Y(_014_)
+  );
+  NAND _175_ (
+    .A(reset),
+    .B(_014_),
+    .Y(_015_)
+  );
+  NOR _176_ (
+    .A(_013_),
+    .B(_015_),
+    .Y(_003_[4])
+  );
+  NOR _177_ (
+    .A(data2send[4]),
+    .B(_012_),
+    .Y(_016_)
+  );
+  NAND _178_ (
+    .A(_083_),
+    .B(_012_),
+    .Y(_017_)
+  );
+  NAND _179_ (
+    .A(reset),
+    .B(_017_),
+    .Y(_018_)
+  );
+  NOR _180_ (
+    .A(_016_),
+    .B(_018_),
+    .Y(_002_[4])
+  );
+  NOR _181_ (
+    .A(selector[2]),
+    .B(_087_),
+    .Y(_019_)
+  );
+  NAND _182_ (
+    .A(_089_),
+    .B(_019_),
+    .Y(_020_)
+  );
+  NOR _183_ (
+    .A(data_out[5]),
+    .B(_019_),
+    .Y(_021_)
+  );
+  NOT _184_ (
+    .A(_021_),
+    .Y(_022_)
+  );
+  NAND _185_ (
+    .A(_020_),
+    .B(_022_),
+    .Y(_023_)
+  );
+  NOR _186_ (
+    .A(_082_),
+    .B(_023_),
+    .Y(_003_[5])
+  );
+  NOR _187_ (
+    .A(data2send[5]),
+    .B(_019_),
+    .Y(_024_)
+  );
+  NAND _188_ (
+    .A(_083_),
+    .B(_019_),
+    .Y(_025_)
+  );
+  NAND _189_ (
+    .A(reset),
+    .B(_025_),
+    .Y(_026_)
+  );
+  NOR _190_ (
+    .A(_024_),
+    .B(_026_),
+    .Y(_002_[5])
+  );
+  NOR _191_ (
+    .A(selector[2]),
+    .B(_105_),
+    .Y(_027_)
+  );
+  NAND _192_ (
+    .A(_089_),
+    .B(_027_),
+    .Y(_028_)
+  );
+  NOR _193_ (
+    .A(data_out[6]),
+    .B(_027_),
+    .Y(_029_)
+  );
+  NOT _194_ (
+    .A(_029_),
+    .Y(_030_)
+  );
+  NAND _195_ (
+    .A(_028_),
+    .B(_030_),
+    .Y(_031_)
+  );
+  NOR _196_ (
+    .A(_082_),
+    .B(_031_),
+    .Y(_003_[6])
+  );
+  NOR _197_ (
+    .A(data2send[6]),
+    .B(_027_),
+    .Y(_032_)
+  );
+  NAND _198_ (
+    .A(_083_),
+    .B(_027_),
+    .Y(_033_)
+  );
+  NAND _199_ (
+    .A(reset),
+    .B(_033_),
+    .Y(_034_)
+  );
+  NOR _200_ (
+    .A(_032_),
+    .B(_034_),
+    .Y(_002_[6])
+  );
+  NOR _201_ (
+    .A(selector[2]),
+    .B(_115_),
+    .Y(_035_)
+  );
+  NOR _202_ (
+    .A(data_out[7]),
+    .B(_035_),
+    .Y(_036_)
+  );
+  NAND _203_ (
+    .A(_089_),
+    .B(_035_),
+    .Y(_037_)
+  );
+  NAND _204_ (
+    .A(reset),
+    .B(_037_),
+    .Y(_038_)
+  );
+  NOR _205_ (
+    .A(_036_),
+    .B(_038_),
+    .Y(_003_[7])
+  );
+  NOR _206_ (
+    .A(data2send[1]),
+    .B(_085_),
+    .Y(_039_)
+  );
+  NOR _207_ (
+    .A(data2send[6]),
+    .B(data2send[0]),
+    .Y(_040_)
+  );
+  NAND _208_ (
+    .A(_039_),
+    .B(_040_),
+    .Y(_041_)
+  );
+  NAND _209_ (
+    .A(data2send[3]),
+    .B(data2send[4]),
+    .Y(_042_)
+  );
+  NAND _210_ (
+    .A(data2send[5]),
+    .B(data2send[7]),
+    .Y(_043_)
+  );
+  NOR _211_ (
+    .A(_042_),
+    .B(_043_),
+    .Y(_044_)
+  );
+  NOT _212_ (
+    .A(_044_),
+    .Y(_045_)
+  );
+  NOR _213_ (
+    .A(_041_),
+    .B(_045_),
+    .Y(_046_)
+  );
+  NAND _214_ (
+    .A(_094_),
+    .B(_046_),
+    .Y(_047_)
+  );
+  NOT _215_ (
+    .A(_047_),
+    .Y(_048_)
+  );
+  NAND _216_ (
+    .A(_094_),
+    .B(_044_),
+    .Y(_049_)
+  );
+  NOR _217_ (
+    .A(_041_),
+    .B(_049_),
+    .Y(_050_)
+  );
+  NAND _218_ (
+    .A(_080_),
+    .B(_047_),
+    .Y(_051_)
+  );
+  NAND _219_ (
+    .A(reset),
+    .B(_051_),
+    .Y(_052_)
+  );
+  NAND _220_ (
+    .A(BC_counter[0]),
+    .B(_050_),
+    .Y(_053_)
+  );
+  NOT _221_ (
+    .A(_053_),
+    .Y(_054_)
+  );
+  NOR _222_ (
+    .A(_052_),
+    .B(_054_),
+    .Y(_000_[0])
+  );
+  NAND _223_ (
+    .A(_081_),
+    .B(_053_),
+    .Y(_055_)
+  );
+  NAND _224_ (
+    .A(reset),
+    .B(_055_),
+    .Y(_056_)
+  );
+  NAND _225_ (
+    .A(BC_counter[1]),
+    .B(_054_),
+    .Y(_057_)
+  );
+  NOT _226_ (
+    .A(_057_),
+    .Y(_058_)
+  );
+  NOR _227_ (
+    .A(_056_),
+    .B(_058_),
+    .Y(_000_[1])
+  );
+  NAND _228_ (
+    .A(_086_),
+    .B(_057_),
+    .Y(_059_)
+  );
+  NAND _229_ (
+    .A(reset),
+    .B(_059_),
+    .Y(_060_)
+  );
+  NOR _230_ (
+    .A(_086_),
+    .B(_057_),
+    .Y(_061_)
+  );
+  NOR _231_ (
+    .A(_060_),
+    .B(_061_),
+    .Y(_000_[2])
+  );
+  NAND _232_ (
+    .A(active),
+    .B(_094_),
+    .Y(_062_)
+  );
+  NOT _233_ (
+    .A(_062_),
+    .Y(_063_)
+  );
+  NOR _234_ (
+    .A(dataout_on),
+    .B(_063_),
+    .Y(_064_)
+  );
+  NOR _235_ (
+    .A(_082_),
+    .B(_064_),
+    .Y(_004_)
+  );
+  NOR _236_ (
+    .A(selector[0]),
+    .B(_082_),
+    .Y(_005_[0])
+  );
+  NAND _237_ (
+    .A(reset),
+    .B(_093_),
+    .Y(_065_)
+  );
+  NOR _238_ (
+    .A(_114_),
+    .B(_065_),
+    .Y(_005_[1])
+  );
+  NAND _239_ (
+    .A(_077_),
+    .B(_093_),
+    .Y(_066_)
+  );
+  NAND _240_ (
+    .A(reset),
+    .B(_066_),
+    .Y(_067_)
+  );
+  NOR _241_ (
+    .A(_094_),
+    .B(_067_),
+    .Y(_005_[2])
+  );
+  NOR _242_ (
+    .A(data2send[7]),
+    .B(_035_),
+    .Y(_068_)
+  );
+  NAND _243_ (
+    .A(_083_),
+    .B(_035_),
+    .Y(_069_)
+  );
+  NAND _244_ (
+    .A(reset),
+    .B(_069_),
+    .Y(_070_)
+  );
+  NOR _245_ (
+    .A(_068_),
+    .B(_070_),
+    .Y(_002_[7])
+  );
+  NAND _246_ (
+    .A(BC_counter[2]),
+    .B(_094_),
+    .Y(_071_)
+  );
+  NOT _247_ (
+    .A(_071_),
+    .Y(_072_)
+  );
+  NOR _248_ (
+    .A(active),
+    .B(_072_),
+    .Y(_073_)
+  );
+  NOR _249_ (
+    .A(_082_),
+    .B(_073_),
+    .Y(_001_)
+  );
+  NOR _250_ (
+    .A(valid_out),
+    .B(_094_),
+    .Y(_074_)
+  );
+  NOT _251_ (
+    .A(_074_),
+    .Y(_075_)
+  );
+  NAND _252_ (
+    .A(reset),
+    .B(_075_),
+    .Y(_076_)
+  );
+  NOR _253_ (
+    .A(_048_),
+    .B(_076_),
+    .Y(_006_)
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _254_ (
+    .C(clk_32f),
+    .D(_006_),
+    .Q(valid_out)
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _255_ (
+    .C(clk_32f),
+    .D(_001_),
+    .Q(active)
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _256_ (
+    .C(clk_32f),
+    .D(_003_[0]),
+    .Q(data_out[0])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _257_ (
+    .C(clk_32f),
+    .D(_003_[1]),
+    .Q(data_out[1])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _258_ (
+    .C(clk_32f),
+    .D(_003_[2]),
+    .Q(data_out[2])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _259_ (
+    .C(clk_32f),
+    .D(_003_[3]),
+    .Q(data_out[3])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _260_ (
+    .C(clk_32f),
+    .D(_003_[4]),
+    .Q(data_out[4])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _261_ (
+    .C(clk_32f),
+    .D(_003_[5]),
+    .Q(data_out[5])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _262_ (
+    .C(clk_32f),
+    .D(_003_[6]),
+    .Q(data_out[6])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _263_ (
+    .C(clk_32f),
+    .D(_003_[7]),
+    .Q(data_out[7])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _264_ (
+    .C(clk_32f),
+    .D(_005_[0]),
+    .Q(selector[0])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _265_ (
+    .C(clk_32f),
+    .D(_005_[1]),
+    .Q(selector[1])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _266_ (
+    .C(clk_32f),
+    .D(_005_[2]),
+    .Q(selector[2])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _267_ (
+    .C(clk_32f),
+    .D(_002_[0]),
+    .Q(data2send[0])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _268_ (
+    .C(clk_32f),
+    .D(_002_[1]),
+    .Q(data2send[1])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _269_ (
+    .C(clk_32f),
+    .D(_002_[2]),
+    .Q(data2send[2])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _270_ (
+    .C(clk_32f),
+    .D(_002_[3]),
+    .Q(data2send[3])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _271_ (
+    .C(clk_32f),
+    .D(_002_[4]),
+    .Q(data2send[4])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _272_ (
+    .C(clk_32f),
+    .D(_002_[5]),
+    .Q(data2send[5])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _273_ (
+    .C(clk_32f),
+    .D(_002_[6]),
+    .Q(data2send[6])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _274_ (
+    .C(clk_32f),
+    .D(_002_[7]),
+    .Q(data2send[7])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _275_ (
+    .C(clk_32f),
+    .D(_000_[0]),
+    .Q(BC_counter[0])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _276_ (
+    .C(clk_32f),
+    .D(_000_[1]),
+    .Q(BC_counter[1])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _277_ (
+    .C(clk_32f),
+    .D(_000_[2]),
+    .Q(BC_counter[2])
+  );
+  (* src = "../serial_paralelo_sintetizado/serial_paralelo_sintetizado.v:15" *)
+  DFF _278_ (
+    .C(clk_32f),
+    .D(_004_),
+    .Q(dataout_on)
   );
 endmodule
