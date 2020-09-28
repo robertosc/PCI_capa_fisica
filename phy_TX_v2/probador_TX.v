@@ -71,10 +71,10 @@ module probador(		input data_out_0,
 	initial clk_4f <= 1;
 	initial clk_32f <= 1;
 
-	always #16 clk_f <= ~clk_f;
-	always #8 clk_2f <= ~clk_2f;
-	always #4 clk_4f <= ~clk_4f;
-	always #0.5 clk_32f <= ~clk_32f;
+	always #24 clk_f <= ~clk_f;
+	always #16 clk_2f <= ~clk_2f;
+	always #8 clk_4f <= ~clk_4f;
+	always #1 clk_32f <= ~clk_32f;
 	
 
 
