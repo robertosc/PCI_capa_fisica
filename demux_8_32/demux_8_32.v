@@ -11,6 +11,7 @@ module demux_8_32(input clk_4f,
 		if(reset == 0) begin
 			selector [1:0] <= 2'b00;
 			valid_out <= 0;
+			data_out <= 0;
 		end
 		else begin
 			if(valid == 1) begin
