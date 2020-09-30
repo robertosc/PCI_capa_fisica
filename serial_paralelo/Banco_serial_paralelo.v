@@ -10,7 +10,7 @@
         wire [7:0] data_out;
 		wire [7:0] data2send_sintetizado;
         wire [7:0]  data_out_sintetizado;
-		wire clk_4f, clk_32f, valid, valid_out, data_in, reset, active, active_sintetizado,valid_out_sintetizado;
+		wire clk_4f, clk_32f, valid_out, data_in, reset, active, active_sintetizado,valid_out_sintetizado;
 
 		serial_paralelo s_p(/*AUTOINST*/
 				    // Outputs
@@ -20,7 +20,6 @@
 				    .data_out		(data_out[7:0]),
 				    // Inputs
 				    .reset		(reset),
-				    .valid		(valid),
 				    .clk_4f		(clk_4f),
 				    .clk_32f		(clk_32f),
 				    .data_in		(data_in));
@@ -35,15 +34,13 @@
 						  .clk_32f		(clk_32f),
 						  .clk_4f		(clk_4f),
 						  .data_in		(data_in),
-						  .reset		(reset),
-						  .valid		(valid));
+						  .reset		(reset));
 
 
 
 		probador_serial_paralelo prob_s_p(/*AUTOINST*/
 						  // Outputs
 						  .reset		(reset),
-						  .valid		(valid),
 						  .data_in		(data_in),
 						  .clk_4f		(clk_4f),
 						  .clk_32f		(clk_32f),

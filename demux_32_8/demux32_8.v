@@ -10,6 +10,7 @@ module demux32_8(output reg [7:0] data_out,
         if(reset==0)begin
             counter1[1:0]<=2'b00;
             valid_out<=0;
+            data_out <= 0;
         end
         else begin
             if(valid_0 == 1)begin
