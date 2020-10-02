@@ -1,6 +1,6 @@
-read_verilog demux32_8.v 
+read_verilog demux_32_8.v 
 
-hierarchy -check -top demux32_8
+hierarchy -check -top demux_32_8
 
 proc; opt; memory; opt; fsm; opt;
 

@@ -10,3 +10,4 @@ recirculador:
 	vvp banco
 	rm banco
 	gtkwave recirculador.vcd
+	rm recirculador.vcd

@@ -8,3 +8,4 @@ paralelo_serial:
 	iverilog -o paraleloserial banco_paralelo_serial.v
 	vvp paraleloserial
 	gtkwave paraleloserial.vcd
+	rm paraleloserial, paraleloserial.vcd

@@ -15,3 +15,4 @@ phy_TX:
 	vvp banco
 	rm banco
 	gtkwave TX.vcd
+	rm TX.vcd
