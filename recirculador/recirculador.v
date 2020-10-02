@@ -11,6 +11,7 @@ module recirculador(input clk_2f,
 		if(reset == 0) begin
 			valid_out <= 0;
 			demux_1_probador <= data_input;
+			demux_0 <= 32'h00000000; // Se agregaron los ceros para que no se 
 		end
 		else begin
 			if(valid == 1 && active == 1) begin
