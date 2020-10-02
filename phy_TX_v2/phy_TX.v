@@ -1,7 +1,7 @@
 `include "../recirculador/recirculador.v"
 //`include "../lib/cmos_cell.v"
 `include "../demux_striping/demux_striping.v"
-`include "../demux_32_8_v2/demux_32_8.v"
+`include "../demux_32_8/demux_32_8.v"
 `include "../paralelo_serial/paralelo_serial.v"
 `include "../serial_paralelo/serial_paralelo.v"
 
