@@ -32,8 +32,19 @@ module serial_paralelo(
         		0: begin
 					if (primero==0) begin
 						data2send[7:0] <= 8'b00000000;
+						if(data_in==1) begin
+							primero<=1;
+							data2send[7:7] <= data_in;
+							if (dataout_on==1) begin
+								transicion_dataout[7:7] <= data_in;
+							end
+							else begin
+								transicion_dataout[7:7] <= 0;
+							end
+
+							end
 					end
-					else begin
+					else if (primero==1) begin
 						data2send[7:0] <= 8'b00000000;
 						data2send[7:7] <= data_in;
 						if (dataout_on==1) begin
@@ -206,8 +217,6 @@ module serial_paralelo(
 					end		
 				end
 			endcase
-		
-			selector <= selector+1;
 			if (selector==7 && primero==1) begin
 				primero<=1;
 				//data2send=data2send<<1;
@@ -247,6 +256,9 @@ module serial_paralelo(
 				if (active ==1) begin
 					dataout_on<=1; 
 				end
+			end
+			else begin
+				selector <= selector+1;
 			end
 			
 		end
