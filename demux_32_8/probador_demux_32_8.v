@@ -13,7 +13,7 @@ module probador_demux_32_8(input [7:0] data_out,
 	$dumpvars;
 
 	{valid, reset} <= 0;
-	//{data_in} <= 32'h00EEBB33;
+	{data_in} <= 32'h00000000;
 
 	
 	@(posedge clk_f);
@@ -26,7 +26,7 @@ module probador_demux_32_8(input [7:0] data_out,
 	data_in <= 32'hFFAABB22;
 
 	@(posedge clk_f);
-	valid <= 0;
+	valid <= 1;
 	data_in <= 32'hFD554488;
 
 	@(posedge clk_f);
@@ -38,11 +38,11 @@ module probador_demux_32_8(input [7:0] data_out,
 	data_in <= 32'hFD554488;
 
 	@(posedge clk_f);
-	valid <= 1;
+	valid <= 0;
 	data_in <= 32'h12345678;
 
 	@(posedge clk_f);
-	valid <= 1;
+	valid <= 0;
 	data_in <= 32'hBBCCDDEE;
 
 	@(posedge clk_f);

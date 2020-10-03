@@ -140,6 +140,72 @@ module sintetizado_recirc_cmos(clk_2f, data_input, valid, active, reset, demux_0
   wire _131_;
   wire _132_;
   wire _133_;
+  wire _134_;
+  wire _135_;
+  wire _136_;
+  wire _137_;
+  wire _138_;
+  wire _139_;
+  wire _140_;
+  wire _141_;
+  wire _142_;
+  wire _143_;
+  wire _144_;
+  wire _145_;
+  wire _146_;
+  wire _147_;
+  wire _148_;
+  wire _149_;
+  wire _150_;
+  wire _151_;
+  wire _152_;
+  wire _153_;
+  wire _154_;
+  wire _155_;
+  wire _156_;
+  wire _157_;
+  wire _158_;
+  wire _159_;
+  wire _160_;
+  wire _161_;
+  wire _162_;
+  wire _163_;
+  wire _164_;
+  wire _165_;
+  wire _166_;
+  wire _167_;
+  wire _168_;
+  wire _169_;
+  wire _170_;
+  wire _171_;
+  wire _172_;
+  wire _173_;
+  wire _174_;
+  wire _175_;
+  wire _176_;
+  wire _177_;
+  wire _178_;
+  wire _179_;
+  wire _180_;
+  wire _181_;
+  wire _182_;
+  wire _183_;
+  wire _184_;
+  wire _185_;
+  wire _186_;
+  wire _187_;
+  wire _188_;
+  wire _189_;
+  wire _190_;
+  wire _191_;
+  wire _192_;
+  wire _193_;
+  wire _194_;
+  wire _195_;
+  wire _196_;
+  wire _197_;
+  wire _198_;
+  wire _199_;
   (* src = "sintetizado_recirc_cmos.v:4" *)
   input active;
   (* src = "sintetizado_recirc_cmos.v:1" *)
@@ -156,1370 +222,1667 @@ module sintetizado_recirc_cmos(clk_2f, data_input, valid, active, reset, demux_0
   input valid;
   (* src = "sintetizado_recirc_cmos.v:8" *)
   output valid_out_estructural;
-  NAND _134_ (
-    .A(reset),
-    .B(valid),
+  NOT _200_ (
+    .A(valid),
     .Y(_003_)
   );
-  NOT _135_ (
-    .A(_003_),
+  NOT _201_ (
+    .A(active),
     .Y(_004_)
   );
-  NAND _136_ (
-    .A(active),
+  NOR _202_ (
+    .A(_003_),
     .B(_004_),
     .Y(_005_)
   );
-  NOT _137_ (
-    .A(_005_),
-    .Y(_002_)
-  );
-  NAND _138_ (
-    .A(demux_1_probador_estructural[15]),
-    .B(_002_),
+  NAND _203_ (
+    .A(valid),
+    .B(active),
     .Y(_006_)
   );
-  NAND _139_ (
-    .A(data_input[15]),
+  NAND _204_ (
+    .A(reset),
     .B(_005_),
     .Y(_007_)
   );
-  NAND _140_ (
-    .A(_006_),
-    .B(_007_),
-    .Y(_001_[15])
+  NOT _205_ (
+    .A(_007_),
+    .Y(_002_)
   );
-  NAND _141_ (
-    .A(demux_1_probador_estructural[16]),
+  NAND _206_ (
+    .A(demux_1_probador_estructural[15]),
     .B(_002_),
     .Y(_008_)
   );
-  NAND _142_ (
-    .A(data_input[16]),
-    .B(_005_),
+  NAND _207_ (
+    .A(data_input[15]),
+    .B(_007_),
     .Y(_009_)
   );
-  NAND _143_ (
+  NAND _208_ (
     .A(_008_),
     .B(_009_),
-    .Y(_001_[16])
+    .Y(_001_[15])
   );
-  NAND _144_ (
-    .A(demux_1_probador_estructural[17]),
+  NAND _209_ (
+    .A(demux_1_probador_estructural[16]),
     .B(_002_),
     .Y(_010_)
   );
-  NAND _145_ (
-    .A(data_input[17]),
-    .B(_005_),
+  NAND _210_ (
+    .A(data_input[16]),
+    .B(_007_),
     .Y(_011_)
   );
-  NAND _146_ (
+  NAND _211_ (
     .A(_010_),
     .B(_011_),
-    .Y(_001_[17])
+    .Y(_001_[16])
   );
-  NAND _147_ (
-    .A(demux_1_probador_estructural[18]),
+  NAND _212_ (
+    .A(demux_1_probador_estructural[17]),
     .B(_002_),
     .Y(_012_)
   );
-  NAND _148_ (
-    .A(data_input[18]),
-    .B(_005_),
+  NAND _213_ (
+    .A(data_input[17]),
+    .B(_007_),
     .Y(_013_)
   );
-  NAND _149_ (
+  NAND _214_ (
     .A(_012_),
     .B(_013_),
-    .Y(_001_[18])
+    .Y(_001_[17])
   );
-  NAND _150_ (
-    .A(demux_1_probador_estructural[19]),
+  NAND _215_ (
+    .A(demux_1_probador_estructural[18]),
     .B(_002_),
     .Y(_014_)
   );
-  NAND _151_ (
-    .A(data_input[19]),
-    .B(_005_),
+  NAND _216_ (
+    .A(data_input[18]),
+    .B(_007_),
     .Y(_015_)
   );
-  NAND _152_ (
+  NAND _217_ (
     .A(_014_),
     .B(_015_),
-    .Y(_001_[19])
+    .Y(_001_[18])
   );
-  NAND _153_ (
-    .A(demux_1_probador_estructural[20]),
+  NAND _218_ (
+    .A(demux_1_probador_estructural[19]),
     .B(_002_),
     .Y(_016_)
   );
-  NAND _154_ (
-    .A(data_input[20]),
-    .B(_005_),
+  NAND _219_ (
+    .A(data_input[19]),
+    .B(_007_),
     .Y(_017_)
   );
-  NAND _155_ (
+  NAND _220_ (
     .A(_016_),
     .B(_017_),
-    .Y(_001_[20])
+    .Y(_001_[19])
   );
-  NAND _156_ (
-    .A(demux_1_probador_estructural[21]),
+  NAND _221_ (
+    .A(demux_1_probador_estructural[20]),
     .B(_002_),
     .Y(_018_)
   );
-  NAND _157_ (
-    .A(data_input[21]),
-    .B(_005_),
+  NAND _222_ (
+    .A(data_input[20]),
+    .B(_007_),
     .Y(_019_)
   );
-  NAND _158_ (
+  NAND _223_ (
     .A(_018_),
     .B(_019_),
-    .Y(_001_[21])
+    .Y(_001_[20])
   );
-  NAND _159_ (
-    .A(demux_1_probador_estructural[22]),
+  NAND _224_ (
+    .A(demux_1_probador_estructural[21]),
     .B(_002_),
     .Y(_020_)
   );
-  NAND _160_ (
-    .A(data_input[22]),
-    .B(_005_),
+  NAND _225_ (
+    .A(data_input[21]),
+    .B(_007_),
     .Y(_021_)
   );
-  NAND _161_ (
+  NAND _226_ (
     .A(_020_),
     .B(_021_),
-    .Y(_001_[22])
+    .Y(_001_[21])
   );
-  NAND _162_ (
-    .A(demux_1_probador_estructural[23]),
+  NAND _227_ (
+    .A(demux_1_probador_estructural[22]),
     .B(_002_),
     .Y(_022_)
   );
-  NAND _163_ (
-    .A(data_input[23]),
-    .B(_005_),
+  NAND _228_ (
+    .A(data_input[22]),
+    .B(_007_),
     .Y(_023_)
   );
-  NAND _164_ (
+  NAND _229_ (
     .A(_022_),
     .B(_023_),
-    .Y(_001_[23])
+    .Y(_001_[22])
   );
-  NAND _165_ (
-    .A(demux_1_probador_estructural[24]),
+  NAND _230_ (
+    .A(demux_1_probador_estructural[23]),
     .B(_002_),
     .Y(_024_)
   );
-  NAND _166_ (
-    .A(data_input[24]),
-    .B(_005_),
+  NAND _231_ (
+    .A(data_input[23]),
+    .B(_007_),
     .Y(_025_)
   );
-  NAND _167_ (
+  NAND _232_ (
     .A(_024_),
     .B(_025_),
-    .Y(_001_[24])
+    .Y(_001_[23])
   );
-  NAND _168_ (
-    .A(demux_1_probador_estructural[25]),
+  NAND _233_ (
+    .A(demux_1_probador_estructural[24]),
     .B(_002_),
     .Y(_026_)
   );
-  NAND _169_ (
-    .A(data_input[25]),
-    .B(_005_),
+  NAND _234_ (
+    .A(data_input[24]),
+    .B(_007_),
     .Y(_027_)
   );
-  NAND _170_ (
+  NAND _235_ (
     .A(_026_),
     .B(_027_),
-    .Y(_001_[25])
+    .Y(_001_[24])
   );
-  NAND _171_ (
-    .A(demux_1_probador_estructural[26]),
+  NAND _236_ (
+    .A(demux_1_probador_estructural[25]),
     .B(_002_),
     .Y(_028_)
   );
-  NAND _172_ (
-    .A(data_input[26]),
-    .B(_005_),
+  NAND _237_ (
+    .A(data_input[25]),
+    .B(_007_),
     .Y(_029_)
   );
-  NAND _173_ (
+  NAND _238_ (
     .A(_028_),
     .B(_029_),
-    .Y(_001_[26])
+    .Y(_001_[25])
   );
-  NAND _174_ (
-    .A(demux_1_probador_estructural[27]),
+  NAND _239_ (
+    .A(demux_1_probador_estructural[26]),
     .B(_002_),
     .Y(_030_)
   );
-  NAND _175_ (
-    .A(data_input[27]),
-    .B(_005_),
+  NAND _240_ (
+    .A(data_input[26]),
+    .B(_007_),
     .Y(_031_)
   );
-  NAND _176_ (
+  NAND _241_ (
     .A(_030_),
     .B(_031_),
-    .Y(_001_[27])
+    .Y(_001_[26])
   );
-  NAND _177_ (
-    .A(demux_1_probador_estructural[28]),
+  NAND _242_ (
+    .A(demux_1_probador_estructural[27]),
     .B(_002_),
     .Y(_032_)
   );
-  NAND _178_ (
-    .A(data_input[28]),
-    .B(_005_),
+  NAND _243_ (
+    .A(data_input[27]),
+    .B(_007_),
     .Y(_033_)
   );
-  NAND _179_ (
+  NAND _244_ (
     .A(_032_),
     .B(_033_),
-    .Y(_001_[28])
+    .Y(_001_[27])
   );
-  NAND _180_ (
-    .A(demux_1_probador_estructural[29]),
+  NAND _245_ (
+    .A(demux_1_probador_estructural[28]),
     .B(_002_),
     .Y(_034_)
   );
-  NAND _181_ (
-    .A(data_input[29]),
-    .B(_005_),
+  NAND _246_ (
+    .A(data_input[28]),
+    .B(_007_),
     .Y(_035_)
   );
-  NAND _182_ (
+  NAND _247_ (
     .A(_034_),
     .B(_035_),
-    .Y(_001_[29])
+    .Y(_001_[28])
   );
-  NAND _183_ (
-    .A(demux_1_probador_estructural[30]),
+  NAND _248_ (
+    .A(demux_1_probador_estructural[29]),
     .B(_002_),
     .Y(_036_)
   );
-  NAND _184_ (
-    .A(data_input[30]),
-    .B(_005_),
+  NAND _249_ (
+    .A(data_input[29]),
+    .B(_007_),
     .Y(_037_)
   );
-  NAND _185_ (
+  NAND _250_ (
     .A(_036_),
     .B(_037_),
-    .Y(_001_[30])
+    .Y(_001_[29])
   );
-  NAND _186_ (
-    .A(demux_1_probador_estructural[31]),
+  NAND _251_ (
+    .A(demux_1_probador_estructural[30]),
     .B(_002_),
     .Y(_038_)
   );
-  NAND _187_ (
-    .A(data_input[31]),
-    .B(_005_),
+  NAND _252_ (
+    .A(data_input[30]),
+    .B(_007_),
     .Y(_039_)
   );
-  NAND _188_ (
+  NAND _253_ (
     .A(_038_),
     .B(_039_),
-    .Y(_001_[31])
+    .Y(_001_[30])
   );
-  NAND _189_ (
-    .A(data_input[0]),
+  NAND _254_ (
+    .A(demux_1_probador_estructural[31]),
     .B(_002_),
     .Y(_040_)
   );
-  NAND _190_ (
-    .A(demux_0_estructural[0]),
-    .B(_005_),
+  NAND _255_ (
+    .A(data_input[31]),
+    .B(_007_),
     .Y(_041_)
   );
-  NAND _191_ (
+  NAND _256_ (
     .A(_040_),
     .B(_041_),
-    .Y(_000_[0])
+    .Y(_001_[31])
   );
-  NAND _192_ (
-    .A(data_input[1]),
-    .B(_002_),
+  NOR _257_ (
+    .A(demux_0_estructural[0]),
+    .B(_005_),
     .Y(_042_)
   );
-  NAND _193_ (
-    .A(demux_0_estructural[1]),
-    .B(_005_),
+  NOR _258_ (
+    .A(data_input[0]),
+    .B(_006_),
     .Y(_043_)
   );
-  NAND _194_ (
-    .A(_042_),
-    .B(_043_),
-    .Y(_000_[1])
-  );
-  NAND _195_ (
-    .A(data_input[2]),
-    .B(_002_),
+  NOT _259_ (
+    .A(_043_),
     .Y(_044_)
   );
-  NAND _196_ (
-    .A(demux_0_estructural[2]),
-    .B(_005_),
+  NAND _260_ (
+    .A(reset),
+    .B(_044_),
     .Y(_045_)
   );
-  NAND _197_ (
-    .A(_044_),
+  NOR _261_ (
+    .A(_042_),
     .B(_045_),
-    .Y(_000_[2])
+    .Y(_000_[0])
   );
-  NAND _198_ (
-    .A(data_input[3]),
-    .B(_002_),
+  NOR _262_ (
+    .A(demux_0_estructural[1]),
+    .B(_005_),
     .Y(_046_)
   );
-  NAND _199_ (
-    .A(demux_0_estructural[3]),
-    .B(_005_),
+  NOR _263_ (
+    .A(data_input[1]),
+    .B(_006_),
     .Y(_047_)
   );
-  NAND _200_ (
-    .A(_046_),
-    .B(_047_),
-    .Y(_000_[3])
-  );
-  NAND _201_ (
-    .A(data_input[4]),
-    .B(_002_),
+  NOT _264_ (
+    .A(_047_),
     .Y(_048_)
   );
-  NAND _202_ (
-    .A(demux_0_estructural[4]),
-    .B(_005_),
+  NAND _265_ (
+    .A(reset),
+    .B(_048_),
     .Y(_049_)
   );
-  NAND _203_ (
-    .A(_048_),
+  NOR _266_ (
+    .A(_046_),
     .B(_049_),
-    .Y(_000_[4])
+    .Y(_000_[1])
   );
-  NAND _204_ (
-    .A(data_input[5]),
-    .B(_002_),
+  NOR _267_ (
+    .A(demux_0_estructural[2]),
+    .B(_005_),
     .Y(_050_)
   );
-  NAND _205_ (
-    .A(demux_0_estructural[5]),
-    .B(_005_),
+  NOR _268_ (
+    .A(data_input[2]),
+    .B(_006_),
     .Y(_051_)
   );
-  NAND _206_ (
-    .A(_050_),
-    .B(_051_),
-    .Y(_000_[5])
-  );
-  NAND _207_ (
-    .A(data_input[6]),
-    .B(_002_),
+  NOT _269_ (
+    .A(_051_),
     .Y(_052_)
   );
-  NAND _208_ (
-    .A(demux_0_estructural[6]),
-    .B(_005_),
+  NAND _270_ (
+    .A(reset),
+    .B(_052_),
     .Y(_053_)
   );
-  NAND _209_ (
-    .A(_052_),
+  NOR _271_ (
+    .A(_050_),
     .B(_053_),
-    .Y(_000_[6])
+    .Y(_000_[2])
   );
-  NAND _210_ (
-    .A(data_input[7]),
-    .B(_002_),
+  NOR _272_ (
+    .A(demux_0_estructural[3]),
+    .B(_005_),
     .Y(_054_)
   );
-  NAND _211_ (
-    .A(demux_0_estructural[7]),
-    .B(_005_),
+  NOR _273_ (
+    .A(data_input[3]),
+    .B(_006_),
     .Y(_055_)
   );
-  NAND _212_ (
-    .A(_054_),
-    .B(_055_),
-    .Y(_000_[7])
-  );
-  NAND _213_ (
-    .A(data_input[8]),
-    .B(_002_),
+  NOT _274_ (
+    .A(_055_),
     .Y(_056_)
   );
-  NAND _214_ (
-    .A(demux_0_estructural[8]),
-    .B(_005_),
+  NAND _275_ (
+    .A(reset),
+    .B(_056_),
     .Y(_057_)
   );
-  NAND _215_ (
-    .A(_056_),
+  NOR _276_ (
+    .A(_054_),
     .B(_057_),
-    .Y(_000_[8])
+    .Y(_000_[3])
   );
-  NAND _216_ (
-    .A(data_input[9]),
-    .B(_002_),
+  NOR _277_ (
+    .A(demux_0_estructural[4]),
+    .B(_005_),
     .Y(_058_)
   );
-  NAND _217_ (
-    .A(demux_0_estructural[9]),
-    .B(_005_),
+  NOR _278_ (
+    .A(data_input[4]),
+    .B(_006_),
     .Y(_059_)
   );
-  NAND _218_ (
-    .A(_058_),
-    .B(_059_),
-    .Y(_000_[9])
-  );
-  NAND _219_ (
-    .A(data_input[10]),
-    .B(_002_),
+  NOT _279_ (
+    .A(_059_),
     .Y(_060_)
   );
-  NAND _220_ (
-    .A(demux_0_estructural[10]),
-    .B(_005_),
+  NAND _280_ (
+    .A(reset),
+    .B(_060_),
     .Y(_061_)
   );
-  NAND _221_ (
-    .A(_060_),
+  NOR _281_ (
+    .A(_058_),
     .B(_061_),
-    .Y(_000_[10])
+    .Y(_000_[4])
   );
-  NAND _222_ (
-    .A(data_input[11]),
-    .B(_002_),
+  NOR _282_ (
+    .A(demux_0_estructural[5]),
+    .B(_005_),
     .Y(_062_)
   );
-  NAND _223_ (
-    .A(demux_0_estructural[11]),
-    .B(_005_),
+  NOR _283_ (
+    .A(data_input[5]),
+    .B(_006_),
     .Y(_063_)
   );
-  NAND _224_ (
-    .A(_062_),
-    .B(_063_),
-    .Y(_000_[11])
-  );
-  NAND _225_ (
-    .A(data_input[12]),
-    .B(_002_),
+  NOT _284_ (
+    .A(_063_),
     .Y(_064_)
   );
-  NAND _226_ (
-    .A(demux_0_estructural[12]),
-    .B(_005_),
+  NAND _285_ (
+    .A(reset),
+    .B(_064_),
     .Y(_065_)
   );
-  NAND _227_ (
-    .A(_064_),
+  NOR _286_ (
+    .A(_062_),
     .B(_065_),
-    .Y(_000_[12])
+    .Y(_000_[5])
   );
-  NAND _228_ (
-    .A(data_input[13]),
-    .B(_002_),
+  NOR _287_ (
+    .A(demux_0_estructural[6]),
+    .B(_005_),
     .Y(_066_)
   );
-  NAND _229_ (
-    .A(demux_0_estructural[13]),
-    .B(_005_),
+  NOR _288_ (
+    .A(data_input[6]),
+    .B(_006_),
     .Y(_067_)
   );
-  NAND _230_ (
-    .A(_066_),
-    .B(_067_),
-    .Y(_000_[13])
-  );
-  NAND _231_ (
-    .A(data_input[14]),
-    .B(_002_),
+  NOT _289_ (
+    .A(_067_),
     .Y(_068_)
   );
-  NAND _232_ (
-    .A(demux_0_estructural[14]),
-    .B(_005_),
+  NAND _290_ (
+    .A(reset),
+    .B(_068_),
     .Y(_069_)
   );
-  NAND _233_ (
-    .A(_068_),
+  NOR _291_ (
+    .A(_066_),
     .B(_069_),
-    .Y(_000_[14])
+    .Y(_000_[6])
   );
-  NAND _234_ (
-    .A(data_input[15]),
-    .B(_002_),
+  NOR _292_ (
+    .A(demux_0_estructural[7]),
+    .B(_005_),
     .Y(_070_)
   );
-  NAND _235_ (
-    .A(demux_0_estructural[15]),
-    .B(_005_),
+  NOR _293_ (
+    .A(data_input[7]),
+    .B(_006_),
     .Y(_071_)
   );
-  NAND _236_ (
-    .A(_070_),
-    .B(_071_),
-    .Y(_000_[15])
-  );
-  NAND _237_ (
-    .A(data_input[16]),
-    .B(_002_),
+  NOT _294_ (
+    .A(_071_),
     .Y(_072_)
   );
-  NAND _238_ (
-    .A(demux_0_estructural[16]),
-    .B(_005_),
+  NAND _295_ (
+    .A(reset),
+    .B(_072_),
     .Y(_073_)
   );
-  NAND _239_ (
-    .A(_072_),
+  NOR _296_ (
+    .A(_070_),
     .B(_073_),
-    .Y(_000_[16])
+    .Y(_000_[7])
   );
-  NAND _240_ (
-    .A(data_input[17]),
-    .B(_002_),
+  NOR _297_ (
+    .A(demux_0_estructural[8]),
+    .B(_005_),
     .Y(_074_)
   );
-  NAND _241_ (
-    .A(demux_0_estructural[17]),
-    .B(_005_),
+  NOR _298_ (
+    .A(data_input[8]),
+    .B(_006_),
     .Y(_075_)
   );
-  NAND _242_ (
-    .A(_074_),
-    .B(_075_),
-    .Y(_000_[17])
-  );
-  NAND _243_ (
-    .A(data_input[18]),
-    .B(_002_),
+  NOT _299_ (
+    .A(_075_),
     .Y(_076_)
   );
-  NAND _244_ (
-    .A(demux_0_estructural[18]),
-    .B(_005_),
+  NAND _300_ (
+    .A(reset),
+    .B(_076_),
     .Y(_077_)
   );
-  NAND _245_ (
-    .A(_076_),
+  NOR _301_ (
+    .A(_074_),
     .B(_077_),
-    .Y(_000_[18])
+    .Y(_000_[8])
   );
-  NAND _246_ (
-    .A(data_input[19]),
-    .B(_002_),
+  NOR _302_ (
+    .A(demux_0_estructural[9]),
+    .B(_005_),
     .Y(_078_)
   );
-  NAND _247_ (
-    .A(demux_0_estructural[19]),
-    .B(_005_),
+  NOR _303_ (
+    .A(data_input[9]),
+    .B(_006_),
     .Y(_079_)
   );
-  NAND _248_ (
-    .A(_078_),
-    .B(_079_),
-    .Y(_000_[19])
-  );
-  NAND _249_ (
-    .A(data_input[20]),
-    .B(_002_),
+  NOT _304_ (
+    .A(_079_),
     .Y(_080_)
   );
-  NAND _250_ (
-    .A(demux_0_estructural[20]),
-    .B(_005_),
+  NAND _305_ (
+    .A(reset),
+    .B(_080_),
     .Y(_081_)
   );
-  NAND _251_ (
-    .A(_080_),
+  NOR _306_ (
+    .A(_078_),
     .B(_081_),
-    .Y(_000_[20])
+    .Y(_000_[9])
   );
-  NAND _252_ (
-    .A(data_input[21]),
-    .B(_002_),
+  NOR _307_ (
+    .A(demux_0_estructural[10]),
+    .B(_005_),
     .Y(_082_)
   );
-  NAND _253_ (
-    .A(demux_0_estructural[21]),
-    .B(_005_),
+  NOR _308_ (
+    .A(data_input[10]),
+    .B(_006_),
     .Y(_083_)
   );
-  NAND _254_ (
-    .A(_082_),
-    .B(_083_),
-    .Y(_000_[21])
-  );
-  NAND _255_ (
-    .A(data_input[22]),
-    .B(_002_),
+  NOT _309_ (
+    .A(_083_),
     .Y(_084_)
   );
-  NAND _256_ (
-    .A(demux_0_estructural[22]),
-    .B(_005_),
+  NAND _310_ (
+    .A(reset),
+    .B(_084_),
     .Y(_085_)
   );
-  NAND _257_ (
-    .A(_084_),
+  NOR _311_ (
+    .A(_082_),
     .B(_085_),
-    .Y(_000_[22])
+    .Y(_000_[10])
   );
-  NAND _258_ (
-    .A(data_input[23]),
-    .B(_002_),
+  NOR _312_ (
+    .A(demux_0_estructural[11]),
+    .B(_005_),
     .Y(_086_)
   );
-  NAND _259_ (
-    .A(demux_0_estructural[23]),
-    .B(_005_),
+  NOR _313_ (
+    .A(data_input[11]),
+    .B(_006_),
     .Y(_087_)
   );
-  NAND _260_ (
-    .A(_086_),
-    .B(_087_),
-    .Y(_000_[23])
-  );
-  NAND _261_ (
-    .A(data_input[24]),
-    .B(_002_),
+  NOT _314_ (
+    .A(_087_),
     .Y(_088_)
   );
-  NAND _262_ (
-    .A(demux_0_estructural[24]),
-    .B(_005_),
+  NAND _315_ (
+    .A(reset),
+    .B(_088_),
     .Y(_089_)
   );
-  NAND _263_ (
-    .A(_088_),
+  NOR _316_ (
+    .A(_086_),
     .B(_089_),
-    .Y(_000_[24])
+    .Y(_000_[11])
   );
-  NAND _264_ (
-    .A(data_input[25]),
-    .B(_002_),
+  NOR _317_ (
+    .A(demux_0_estructural[12]),
+    .B(_005_),
     .Y(_090_)
   );
-  NAND _265_ (
-    .A(demux_0_estructural[25]),
-    .B(_005_),
+  NOR _318_ (
+    .A(data_input[12]),
+    .B(_006_),
     .Y(_091_)
   );
-  NAND _266_ (
-    .A(_090_),
-    .B(_091_),
-    .Y(_000_[25])
-  );
-  NAND _267_ (
-    .A(data_input[26]),
-    .B(_002_),
+  NOT _319_ (
+    .A(_091_),
     .Y(_092_)
   );
-  NAND _268_ (
-    .A(demux_0_estructural[26]),
-    .B(_005_),
+  NAND _320_ (
+    .A(reset),
+    .B(_092_),
     .Y(_093_)
   );
-  NAND _269_ (
-    .A(_092_),
+  NOR _321_ (
+    .A(_090_),
     .B(_093_),
-    .Y(_000_[26])
+    .Y(_000_[12])
   );
-  NAND _270_ (
-    .A(data_input[27]),
-    .B(_002_),
+  NOR _322_ (
+    .A(demux_0_estructural[13]),
+    .B(_005_),
     .Y(_094_)
   );
-  NAND _271_ (
-    .A(demux_0_estructural[27]),
-    .B(_005_),
+  NOR _323_ (
+    .A(data_input[13]),
+    .B(_006_),
     .Y(_095_)
   );
-  NAND _272_ (
-    .A(_094_),
-    .B(_095_),
-    .Y(_000_[27])
-  );
-  NAND _273_ (
-    .A(data_input[28]),
-    .B(_002_),
+  NOT _324_ (
+    .A(_095_),
     .Y(_096_)
   );
-  NAND _274_ (
-    .A(demux_0_estructural[28]),
-    .B(_005_),
+  NAND _325_ (
+    .A(reset),
+    .B(_096_),
     .Y(_097_)
   );
-  NAND _275_ (
-    .A(_096_),
+  NOR _326_ (
+    .A(_094_),
     .B(_097_),
-    .Y(_000_[28])
+    .Y(_000_[13])
   );
-  NAND _276_ (
-    .A(data_input[29]),
-    .B(_002_),
+  NOR _327_ (
+    .A(demux_0_estructural[14]),
+    .B(_005_),
     .Y(_098_)
   );
-  NAND _277_ (
-    .A(demux_0_estructural[29]),
-    .B(_005_),
+  NOR _328_ (
+    .A(data_input[14]),
+    .B(_006_),
     .Y(_099_)
   );
-  NAND _278_ (
-    .A(_098_),
-    .B(_099_),
-    .Y(_000_[29])
-  );
-  NAND _279_ (
-    .A(data_input[30]),
-    .B(_002_),
+  NOT _329_ (
+    .A(_099_),
     .Y(_100_)
   );
-  NAND _280_ (
-    .A(demux_0_estructural[30]),
-    .B(_005_),
+  NAND _330_ (
+    .A(reset),
+    .B(_100_),
     .Y(_101_)
   );
-  NAND _281_ (
-    .A(_100_),
+  NOR _331_ (
+    .A(_098_),
     .B(_101_),
-    .Y(_000_[30])
+    .Y(_000_[14])
   );
-  NAND _282_ (
-    .A(data_input[31]),
-    .B(_002_),
+  NOR _332_ (
+    .A(demux_0_estructural[15]),
+    .B(_005_),
     .Y(_102_)
   );
-  NAND _283_ (
-    .A(demux_0_estructural[31]),
-    .B(_005_),
+  NOR _333_ (
+    .A(data_input[15]),
+    .B(_006_),
     .Y(_103_)
   );
-  NAND _284_ (
-    .A(_102_),
-    .B(_103_),
-    .Y(_000_[31])
-  );
-  NAND _285_ (
-    .A(demux_1_probador_estructural[0]),
-    .B(_002_),
+  NOT _334_ (
+    .A(_103_),
     .Y(_104_)
   );
-  NAND _286_ (
-    .A(data_input[0]),
-    .B(_005_),
+  NAND _335_ (
+    .A(reset),
+    .B(_104_),
     .Y(_105_)
   );
-  NAND _287_ (
-    .A(_104_),
+  NOR _336_ (
+    .A(_102_),
     .B(_105_),
-    .Y(_001_[0])
+    .Y(_000_[15])
   );
-  NAND _288_ (
-    .A(demux_1_probador_estructural[1]),
-    .B(_002_),
+  NOR _337_ (
+    .A(demux_0_estructural[16]),
+    .B(_005_),
     .Y(_106_)
   );
-  NAND _289_ (
-    .A(data_input[1]),
-    .B(_005_),
+  NOR _338_ (
+    .A(data_input[16]),
+    .B(_006_),
     .Y(_107_)
   );
-  NAND _290_ (
-    .A(_106_),
-    .B(_107_),
-    .Y(_001_[1])
-  );
-  NAND _291_ (
-    .A(demux_1_probador_estructural[2]),
-    .B(_002_),
+  NOT _339_ (
+    .A(_107_),
     .Y(_108_)
   );
-  NAND _292_ (
-    .A(data_input[2]),
-    .B(_005_),
+  NAND _340_ (
+    .A(reset),
+    .B(_108_),
     .Y(_109_)
   );
-  NAND _293_ (
-    .A(_108_),
+  NOR _341_ (
+    .A(_106_),
     .B(_109_),
-    .Y(_001_[2])
+    .Y(_000_[16])
   );
-  NAND _294_ (
-    .A(demux_1_probador_estructural[3]),
-    .B(_002_),
+  NOR _342_ (
+    .A(demux_0_estructural[17]),
+    .B(_005_),
     .Y(_110_)
   );
-  NAND _295_ (
-    .A(data_input[3]),
-    .B(_005_),
+  NOR _343_ (
+    .A(data_input[17]),
+    .B(_006_),
     .Y(_111_)
   );
-  NAND _296_ (
-    .A(_110_),
-    .B(_111_),
-    .Y(_001_[3])
-  );
-  NAND _297_ (
-    .A(demux_1_probador_estructural[4]),
-    .B(_002_),
+  NOT _344_ (
+    .A(_111_),
     .Y(_112_)
   );
-  NAND _298_ (
-    .A(data_input[4]),
-    .B(_005_),
+  NAND _345_ (
+    .A(reset),
+    .B(_112_),
     .Y(_113_)
   );
-  NAND _299_ (
-    .A(_112_),
+  NOR _346_ (
+    .A(_110_),
     .B(_113_),
-    .Y(_001_[4])
+    .Y(_000_[17])
   );
-  NAND _300_ (
-    .A(demux_1_probador_estructural[5]),
-    .B(_002_),
+  NOR _347_ (
+    .A(demux_0_estructural[18]),
+    .B(_005_),
     .Y(_114_)
   );
-  NAND _301_ (
-    .A(data_input[5]),
-    .B(_005_),
+  NOR _348_ (
+    .A(data_input[18]),
+    .B(_006_),
     .Y(_115_)
   );
-  NAND _302_ (
-    .A(_114_),
-    .B(_115_),
-    .Y(_001_[5])
-  );
-  NAND _303_ (
-    .A(demux_1_probador_estructural[6]),
-    .B(_002_),
+  NOT _349_ (
+    .A(_115_),
     .Y(_116_)
   );
-  NAND _304_ (
-    .A(data_input[6]),
-    .B(_005_),
+  NAND _350_ (
+    .A(reset),
+    .B(_116_),
     .Y(_117_)
   );
-  NAND _305_ (
-    .A(_116_),
+  NOR _351_ (
+    .A(_114_),
     .B(_117_),
-    .Y(_001_[6])
+    .Y(_000_[18])
   );
-  NAND _306_ (
-    .A(demux_1_probador_estructural[7]),
-    .B(_002_),
+  NOR _352_ (
+    .A(demux_0_estructural[19]),
+    .B(_005_),
     .Y(_118_)
   );
-  NAND _307_ (
-    .A(data_input[7]),
-    .B(_005_),
+  NOR _353_ (
+    .A(data_input[19]),
+    .B(_006_),
     .Y(_119_)
   );
-  NAND _308_ (
-    .A(_118_),
-    .B(_119_),
-    .Y(_001_[7])
-  );
-  NAND _309_ (
-    .A(demux_1_probador_estructural[8]),
-    .B(_002_),
+  NOT _354_ (
+    .A(_119_),
     .Y(_120_)
   );
-  NAND _310_ (
-    .A(data_input[8]),
-    .B(_005_),
+  NAND _355_ (
+    .A(reset),
+    .B(_120_),
     .Y(_121_)
   );
-  NAND _311_ (
-    .A(_120_),
+  NOR _356_ (
+    .A(_118_),
     .B(_121_),
-    .Y(_001_[8])
+    .Y(_000_[19])
   );
-  NAND _312_ (
-    .A(demux_1_probador_estructural[9]),
-    .B(_002_),
+  NOR _357_ (
+    .A(demux_0_estructural[20]),
+    .B(_005_),
     .Y(_122_)
   );
-  NAND _313_ (
-    .A(data_input[9]),
-    .B(_005_),
+  NOR _358_ (
+    .A(data_input[20]),
+    .B(_006_),
     .Y(_123_)
   );
-  NAND _314_ (
-    .A(_122_),
-    .B(_123_),
-    .Y(_001_[9])
-  );
-  NAND _315_ (
-    .A(demux_1_probador_estructural[10]),
-    .B(_002_),
+  NOT _359_ (
+    .A(_123_),
     .Y(_124_)
   );
-  NAND _316_ (
-    .A(data_input[10]),
-    .B(_005_),
+  NAND _360_ (
+    .A(reset),
+    .B(_124_),
     .Y(_125_)
   );
-  NAND _317_ (
-    .A(_124_),
+  NOR _361_ (
+    .A(_122_),
     .B(_125_),
-    .Y(_001_[10])
+    .Y(_000_[20])
   );
-  NAND _318_ (
-    .A(demux_1_probador_estructural[11]),
-    .B(_002_),
+  NOR _362_ (
+    .A(demux_0_estructural[21]),
+    .B(_005_),
     .Y(_126_)
   );
-  NAND _319_ (
-    .A(data_input[11]),
-    .B(_005_),
+  NOR _363_ (
+    .A(data_input[21]),
+    .B(_006_),
     .Y(_127_)
   );
-  NAND _320_ (
-    .A(_126_),
-    .B(_127_),
-    .Y(_001_[11])
-  );
-  NAND _321_ (
-    .A(demux_1_probador_estructural[12]),
-    .B(_002_),
+  NOT _364_ (
+    .A(_127_),
     .Y(_128_)
   );
-  NAND _322_ (
-    .A(data_input[12]),
-    .B(_005_),
+  NAND _365_ (
+    .A(reset),
+    .B(_128_),
     .Y(_129_)
   );
-  NAND _323_ (
-    .A(_128_),
+  NOR _366_ (
+    .A(_126_),
     .B(_129_),
-    .Y(_001_[12])
+    .Y(_000_[21])
   );
-  NAND _324_ (
-    .A(demux_1_probador_estructural[13]),
-    .B(_002_),
+  NOR _367_ (
+    .A(demux_0_estructural[22]),
+    .B(_005_),
     .Y(_130_)
   );
-  NAND _325_ (
-    .A(data_input[13]),
-    .B(_005_),
+  NOR _368_ (
+    .A(data_input[22]),
+    .B(_006_),
     .Y(_131_)
   );
-  NAND _326_ (
-    .A(_130_),
-    .B(_131_),
-    .Y(_001_[13])
-  );
-  NAND _327_ (
-    .A(demux_1_probador_estructural[14]),
-    .B(_002_),
+  NOT _369_ (
+    .A(_131_),
     .Y(_132_)
   );
-  NAND _328_ (
-    .A(data_input[14]),
-    .B(_005_),
+  NAND _370_ (
+    .A(reset),
+    .B(_132_),
     .Y(_133_)
   );
-  NAND _329_ (
-    .A(_132_),
+  NOR _371_ (
+    .A(_130_),
     .B(_133_),
+    .Y(_000_[22])
+  );
+  NOR _372_ (
+    .A(demux_0_estructural[23]),
+    .B(_005_),
+    .Y(_134_)
+  );
+  NOR _373_ (
+    .A(data_input[23]),
+    .B(_006_),
+    .Y(_135_)
+  );
+  NOT _374_ (
+    .A(_135_),
+    .Y(_136_)
+  );
+  NAND _375_ (
+    .A(reset),
+    .B(_136_),
+    .Y(_137_)
+  );
+  NOR _376_ (
+    .A(_134_),
+    .B(_137_),
+    .Y(_000_[23])
+  );
+  NOR _377_ (
+    .A(demux_0_estructural[24]),
+    .B(_005_),
+    .Y(_138_)
+  );
+  NOR _378_ (
+    .A(data_input[24]),
+    .B(_006_),
+    .Y(_139_)
+  );
+  NOT _379_ (
+    .A(_139_),
+    .Y(_140_)
+  );
+  NAND _380_ (
+    .A(reset),
+    .B(_140_),
+    .Y(_141_)
+  );
+  NOR _381_ (
+    .A(_138_),
+    .B(_141_),
+    .Y(_000_[24])
+  );
+  NOR _382_ (
+    .A(demux_0_estructural[25]),
+    .B(_005_),
+    .Y(_142_)
+  );
+  NOR _383_ (
+    .A(data_input[25]),
+    .B(_006_),
+    .Y(_143_)
+  );
+  NOT _384_ (
+    .A(_143_),
+    .Y(_144_)
+  );
+  NAND _385_ (
+    .A(reset),
+    .B(_144_),
+    .Y(_145_)
+  );
+  NOR _386_ (
+    .A(_142_),
+    .B(_145_),
+    .Y(_000_[25])
+  );
+  NOR _387_ (
+    .A(demux_0_estructural[26]),
+    .B(_005_),
+    .Y(_146_)
+  );
+  NOR _388_ (
+    .A(data_input[26]),
+    .B(_006_),
+    .Y(_147_)
+  );
+  NOT _389_ (
+    .A(_147_),
+    .Y(_148_)
+  );
+  NAND _390_ (
+    .A(reset),
+    .B(_148_),
+    .Y(_149_)
+  );
+  NOR _391_ (
+    .A(_146_),
+    .B(_149_),
+    .Y(_000_[26])
+  );
+  NOR _392_ (
+    .A(demux_0_estructural[27]),
+    .B(_005_),
+    .Y(_150_)
+  );
+  NOR _393_ (
+    .A(data_input[27]),
+    .B(_006_),
+    .Y(_151_)
+  );
+  NOT _394_ (
+    .A(_151_),
+    .Y(_152_)
+  );
+  NAND _395_ (
+    .A(reset),
+    .B(_152_),
+    .Y(_153_)
+  );
+  NOR _396_ (
+    .A(_150_),
+    .B(_153_),
+    .Y(_000_[27])
+  );
+  NOR _397_ (
+    .A(demux_0_estructural[28]),
+    .B(_005_),
+    .Y(_154_)
+  );
+  NOR _398_ (
+    .A(data_input[28]),
+    .B(_006_),
+    .Y(_155_)
+  );
+  NOT _399_ (
+    .A(_155_),
+    .Y(_156_)
+  );
+  NAND _400_ (
+    .A(reset),
+    .B(_156_),
+    .Y(_157_)
+  );
+  NOR _401_ (
+    .A(_154_),
+    .B(_157_),
+    .Y(_000_[28])
+  );
+  NOR _402_ (
+    .A(demux_0_estructural[29]),
+    .B(_005_),
+    .Y(_158_)
+  );
+  NOR _403_ (
+    .A(data_input[29]),
+    .B(_006_),
+    .Y(_159_)
+  );
+  NOT _404_ (
+    .A(_159_),
+    .Y(_160_)
+  );
+  NAND _405_ (
+    .A(reset),
+    .B(_160_),
+    .Y(_161_)
+  );
+  NOR _406_ (
+    .A(_158_),
+    .B(_161_),
+    .Y(_000_[29])
+  );
+  NOR _407_ (
+    .A(demux_0_estructural[30]),
+    .B(_005_),
+    .Y(_162_)
+  );
+  NOR _408_ (
+    .A(data_input[30]),
+    .B(_006_),
+    .Y(_163_)
+  );
+  NOT _409_ (
+    .A(_163_),
+    .Y(_164_)
+  );
+  NAND _410_ (
+    .A(reset),
+    .B(_164_),
+    .Y(_165_)
+  );
+  NOR _411_ (
+    .A(_162_),
+    .B(_165_),
+    .Y(_000_[30])
+  );
+  NOR _412_ (
+    .A(demux_0_estructural[31]),
+    .B(_005_),
+    .Y(_166_)
+  );
+  NOR _413_ (
+    .A(data_input[31]),
+    .B(_006_),
+    .Y(_167_)
+  );
+  NOT _414_ (
+    .A(_167_),
+    .Y(_168_)
+  );
+  NAND _415_ (
+    .A(reset),
+    .B(_168_),
+    .Y(_169_)
+  );
+  NOR _416_ (
+    .A(_166_),
+    .B(_169_),
+    .Y(_000_[31])
+  );
+  NAND _417_ (
+    .A(demux_1_probador_estructural[0]),
+    .B(_002_),
+    .Y(_170_)
+  );
+  NAND _418_ (
+    .A(data_input[0]),
+    .B(_007_),
+    .Y(_171_)
+  );
+  NAND _419_ (
+    .A(_170_),
+    .B(_171_),
+    .Y(_001_[0])
+  );
+  NAND _420_ (
+    .A(demux_1_probador_estructural[1]),
+    .B(_002_),
+    .Y(_172_)
+  );
+  NAND _421_ (
+    .A(data_input[1]),
+    .B(_007_),
+    .Y(_173_)
+  );
+  NAND _422_ (
+    .A(_172_),
+    .B(_173_),
+    .Y(_001_[1])
+  );
+  NAND _423_ (
+    .A(demux_1_probador_estructural[2]),
+    .B(_002_),
+    .Y(_174_)
+  );
+  NAND _424_ (
+    .A(data_input[2]),
+    .B(_007_),
+    .Y(_175_)
+  );
+  NAND _425_ (
+    .A(_174_),
+    .B(_175_),
+    .Y(_001_[2])
+  );
+  NAND _426_ (
+    .A(demux_1_probador_estructural[3]),
+    .B(_002_),
+    .Y(_176_)
+  );
+  NAND _427_ (
+    .A(data_input[3]),
+    .B(_007_),
+    .Y(_177_)
+  );
+  NAND _428_ (
+    .A(_176_),
+    .B(_177_),
+    .Y(_001_[3])
+  );
+  NAND _429_ (
+    .A(demux_1_probador_estructural[4]),
+    .B(_002_),
+    .Y(_178_)
+  );
+  NAND _430_ (
+    .A(data_input[4]),
+    .B(_007_),
+    .Y(_179_)
+  );
+  NAND _431_ (
+    .A(_178_),
+    .B(_179_),
+    .Y(_001_[4])
+  );
+  NAND _432_ (
+    .A(demux_1_probador_estructural[5]),
+    .B(_002_),
+    .Y(_180_)
+  );
+  NAND _433_ (
+    .A(data_input[5]),
+    .B(_007_),
+    .Y(_181_)
+  );
+  NAND _434_ (
+    .A(_180_),
+    .B(_181_),
+    .Y(_001_[5])
+  );
+  NAND _435_ (
+    .A(demux_1_probador_estructural[6]),
+    .B(_002_),
+    .Y(_182_)
+  );
+  NAND _436_ (
+    .A(data_input[6]),
+    .B(_007_),
+    .Y(_183_)
+  );
+  NAND _437_ (
+    .A(_182_),
+    .B(_183_),
+    .Y(_001_[6])
+  );
+  NAND _438_ (
+    .A(demux_1_probador_estructural[7]),
+    .B(_002_),
+    .Y(_184_)
+  );
+  NAND _439_ (
+    .A(data_input[7]),
+    .B(_007_),
+    .Y(_185_)
+  );
+  NAND _440_ (
+    .A(_184_),
+    .B(_185_),
+    .Y(_001_[7])
+  );
+  NAND _441_ (
+    .A(demux_1_probador_estructural[8]),
+    .B(_002_),
+    .Y(_186_)
+  );
+  NAND _442_ (
+    .A(data_input[8]),
+    .B(_007_),
+    .Y(_187_)
+  );
+  NAND _443_ (
+    .A(_186_),
+    .B(_187_),
+    .Y(_001_[8])
+  );
+  NAND _444_ (
+    .A(demux_1_probador_estructural[9]),
+    .B(_002_),
+    .Y(_188_)
+  );
+  NAND _445_ (
+    .A(data_input[9]),
+    .B(_007_),
+    .Y(_189_)
+  );
+  NAND _446_ (
+    .A(_188_),
+    .B(_189_),
+    .Y(_001_[9])
+  );
+  NAND _447_ (
+    .A(demux_1_probador_estructural[10]),
+    .B(_002_),
+    .Y(_190_)
+  );
+  NAND _448_ (
+    .A(data_input[10]),
+    .B(_007_),
+    .Y(_191_)
+  );
+  NAND _449_ (
+    .A(_190_),
+    .B(_191_),
+    .Y(_001_[10])
+  );
+  NAND _450_ (
+    .A(demux_1_probador_estructural[11]),
+    .B(_002_),
+    .Y(_192_)
+  );
+  NAND _451_ (
+    .A(data_input[11]),
+    .B(_007_),
+    .Y(_193_)
+  );
+  NAND _452_ (
+    .A(_192_),
+    .B(_193_),
+    .Y(_001_[11])
+  );
+  NAND _453_ (
+    .A(demux_1_probador_estructural[12]),
+    .B(_002_),
+    .Y(_194_)
+  );
+  NAND _454_ (
+    .A(data_input[12]),
+    .B(_007_),
+    .Y(_195_)
+  );
+  NAND _455_ (
+    .A(_194_),
+    .B(_195_),
+    .Y(_001_[12])
+  );
+  NAND _456_ (
+    .A(demux_1_probador_estructural[13]),
+    .B(_002_),
+    .Y(_196_)
+  );
+  NAND _457_ (
+    .A(data_input[13]),
+    .B(_007_),
+    .Y(_197_)
+  );
+  NAND _458_ (
+    .A(_196_),
+    .B(_197_),
+    .Y(_001_[13])
+  );
+  NAND _459_ (
+    .A(demux_1_probador_estructural[14]),
+    .B(_002_),
+    .Y(_198_)
+  );
+  NAND _460_ (
+    .A(data_input[14]),
+    .B(_007_),
+    .Y(_199_)
+  );
+  NAND _461_ (
+    .A(_198_),
+    .B(_199_),
     .Y(_001_[14])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _330_ (
+  DFF _462_ (
     .C(clk_2f),
     .D(_000_[0]),
     .Q(demux_0_estructural[0])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _331_ (
+  DFF _463_ (
     .C(clk_2f),
     .D(_000_[1]),
     .Q(demux_0_estructural[1])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _332_ (
+  DFF _464_ (
     .C(clk_2f),
     .D(_000_[2]),
     .Q(demux_0_estructural[2])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _333_ (
+  DFF _465_ (
     .C(clk_2f),
     .D(_000_[3]),
     .Q(demux_0_estructural[3])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _334_ (
+  DFF _466_ (
     .C(clk_2f),
     .D(_000_[4]),
     .Q(demux_0_estructural[4])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _335_ (
+  DFF _467_ (
     .C(clk_2f),
     .D(_000_[5]),
     .Q(demux_0_estructural[5])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _336_ (
+  DFF _468_ (
     .C(clk_2f),
     .D(_000_[6]),
     .Q(demux_0_estructural[6])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _337_ (
+  DFF _469_ (
     .C(clk_2f),
     .D(_000_[7]),
     .Q(demux_0_estructural[7])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _338_ (
+  DFF _470_ (
     .C(clk_2f),
     .D(_000_[8]),
     .Q(demux_0_estructural[8])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _339_ (
+  DFF _471_ (
     .C(clk_2f),
     .D(_000_[9]),
     .Q(demux_0_estructural[9])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _340_ (
+  DFF _472_ (
     .C(clk_2f),
     .D(_000_[10]),
     .Q(demux_0_estructural[10])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _341_ (
+  DFF _473_ (
     .C(clk_2f),
     .D(_000_[11]),
     .Q(demux_0_estructural[11])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _342_ (
+  DFF _474_ (
     .C(clk_2f),
     .D(_000_[12]),
     .Q(demux_0_estructural[12])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _343_ (
+  DFF _475_ (
     .C(clk_2f),
     .D(_000_[13]),
     .Q(demux_0_estructural[13])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _344_ (
+  DFF _476_ (
     .C(clk_2f),
     .D(_000_[14]),
     .Q(demux_0_estructural[14])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _345_ (
+  DFF _477_ (
     .C(clk_2f),
     .D(_000_[15]),
     .Q(demux_0_estructural[15])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _346_ (
+  DFF _478_ (
     .C(clk_2f),
     .D(_000_[16]),
     .Q(demux_0_estructural[16])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _347_ (
+  DFF _479_ (
     .C(clk_2f),
     .D(_000_[17]),
     .Q(demux_0_estructural[17])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _348_ (
+  DFF _480_ (
     .C(clk_2f),
     .D(_000_[18]),
     .Q(demux_0_estructural[18])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _349_ (
+  DFF _481_ (
     .C(clk_2f),
     .D(_000_[19]),
     .Q(demux_0_estructural[19])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _350_ (
+  DFF _482_ (
     .C(clk_2f),
     .D(_000_[20]),
     .Q(demux_0_estructural[20])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _351_ (
+  DFF _483_ (
     .C(clk_2f),
     .D(_000_[21]),
     .Q(demux_0_estructural[21])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _352_ (
+  DFF _484_ (
     .C(clk_2f),
     .D(_000_[22]),
     .Q(demux_0_estructural[22])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _353_ (
+  DFF _485_ (
     .C(clk_2f),
     .D(_000_[23]),
     .Q(demux_0_estructural[23])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _354_ (
+  DFF _486_ (
     .C(clk_2f),
     .D(_000_[24]),
     .Q(demux_0_estructural[24])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _355_ (
+  DFF _487_ (
     .C(clk_2f),
     .D(_000_[25]),
     .Q(demux_0_estructural[25])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _356_ (
+  DFF _488_ (
     .C(clk_2f),
     .D(_000_[26]),
     .Q(demux_0_estructural[26])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _357_ (
+  DFF _489_ (
     .C(clk_2f),
     .D(_000_[27]),
     .Q(demux_0_estructural[27])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _358_ (
+  DFF _490_ (
     .C(clk_2f),
     .D(_000_[28]),
     .Q(demux_0_estructural[28])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _359_ (
+  DFF _491_ (
     .C(clk_2f),
     .D(_000_[29]),
     .Q(demux_0_estructural[29])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _360_ (
+  DFF _492_ (
     .C(clk_2f),
     .D(_000_[30]),
     .Q(demux_0_estructural[30])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _361_ (
+  DFF _493_ (
     .C(clk_2f),
     .D(_000_[31]),
     .Q(demux_0_estructural[31])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _362_ (
+  DFF _494_ (
     .C(clk_2f),
     .D(_001_[0]),
     .Q(demux_1_probador_estructural[0])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _363_ (
+  DFF _495_ (
     .C(clk_2f),
     .D(_001_[1]),
     .Q(demux_1_probador_estructural[1])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _364_ (
+  DFF _496_ (
     .C(clk_2f),
     .D(_001_[2]),
     .Q(demux_1_probador_estructural[2])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _365_ (
+  DFF _497_ (
     .C(clk_2f),
     .D(_001_[3]),
     .Q(demux_1_probador_estructural[3])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _366_ (
+  DFF _498_ (
     .C(clk_2f),
     .D(_001_[4]),
     .Q(demux_1_probador_estructural[4])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _367_ (
+  DFF _499_ (
     .C(clk_2f),
     .D(_001_[5]),
     .Q(demux_1_probador_estructural[5])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _368_ (
+  DFF _500_ (
     .C(clk_2f),
     .D(_001_[6]),
     .Q(demux_1_probador_estructural[6])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _369_ (
+  DFF _501_ (
     .C(clk_2f),
     .D(_001_[7]),
     .Q(demux_1_probador_estructural[7])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _370_ (
+  DFF _502_ (
     .C(clk_2f),
     .D(_001_[8]),
     .Q(demux_1_probador_estructural[8])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _371_ (
+  DFF _503_ (
     .C(clk_2f),
     .D(_001_[9]),
     .Q(demux_1_probador_estructural[9])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _372_ (
+  DFF _504_ (
     .C(clk_2f),
     .D(_001_[10]),
     .Q(demux_1_probador_estructural[10])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _373_ (
+  DFF _505_ (
     .C(clk_2f),
     .D(_001_[11]),
     .Q(demux_1_probador_estructural[11])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _374_ (
+  DFF _506_ (
     .C(clk_2f),
     .D(_001_[12]),
     .Q(demux_1_probador_estructural[12])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _375_ (
+  DFF _507_ (
     .C(clk_2f),
     .D(_001_[13]),
     .Q(demux_1_probador_estructural[13])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _376_ (
+  DFF _508_ (
     .C(clk_2f),
     .D(_001_[14]),
     .Q(demux_1_probador_estructural[14])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _377_ (
+  DFF _509_ (
     .C(clk_2f),
     .D(_001_[15]),
     .Q(demux_1_probador_estructural[15])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _378_ (
+  DFF _510_ (
     .C(clk_2f),
     .D(_001_[16]),
     .Q(demux_1_probador_estructural[16])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _379_ (
+  DFF _511_ (
     .C(clk_2f),
     .D(_001_[17]),
     .Q(demux_1_probador_estructural[17])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _380_ (
+  DFF _512_ (
     .C(clk_2f),
     .D(_001_[18]),
     .Q(demux_1_probador_estructural[18])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _381_ (
+  DFF _513_ (
     .C(clk_2f),
     .D(_001_[19]),
     .Q(demux_1_probador_estructural[19])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _382_ (
+  DFF _514_ (
     .C(clk_2f),
     .D(_001_[20]),
     .Q(demux_1_probador_estructural[20])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _383_ (
+  DFF _515_ (
     .C(clk_2f),
     .D(_001_[21]),
     .Q(demux_1_probador_estructural[21])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _384_ (
+  DFF _516_ (
     .C(clk_2f),
     .D(_001_[22]),
     .Q(demux_1_probador_estructural[22])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _385_ (
+  DFF _517_ (
     .C(clk_2f),
     .D(_001_[23]),
     .Q(demux_1_probador_estructural[23])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _386_ (
+  DFF _518_ (
     .C(clk_2f),
     .D(_001_[24]),
     .Q(demux_1_probador_estructural[24])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _387_ (
+  DFF _519_ (
     .C(clk_2f),
     .D(_001_[25]),
     .Q(demux_1_probador_estructural[25])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _388_ (
+  DFF _520_ (
     .C(clk_2f),
     .D(_001_[26]),
     .Q(demux_1_probador_estructural[26])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _389_ (
+  DFF _521_ (
     .C(clk_2f),
     .D(_001_[27]),
     .Q(demux_1_probador_estructural[27])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _390_ (
+  DFF _522_ (
     .C(clk_2f),
     .D(_001_[28]),
     .Q(demux_1_probador_estructural[28])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _391_ (
+  DFF _523_ (
     .C(clk_2f),
     .D(_001_[29]),
     .Q(demux_1_probador_estructural[29])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _392_ (
+  DFF _524_ (
     .C(clk_2f),
     .D(_001_[30]),
     .Q(demux_1_probador_estructural[30])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _393_ (
+  DFF _525_ (
     .C(clk_2f),
     .D(_001_[31]),
     .Q(demux_1_probador_estructural[31])
   );
   (* src = "sintetizado_recirc_cmos.v:10" *)
-  DFF _394_ (
+  DFF _526_ (
     .C(clk_2f),
     .D(_002_),
     .Q(valid_out_estructural)
