@@ -6,4 +6,5 @@ serial_paralelo:
 	iverilog -o serialparalelo Banco_serial_paralelo.v 
 	vvp serialparalelo
 	gtkwave serialparalelo.vcd
-	rm serial_paralelo, serialparalelo.vcd
+	rm serialparalelo.vcd
+	rm serial_paralelo
