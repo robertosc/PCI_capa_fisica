@@ -3,21 +3,21 @@
 (* top =  1  *)
 (* src = "sintetizado_serial_paralelo.v:1" *)
 module sintetizado_serial_paralelo(reset, clk_4f, clk_32f, data_in, data2send, active, valid_out, data_out);
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   wire [2:0] _000_;
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   wire _001_;
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   wire [7:0] _002_;
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   wire [7:0] _003_;
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   wire _004_;
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   wire [2:0] _005_;
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   wire [7:0] _006_;
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   wire _007_;
   wire _008_;
   wire _009_;
@@ -1028,199 +1028,199 @@ module sintetizado_serial_paralelo(reset, clk_4f, clk_32f, data_in, data2send, a
     .B(_118_),
     .Y(_007_)
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _323_ (
     .C(clk_32f),
     .D(_007_),
     .Q(valid_out)
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _324_ (
     .C(clk_32f),
     .D(_003_[0]),
     .Q(data_out[0])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _325_ (
     .C(clk_32f),
     .D(_003_[1]),
     .Q(data_out[1])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _326_ (
     .C(clk_32f),
     .D(_003_[2]),
     .Q(data_out[2])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _327_ (
     .C(clk_32f),
     .D(_003_[3]),
     .Q(data_out[3])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _328_ (
     .C(clk_32f),
     .D(_003_[4]),
     .Q(data_out[4])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _329_ (
     .C(clk_32f),
     .D(_003_[5]),
     .Q(data_out[5])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _330_ (
     .C(clk_32f),
     .D(_003_[6]),
     .Q(data_out[6])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _331_ (
     .C(clk_32f),
     .D(_003_[7]),
     .Q(data_out[7])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _332_ (
     .C(clk_32f),
     .D(_005_[0]),
     .Q(selector[0])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _333_ (
     .C(clk_32f),
     .D(_005_[1]),
     .Q(selector[1])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _334_ (
     .C(clk_32f),
     .D(_005_[2]),
     .Q(selector[2])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _335_ (
     .C(clk_32f),
     .D(_002_[0]),
     .Q(data2send[0])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _336_ (
     .C(clk_32f),
     .D(_002_[1]),
     .Q(data2send[1])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _337_ (
     .C(clk_32f),
     .D(_002_[2]),
     .Q(data2send[2])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _338_ (
     .C(clk_32f),
     .D(_002_[3]),
     .Q(data2send[3])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _339_ (
     .C(clk_32f),
     .D(_002_[4]),
     .Q(data2send[4])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _340_ (
     .C(clk_32f),
     .D(_002_[5]),
     .Q(data2send[5])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _341_ (
     .C(clk_32f),
     .D(_002_[6]),
     .Q(data2send[6])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _342_ (
     .C(clk_32f),
     .D(_002_[7]),
     .Q(data2send[7])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _343_ (
     .C(clk_32f),
     .D(_001_),
     .Q(active)
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _344_ (
     .C(clk_32f),
     .D(_000_[0]),
     .Q(BC_counter[0])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _345_ (
     .C(clk_32f),
     .D(_000_[1]),
     .Q(BC_counter[1])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _346_ (
     .C(clk_32f),
     .D(_000_[2]),
     .Q(BC_counter[2])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _347_ (
     .C(clk_32f),
     .D(_006_[0]),
     .Q(transicion_dataout[0])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _348_ (
     .C(clk_32f),
     .D(_006_[1]),
     .Q(transicion_dataout[1])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _349_ (
     .C(clk_32f),
     .D(_006_[2]),
     .Q(transicion_dataout[2])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _350_ (
     .C(clk_32f),
     .D(_006_[3]),
     .Q(transicion_dataout[3])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _351_ (
     .C(clk_32f),
     .D(_006_[4]),
     .Q(transicion_dataout[4])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _352_ (
     .C(clk_32f),
     .D(_006_[5]),
     .Q(transicion_dataout[5])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _353_ (
     .C(clk_32f),
     .D(_006_[6]),
     .Q(transicion_dataout[6])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _354_ (
     .C(clk_32f),
     .D(_006_[7]),
     .Q(transicion_dataout[7])
   );
-  (* src = "sintetizado_serial_paralelo.v:16" *)
+  (* src = "sintetizado_serial_paralelo.v:18" *)
   DFF _355_ (
     .C(clk_32f),
     .D(_004_),

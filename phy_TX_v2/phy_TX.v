@@ -13,13 +13,14 @@ module phy_TX(input [31:0] data_input,
 			input clk_f,
 			input clk_4f,
 			input clk_32f,
-			output data_out_sp1	
+			output [7:0] data_out_sp1,
+			output valid_out_sp1	
 			);
 
 	wire [31:0] data_input, demux_0, demux_1_probador, lane_0, lane_1;
 	wire [7:0] demux0_paraleloserial, demux1_paraleloserial;
 	wire clk_2f, clk_f, clk_4f, valid, active, valid_out, reset;
-	wire valid_demux_striping_0, valid_demux_striping_1, valid_out0, valid_out1, data_out_ps0, data_out_ps1, valid_out_sp1;
+	wire valid_demux_striping_0, valid_demux_striping_1, valid_out0, valid_out1, data_out_ps0, data_out_ps1;
 
 	recirculador recirculador_inicial(
 		.clk_2f           ( clk_2f           ),
@@ -83,7 +84,7 @@ module phy_TX(input [31:0] data_input,
 		.clk_32f	(	clk_32f	    ),
 		.data_in	( 	data_out_ps1  ),
 		.reset 		( 	reset	    ),
-		.data_out	(  data_out_sp1	),
+		.data_out	(  data_out_sp1	[7:0]),
 		.valid_out	( valid_out_sp1	)
 	);
 
