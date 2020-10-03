@@ -3226,7 +3226,7 @@ endmodule
 
 (* cells_not_processed =  1  *)
 (* src = "phy_TX_sintetizado.v:8" *)
-module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4f, clk_32f, data_out_sp1_sintetizado, valid_out_sp1);
+module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4f, clk_32f, data_out_sp1_sintetizado, valid_out_sp1_sintetizado);
   (* src = "phy_TX_sintetizado.v:10" *)
   input active;
   (* src = "phy_TX_sintetizado.v:12" *)
@@ -3269,7 +3269,7 @@ module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4
   (* src = "phy_TX_sintetizado.v:23" *)
   wire valid_out1;
   (* src = "phy_TX_sintetizado.v:17" *)
-  output valid_out_sp1;
+  output valid_out_sp1_sintetizado;
   (* module_not_derived = 32'd1 *)
   (* src = "phy_TX_sintetizado.v:65" *)
   demux_32_8_sintetizado demux_lane_1 (
@@ -3310,7 +3310,7 @@ module phy_TX_sintetizado(data_input, valid, active, reset, clk_2f, clk_f, clk_4
     .data_in(data_out_ps1),
     .data_out(data_out_sp1_sintetizado),
     .reset(reset),
-    .valid_out(valid_out_sp1)
+    .valid_out(valid_out_sp1_sintetizado)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "phy_TX_sintetizado.v:36" *)
