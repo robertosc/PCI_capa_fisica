@@ -8,6 +8,7 @@ module serial_paralelo(
 	output reg valid_out,
 	output reg [7:0] data_out
 	);
+
 	reg [3:0] selector;
 	reg [2:0] BC_counter;
 	reg [7:0] transicion_dataout;
@@ -246,11 +247,9 @@ module serial_paralelo(
 					BC_counter<= BC_counter+1;
 					valid_out<=0;
 				end
-				else begin
-					valid_out<=1;
-				end
 				if (BC_counter>3) begin
 					active <= 1;
+					valid_out<=1;
 				end
 
 				if (active ==1) begin

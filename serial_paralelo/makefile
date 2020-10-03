@@ -7,4 +7,4 @@ serial_paralelo:
 	vvp serialparalelo
 	gtkwave serialparalelo.vcd
 	rm serialparalelo.vcd
-	rm serial_paralelo
+	rm serialparalelo

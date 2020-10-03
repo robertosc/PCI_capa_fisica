@@ -22,12 +22,12 @@ module demux_8_32(input clk_4f,
 				end
 				else if(selector == 2'b01) begin
 					data_out [23:16] <= data_in;
-					valid_out <= valid;
+					valid_out <= 0;
 					selector <= 2'b10;
 				end
 				else if(selector[1] == 1 && selector[0] == 0) begin
 					data_out [15:8] <= data_in;
-					valid_out <= valid;
+					valid_out <= 0;
 					selector <= 2'b11;
 				end
 				else if(selector == 2'b11) begin

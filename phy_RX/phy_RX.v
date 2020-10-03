@@ -1,3 +1,4 @@
+//`include "prueba.v"
 `include "../serial_paralelo/serial_paralelo.v"
 `include "../mux_striping/mux_striping.v"
 `include "../demux_8_32/demux_8_32.v"
@@ -24,9 +25,8 @@ module phy_RX(input serial_data_0,
 
    serial_paralelo sp0 (/*AUTOINST*/
 			// Outputs
-			.data2send	(data2send_0[7:0]),
 			.active		(active_0),
-			.valid_out	(valid_out_0),
+			.valid_out	(valid_sp_0),
 			.data_out	(data_out_sp_0[7:0]),
 			// Inputs
 			.reset		(reset),
@@ -36,7 +36,6 @@ module phy_RX(input serial_data_0,
 
    serial_paralelo sp1 (/*AUTOINST*/
 			// Outputs
-			.data2send	(data2send_1[7:0]),
 			.active		(active_1),
 			.valid_out	(valid_sp_1),
 			.data_out	(data_out_sp_1[7:0]),
