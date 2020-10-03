@@ -16,7 +16,10 @@ module probador_RX(output reg serial_data_0,
 	
 	//primer BC
 	@(posedge clk_4f);
-	reset <= 0;
+	@(posedge clk_4f);
+	
+	@(posedge clk_4f);
+	reset <= 1;
 	serial_data_0<=1;
 	serial_data_1<=1;
 	@(posedge clk_32f);
