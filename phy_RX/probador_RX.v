@@ -14,6 +14,7 @@ module probador_RX(output reg serial_data_0,
 	serial_data_1<=0;
 	reset <=0;
 	
+	//primer BC
 	@(posedge clk_4f);
 	reset <= 0;
 	serial_data_0<=1;
@@ -40,7 +41,7 @@ module probador_RX(output reg serial_data_0,
 	serial_data_0<=0;
 	serial_data_1<=0;
 
-
+	//Segundo BC
 	@(posedge clk_4f);
 	serial_data_0<=1;
 	serial_data_1<=1;
@@ -66,10 +67,37 @@ module probador_RX(output reg serial_data_0,
 	serial_data_0<=0;
 	serial_data_1<=0;
 
+	//Tercer BC
 	@(posedge clk_4f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=0;
+	serial_data_1<=0;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=0;
+	serial_data_1<=0;
+	@(posedge clk_32f);
+	serial_data_0<=0;
+	serial_data_1<=0;
+
+	//Cuarto BC
+	@(posedge clk_4f);
+	serial_data_0<=1;
+	serial_data_1<=1;
 	reset <=1;
-	serial_data_0<=1;
-	serial_data_1<=1;
 	@(posedge clk_32f);
 	serial_data_0<=0;
 	serial_data_1<=0;
@@ -92,63 +120,17 @@ module probador_RX(output reg serial_data_0,
 	serial_data_0<=0;
 	serial_data_1<=0;
 
-	@(posedge clk_4f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	reset <=1;
-	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
-	@(posedge clk_32f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
-	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
 
+	//Señal interes
 	@(posedge clk_4f);
 	serial_data_0<=1;
 	serial_data_1<=1;
 	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
-	@(posedge clk_32f);
 	serial_data_0<=1;
 	serial_data_1<=1;
 	@(posedge clk_32f);
 	serial_data_0<=1;
 	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
-	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
-
-	@(posedge clk_4f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
 	@(posedge clk_32f);
 	serial_data_0<=1;
 	serial_data_1<=1;
@@ -162,36 +144,8 @@ module probador_RX(output reg serial_data_0,
 	serial_data_0<=1;
 	serial_data_1<=1;
 	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
-	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
-
-	@(posedge clk_4f);
 	serial_data_0<=1;
 	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
-	@(posedge clk_32f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=1;
-	serial_data_1<=1;
-	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
-	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
 
 	@(posedge clk_4f);
 	serial_data_0<=1;
@@ -206,17 +160,67 @@ module probador_RX(output reg serial_data_0,
 	serial_data_0<=1;
 	serial_data_1<=1;
 	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
+	serial_data_0<=1;
+	serial_data_1<=1;
 	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
+	serial_data_0<=1;
+	serial_data_1<=1;
 	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
+	serial_data_0<=1;
+	serial_data_1<=1;
 	@(posedge clk_32f);
-	serial_data_0<=0;
-	serial_data_1<=0;
+	serial_data_0<=1;
+	serial_data_1<=1;
+
+	@(posedge clk_4f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+
+	@(posedge clk_4f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
+	@(posedge clk_32f);
+	serial_data_0<=1;
+	serial_data_1<=1;
 
 	@(posedge clk_4f);
 	serial_data_0<=1;
