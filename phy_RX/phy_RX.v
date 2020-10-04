@@ -1,9 +1,9 @@
-//`include "prueba.v"
-`include "../serial_paralelo/serial_paralelo.v"
+`include "prueba.v"
+//`include "../serial_paralelo/serial_paralelo.v"
 `include "../mux_striping/mux_striping.v"
 `include "../demux_8_32/demux_8_32.v"
 
-module phy_RX(input serial_data_0,
+module phy_RX(	input serial_data_0,
 				input serial_data_1,
 				input reset,
 				input clk_2f,
@@ -13,6 +13,7 @@ module phy_RX(input serial_data_0,
 				output valid_final);
 
 	wire data_in0, data_in1, clk_4f, clk_32f, reset, active_0, active_1;
+
 	wire [7:0] data2send_0, data2send_1;
 
 	wire [7:0] data_out_0, data_out_1;

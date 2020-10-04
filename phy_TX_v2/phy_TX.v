@@ -13,8 +13,7 @@ module phy_TX(input [31:0] data_input,
 			input clk_4f,
 			input clk_32f,
 			output data_out_ps0,
-			output data_out_ps1	
-			);
+			output data_out_ps1);
 
 	wire [31:0] data_input, demux_0, demux_1_probador, lane_0, lane_1;
 	wire [7:0] demux0_paraleloserial, demux1_paraleloserial;
