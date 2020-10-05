@@ -1,18 +1,15 @@
-module probador(input [7:0] data_out_0,
-						input [7:0] data_out_0_sintetizado,
-						input [7:0] data_out_1,
-						input [7:0] data_out_1_sintetizado,
-						input valid_out0,
-						input valid_out1,
-						input valid_out0_sintetizado,
-						input valid_out1_sintetizado,
+module probador_TX(		input [7:0] data_out_ps0,
+						input [7:0] data_out_ps0_sintetizado,
+						input [7:0] data_out_ps1,
+						input [7:0] data_out_ps1_sintetizado,
 						output reg active,
 						output reg valid,
 						output reg reset,
 						output reg [31:0] data_input,
 						output reg clk_f,
 						output reg clk_2f,
-						output reg clk_4f);
+						output reg clk_4f,
+						output reg clk_32f);
 	initial begin
 	$dumpfile("TX.vcd");
 	$dumpvars;
@@ -60,16 +57,25 @@ module probador(input [7:0] data_out_0,
 	@(posedge clk_2f);
 
 	@(posedge clk_2f);
+
+	@(posedge clk_2f);
+
+	@(posedge clk_2f);
+
+	@(posedge clk_2f);
 	$finish;
 	end
 	
 	initial clk_f <= 1;
 	initial clk_2f <= 1;
 	initial clk_4f <= 1;
+	initial clk_32f <= 1;
 
-	always #4 clk_f <= ~clk_f;
-	always #2 clk_2f <= ~clk_2f;
-	always #1 clk_4f <= ~clk_4f;
+	always #24 clk_f <= ~clk_f;
+	always #16 clk_2f <= ~clk_2f;
+	always #8 clk_4f <= ~clk_4f;
+	always #1 clk_32f <= ~clk_32f;
+	
 
 
 endmodule

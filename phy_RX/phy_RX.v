@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-//`include "prueba.v"
-`include "../serial_paralelo/serial_paralelo.v "
-=======
-`include "prueba.v"
-//`include "../serial_paralelo/serial_paralelo.v"
->>>>>>> 9f51cb8fb7109f463934c994e549244c0ccf4ca0
+`include "../serial_paralelo_v2/serial_paralelo.v"
 `include "../mux_striping/mux_striping.v"
 `include "../demux_8_32/demux_8_32.v"
 
