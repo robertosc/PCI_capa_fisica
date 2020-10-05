@@ -8,6 +8,7 @@ module demux_8_32(input clk_4f,
 	reg [31:0] buffer;
 	integer contador;
 
+
 	always @(posedge clk_4f) begin
 		if(reset == 0) begin
 			contador <= 0;
@@ -20,7 +21,6 @@ module demux_8_32(input clk_4f,
 				buffer = {buffer[23:0], data_in};
 				if (contador == 3) begin
 					data_out <= buffer;
-					contador <= 0;
 					valid_out <= 1;
 				end
 				contador <= contador + 1;
