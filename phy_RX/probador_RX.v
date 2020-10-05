@@ -5,7 +5,9 @@ module probador_RX(output reg serial_data_0,
 					output reg clk_4f,
 					output reg clk_2f,
 					input [31:0] data_final,
-					input valid_final);
+					input valid_final,
+					input [31:0] data_final_sintetizado,
+					input valid_final_sintetizado);
 	initial begin
 	$dumpfile("RX.vcd");
 	$dumpvars;

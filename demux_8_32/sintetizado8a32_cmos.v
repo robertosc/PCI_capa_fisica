@@ -87,6 +87,48 @@ module sintetizado8a32_cmos(clk_4f, data_in, valid, reset, data_out_estructural,
   wire _078_;
   wire _079_;
   wire _080_;
+  wire _081_;
+  wire _082_;
+  wire _083_;
+  wire _084_;
+  wire _085_;
+  wire _086_;
+  wire _087_;
+  wire _088_;
+  wire _089_;
+  wire _090_;
+  wire _091_;
+  wire _092_;
+  wire _093_;
+  wire _094_;
+  wire _095_;
+  wire _096_;
+  wire _097_;
+  wire _098_;
+  wire _099_;
+  wire _100_;
+  wire _101_;
+  wire _102_;
+  wire _103_;
+  wire _104_;
+  wire _105_;
+  wire _106_;
+  wire _107_;
+  wire _108_;
+  wire _109_;
+  wire _110_;
+  wire _111_;
+  wire _112_;
+  wire _113_;
+  wire _114_;
+  wire _115_;
+  wire _116_;
+  wire _117_;
+  wire _118_;
+  wire _119_;
+  wire _120_;
+  wire _121_;
+  wire _122_;
   (* src = "sintetizado8a32_cmos.v:1" *)
   input clk_4f;
   (* src = "sintetizado8a32_cmos.v:2" *)
@@ -101,773 +143,974 @@ module sintetizado8a32_cmos(clk_4f, data_in, valid, reset, data_out_estructural,
   input valid;
   (* src = "sintetizado8a32_cmos.v:6" *)
   output valid_out_estructural;
-  NOT _081_ (
+  NOT _123_ (
     .A(selector[0]),
-    .Y(_067_)
+    .Y(_105_)
   );
-  NOT _082_ (
+  NOT _124_ (
     .A(selector[1]),
-    .Y(_068_)
+    .Y(_106_)
   );
-  NAND _083_ (
-    .A(valid),
-    .B(reset),
-    .Y(_069_)
-  );
-  NOT _084_ (
-    .A(_069_),
-    .Y(_002_)
-  );
-  NOR _085_ (
-    .A(selector[0]),
-    .B(_069_),
-    .Y(_001_[0])
-  );
-  NOT _086_ (
-    .A(_001_[0]),
-    .Y(_070_)
-  );
-  NOR _087_ (
-    .A(_068_),
-    .B(_070_),
-    .Y(_071_)
-  );
-  NAND _088_ (
-    .A(selector[1]),
-    .B(_001_[0]),
-    .Y(_072_)
-  );
-  NAND _089_ (
+  NOT _125_ (
     .A(data_in[0]),
-    .B(_071_),
-    .Y(_073_)
+    .Y(_107_)
   );
-  NAND _090_ (
-    .A(data_out_estructural[8]),
-    .B(_072_),
-    .Y(_074_)
-  );
-  NAND _091_ (
-    .A(_073_),
-    .B(_074_),
-    .Y(_000_[8])
-  );
-  NAND _092_ (
+  NOT _126_ (
     .A(data_in[1]),
-    .B(_071_),
-    .Y(_075_)
+    .Y(_108_)
   );
-  NAND _093_ (
-    .A(data_out_estructural[9]),
-    .B(_072_),
-    .Y(_076_)
-  );
-  NAND _094_ (
-    .A(_075_),
-    .B(_076_),
-    .Y(_000_[9])
-  );
-  NAND _095_ (
+  NOT _127_ (
     .A(data_in[2]),
-    .B(_071_),
-    .Y(_077_)
+    .Y(_109_)
   );
-  NAND _096_ (
-    .A(data_out_estructural[10]),
-    .B(_072_),
-    .Y(_078_)
-  );
-  NAND _097_ (
-    .A(_077_),
-    .B(_078_),
-    .Y(_000_[10])
-  );
-  NAND _098_ (
+  NOT _128_ (
     .A(data_in[3]),
-    .B(_071_),
-    .Y(_079_)
+    .Y(_110_)
   );
-  NAND _099_ (
-    .A(data_out_estructural[11]),
-    .B(_072_),
-    .Y(_080_)
-  );
-  NAND _100_ (
-    .A(_079_),
-    .B(_080_),
-    .Y(_000_[11])
-  );
-  NAND _101_ (
+  NOT _129_ (
     .A(data_in[4]),
-    .B(_071_),
-    .Y(_003_)
+    .Y(_111_)
   );
-  NAND _102_ (
-    .A(data_out_estructural[12]),
-    .B(_072_),
-    .Y(_004_)
-  );
-  NAND _103_ (
-    .A(_003_),
-    .B(_004_),
-    .Y(_000_[12])
-  );
-  NAND _104_ (
+  NOT _130_ (
     .A(data_in[5]),
-    .B(_071_),
-    .Y(_005_)
+    .Y(_112_)
   );
-  NAND _105_ (
-    .A(data_out_estructural[13]),
-    .B(_072_),
-    .Y(_006_)
-  );
-  NAND _106_ (
-    .A(_005_),
-    .B(_006_),
-    .Y(_000_[13])
-  );
-  NAND _107_ (
+  NOT _131_ (
     .A(data_in[6]),
-    .B(_071_),
-    .Y(_007_)
+    .Y(_113_)
   );
-  NAND _108_ (
-    .A(data_out_estructural[14]),
-    .B(_072_),
-    .Y(_008_)
-  );
-  NAND _109_ (
-    .A(_007_),
-    .B(_008_),
-    .Y(_000_[14])
-  );
-  NAND _110_ (
+  NOT _132_ (
     .A(data_in[7]),
-    .B(_071_),
-    .Y(_009_)
+    .Y(_114_)
   );
-  NAND _111_ (
-    .A(data_out_estructural[15]),
-    .B(_072_),
-    .Y(_010_)
-  );
-  NAND _112_ (
-    .A(_009_),
-    .B(_010_),
-    .Y(_000_[15])
-  );
-  NOR _113_ (
-    .A(_067_),
-    .B(_069_),
-    .Y(_011_)
-  );
-  NAND _114_ (
-    .A(selector[0]),
-    .B(_002_),
-    .Y(_012_)
-  );
-  NOR _115_ (
-    .A(_068_),
-    .B(_012_),
-    .Y(_013_)
-  );
-  NAND _116_ (
-    .A(selector[1]),
-    .B(_011_),
-    .Y(_014_)
-  );
-  NAND _117_ (
-    .A(data_in[0]),
-    .B(_013_),
-    .Y(_015_)
-  );
-  NAND _118_ (
-    .A(data_out_estructural[0]),
-    .B(_014_),
-    .Y(_016_)
-  );
-  NAND _119_ (
-    .A(_015_),
-    .B(_016_),
-    .Y(_000_[0])
-  );
-  NAND _120_ (
-    .A(data_in[1]),
-    .B(_013_),
-    .Y(_017_)
-  );
-  NAND _121_ (
-    .A(data_out_estructural[1]),
-    .B(_014_),
-    .Y(_018_)
-  );
-  NAND _122_ (
-    .A(_017_),
-    .B(_018_),
-    .Y(_000_[1])
-  );
-  NAND _123_ (
-    .A(data_in[2]),
-    .B(_013_),
-    .Y(_019_)
-  );
-  NAND _124_ (
-    .A(data_out_estructural[2]),
-    .B(_014_),
-    .Y(_020_)
-  );
-  NAND _125_ (
-    .A(_019_),
-    .B(_020_),
-    .Y(_000_[2])
-  );
-  NAND _126_ (
-    .A(data_in[3]),
-    .B(_013_),
-    .Y(_021_)
-  );
-  NAND _127_ (
-    .A(data_out_estructural[3]),
-    .B(_014_),
-    .Y(_022_)
-  );
-  NAND _128_ (
-    .A(_021_),
-    .B(_022_),
-    .Y(_000_[3])
-  );
-  NAND _129_ (
-    .A(data_in[4]),
-    .B(_013_),
-    .Y(_023_)
-  );
-  NAND _130_ (
-    .A(data_out_estructural[4]),
-    .B(_014_),
-    .Y(_024_)
-  );
-  NAND _131_ (
-    .A(_023_),
-    .B(_024_),
-    .Y(_000_[4])
-  );
-  NAND _132_ (
-    .A(data_in[5]),
-    .B(_013_),
-    .Y(_025_)
-  );
-  NAND _133_ (
-    .A(data_out_estructural[5]),
-    .B(_014_),
-    .Y(_026_)
+  NOT _133_ (
+    .A(valid),
+    .Y(_115_)
   );
   NAND _134_ (
-    .A(_025_),
-    .B(_026_),
-    .Y(_000_[5])
+    .A(_105_),
+    .B(valid),
+    .Y(_116_)
   );
-  NAND _135_ (
-    .A(data_in[6]),
-    .B(_013_),
-    .Y(_027_)
+  NOR _135_ (
+    .A(_106_),
+    .B(_116_),
+    .Y(_117_)
   );
-  NAND _136_ (
-    .A(data_out_estructural[6]),
-    .B(_014_),
-    .Y(_028_)
+  NOR _136_ (
+    .A(data_out_estructural[8]),
+    .B(_117_),
+    .Y(_118_)
   );
   NAND _137_ (
-    .A(_027_),
-    .B(_028_),
-    .Y(_000_[6])
+    .A(_107_),
+    .B(_117_),
+    .Y(_119_)
   );
   NAND _138_ (
-    .A(data_in[7]),
-    .B(_013_),
-    .Y(_029_)
+    .A(reset),
+    .B(_119_),
+    .Y(_120_)
   );
-  NAND _139_ (
-    .A(data_out_estructural[7]),
-    .B(_014_),
-    .Y(_030_)
+  NOR _139_ (
+    .A(_118_),
+    .B(_120_),
+    .Y(_000_[8])
   );
-  NAND _140_ (
-    .A(_029_),
-    .B(_030_),
-    .Y(_000_[7])
+  NOR _140_ (
+    .A(data_out_estructural[9]),
+    .B(_117_),
+    .Y(_121_)
   );
-  NOR _141_ (
-    .A(selector[1]),
-    .B(_012_),
-    .Y(_031_)
+  NAND _141_ (
+    .A(_108_),
+    .B(_117_),
+    .Y(_122_)
   );
   NAND _142_ (
-    .A(_068_),
-    .B(_011_),
-    .Y(_032_)
+    .A(reset),
+    .B(_122_),
+    .Y(_003_)
   );
-  NAND _143_ (
-    .A(data_in[0]),
-    .B(_031_),
-    .Y(_033_)
+  NOR _143_ (
+    .A(_121_),
+    .B(_003_),
+    .Y(_000_[9])
   );
-  NAND _144_ (
-    .A(data_out_estructural[16]),
-    .B(_032_),
-    .Y(_034_)
+  NOR _144_ (
+    .A(data_out_estructural[10]),
+    .B(_117_),
+    .Y(_004_)
   );
   NAND _145_ (
-    .A(_033_),
-    .B(_034_),
-    .Y(_000_[16])
+    .A(_109_),
+    .B(_117_),
+    .Y(_005_)
   );
   NAND _146_ (
-    .A(data_in[1]),
-    .B(_031_),
-    .Y(_035_)
+    .A(reset),
+    .B(_005_),
+    .Y(_006_)
   );
-  NAND _147_ (
-    .A(data_out_estructural[17]),
-    .B(_032_),
-    .Y(_036_)
+  NOR _147_ (
+    .A(_004_),
+    .B(_006_),
+    .Y(_000_[10])
   );
-  NAND _148_ (
-    .A(_035_),
-    .B(_036_),
-    .Y(_000_[17])
+  NOR _148_ (
+    .A(data_out_estructural[11]),
+    .B(_117_),
+    .Y(_007_)
   );
   NAND _149_ (
-    .A(data_in[2]),
-    .B(_031_),
-    .Y(_037_)
+    .A(_110_),
+    .B(_117_),
+    .Y(_008_)
   );
   NAND _150_ (
-    .A(data_out_estructural[18]),
-    .B(_032_),
-    .Y(_038_)
+    .A(reset),
+    .B(_008_),
+    .Y(_009_)
   );
-  NAND _151_ (
-    .A(_037_),
-    .B(_038_),
-    .Y(_000_[18])
+  NOR _151_ (
+    .A(_007_),
+    .B(_009_),
+    .Y(_000_[11])
   );
-  NAND _152_ (
-    .A(data_in[3]),
-    .B(_031_),
-    .Y(_039_)
+  NOR _152_ (
+    .A(data_out_estructural[12]),
+    .B(_117_),
+    .Y(_010_)
   );
   NAND _153_ (
-    .A(data_out_estructural[19]),
-    .B(_032_),
-    .Y(_040_)
+    .A(_111_),
+    .B(_117_),
+    .Y(_011_)
   );
   NAND _154_ (
-    .A(_039_),
-    .B(_040_),
-    .Y(_000_[19])
+    .A(reset),
+    .B(_011_),
+    .Y(_012_)
   );
-  NAND _155_ (
-    .A(data_in[4]),
-    .B(_031_),
-    .Y(_041_)
+  NOR _155_ (
+    .A(_010_),
+    .B(_012_),
+    .Y(_000_[12])
   );
-  NAND _156_ (
-    .A(data_out_estructural[20]),
-    .B(_032_),
-    .Y(_042_)
+  NOR _156_ (
+    .A(data_out_estructural[13]),
+    .B(_117_),
+    .Y(_013_)
   );
   NAND _157_ (
-    .A(_041_),
-    .B(_042_),
-    .Y(_000_[20])
+    .A(_112_),
+    .B(_117_),
+    .Y(_014_)
   );
   NAND _158_ (
-    .A(data_in[5]),
-    .B(_031_),
-    .Y(_043_)
+    .A(reset),
+    .B(_014_),
+    .Y(_015_)
   );
-  NAND _159_ (
-    .A(data_out_estructural[21]),
-    .B(_032_),
-    .Y(_044_)
+  NOR _159_ (
+    .A(_013_),
+    .B(_015_),
+    .Y(_000_[13])
   );
-  NAND _160_ (
-    .A(_043_),
-    .B(_044_),
-    .Y(_000_[21])
+  NOR _160_ (
+    .A(data_out_estructural[14]),
+    .B(_117_),
+    .Y(_016_)
   );
   NAND _161_ (
-    .A(data_in[6]),
-    .B(_031_),
-    .Y(_045_)
+    .A(_113_),
+    .B(_117_),
+    .Y(_017_)
   );
   NAND _162_ (
-    .A(data_out_estructural[22]),
-    .B(_032_),
-    .Y(_046_)
+    .A(reset),
+    .B(_017_),
+    .Y(_018_)
   );
-  NAND _163_ (
-    .A(_045_),
-    .B(_046_),
-    .Y(_000_[22])
+  NOR _163_ (
+    .A(_016_),
+    .B(_018_),
+    .Y(_000_[14])
   );
-  NAND _164_ (
-    .A(data_in[7]),
-    .B(_031_),
-    .Y(_047_)
+  NOR _164_ (
+    .A(data_out_estructural[15]),
+    .B(_117_),
+    .Y(_019_)
   );
   NAND _165_ (
-    .A(data_out_estructural[23]),
-    .B(_032_),
-    .Y(_048_)
+    .A(_114_),
+    .B(_117_),
+    .Y(_020_)
   );
   NAND _166_ (
-    .A(_047_),
-    .B(_048_),
-    .Y(_000_[23])
+    .A(reset),
+    .B(_020_),
+    .Y(_021_)
   );
   NOR _167_ (
-    .A(selector[1]),
-    .B(_070_),
-    .Y(_049_)
+    .A(_019_),
+    .B(_021_),
+    .Y(_000_[15])
   );
   NAND _168_ (
-    .A(_068_),
-    .B(_001_[0]),
+    .A(selector[0]),
+    .B(selector[1]),
+    .Y(_022_)
+  );
+  NOT _169_ (
+    .A(_022_),
+    .Y(_023_)
+  );
+  NOR _170_ (
+    .A(_115_),
+    .B(_022_),
+    .Y(_024_)
+  );
+  NOR _171_ (
+    .A(data_out_estructural[0]),
+    .B(_024_),
+    .Y(_025_)
+  );
+  NAND _172_ (
+    .A(_107_),
+    .B(_024_),
+    .Y(_026_)
+  );
+  NAND _173_ (
+    .A(reset),
+    .B(_026_),
+    .Y(_027_)
+  );
+  NOR _174_ (
+    .A(_025_),
+    .B(_027_),
+    .Y(_000_[0])
+  );
+  NOR _175_ (
+    .A(data_out_estructural[1]),
+    .B(_024_),
+    .Y(_028_)
+  );
+  NAND _176_ (
+    .A(_108_),
+    .B(_024_),
+    .Y(_029_)
+  );
+  NAND _177_ (
+    .A(reset),
+    .B(_029_),
+    .Y(_030_)
+  );
+  NOR _178_ (
+    .A(_028_),
+    .B(_030_),
+    .Y(_000_[1])
+  );
+  NOR _179_ (
+    .A(data_out_estructural[2]),
+    .B(_024_),
+    .Y(_031_)
+  );
+  NAND _180_ (
+    .A(_109_),
+    .B(_024_),
+    .Y(_032_)
+  );
+  NAND _181_ (
+    .A(reset),
+    .B(_032_),
+    .Y(_033_)
+  );
+  NOR _182_ (
+    .A(_031_),
+    .B(_033_),
+    .Y(_000_[2])
+  );
+  NOR _183_ (
+    .A(data_out_estructural[3]),
+    .B(_024_),
+    .Y(_034_)
+  );
+  NAND _184_ (
+    .A(_110_),
+    .B(_024_),
+    .Y(_035_)
+  );
+  NAND _185_ (
+    .A(reset),
+    .B(_035_),
+    .Y(_036_)
+  );
+  NOR _186_ (
+    .A(_034_),
+    .B(_036_),
+    .Y(_000_[3])
+  );
+  NOR _187_ (
+    .A(data_out_estructural[4]),
+    .B(_024_),
+    .Y(_037_)
+  );
+  NAND _188_ (
+    .A(_111_),
+    .B(_024_),
+    .Y(_038_)
+  );
+  NAND _189_ (
+    .A(reset),
+    .B(_038_),
+    .Y(_039_)
+  );
+  NOR _190_ (
+    .A(_037_),
+    .B(_039_),
+    .Y(_000_[4])
+  );
+  NOR _191_ (
+    .A(data_out_estructural[5]),
+    .B(_024_),
+    .Y(_040_)
+  );
+  NAND _192_ (
+    .A(_112_),
+    .B(_024_),
+    .Y(_041_)
+  );
+  NAND _193_ (
+    .A(reset),
+    .B(_041_),
+    .Y(_042_)
+  );
+  NOR _194_ (
+    .A(_040_),
+    .B(_042_),
+    .Y(_000_[5])
+  );
+  NOR _195_ (
+    .A(data_out_estructural[6]),
+    .B(_024_),
+    .Y(_043_)
+  );
+  NAND _196_ (
+    .A(_113_),
+    .B(_024_),
+    .Y(_044_)
+  );
+  NAND _197_ (
+    .A(reset),
+    .B(_044_),
+    .Y(_045_)
+  );
+  NOR _198_ (
+    .A(_043_),
+    .B(_045_),
+    .Y(_000_[6])
+  );
+  NOR _199_ (
+    .A(data_out_estructural[7]),
+    .B(_024_),
+    .Y(_046_)
+  );
+  NAND _200_ (
+    .A(_114_),
+    .B(_024_),
+    .Y(_047_)
+  );
+  NAND _201_ (
+    .A(reset),
+    .B(_047_),
+    .Y(_048_)
+  );
+  NOR _202_ (
+    .A(_046_),
+    .B(_048_),
+    .Y(_000_[7])
+  );
+  NAND _203_ (
+    .A(selector[0]),
+    .B(valid),
+    .Y(_049_)
+  );
+  NOR _204_ (
+    .A(selector[1]),
+    .B(_049_),
     .Y(_050_)
   );
-  NAND _169_ (
-    .A(data_in[0]),
-    .B(_049_),
+  NOR _205_ (
+    .A(data_out_estructural[16]),
+    .B(_050_),
     .Y(_051_)
   );
-  NAND _170_ (
-    .A(data_out_estructural[24]),
+  NAND _206_ (
+    .A(_107_),
     .B(_050_),
     .Y(_052_)
   );
-  NAND _171_ (
-    .A(_051_),
+  NAND _207_ (
+    .A(reset),
     .B(_052_),
-    .Y(_000_[24])
-  );
-  NAND _172_ (
-    .A(data_in[1]),
-    .B(_049_),
     .Y(_053_)
   );
-  NAND _173_ (
-    .A(data_out_estructural[25]),
+  NOR _208_ (
+    .A(_051_),
+    .B(_053_),
+    .Y(_000_[16])
+  );
+  NOR _209_ (
+    .A(data_out_estructural[17]),
     .B(_050_),
     .Y(_054_)
   );
-  NAND _174_ (
-    .A(_053_),
-    .B(_054_),
-    .Y(_000_[25])
-  );
-  NAND _175_ (
-    .A(data_in[2]),
-    .B(_049_),
+  NAND _210_ (
+    .A(_108_),
+    .B(_050_),
     .Y(_055_)
   );
-  NAND _176_ (
-    .A(data_out_estructural[26]),
-    .B(_050_),
+  NAND _211_ (
+    .A(reset),
+    .B(_055_),
     .Y(_056_)
   );
-  NAND _177_ (
-    .A(_055_),
+  NOR _212_ (
+    .A(_054_),
     .B(_056_),
-    .Y(_000_[26])
+    .Y(_000_[17])
   );
-  NAND _178_ (
-    .A(data_in[3]),
-    .B(_049_),
+  NOR _213_ (
+    .A(data_out_estructural[18]),
+    .B(_050_),
     .Y(_057_)
   );
-  NAND _179_ (
-    .A(data_out_estructural[27]),
+  NAND _214_ (
+    .A(_109_),
     .B(_050_),
     .Y(_058_)
   );
-  NAND _180_ (
-    .A(_057_),
+  NAND _215_ (
+    .A(reset),
     .B(_058_),
-    .Y(_000_[27])
-  );
-  NAND _181_ (
-    .A(data_in[4]),
-    .B(_049_),
     .Y(_059_)
   );
-  NAND _182_ (
-    .A(data_out_estructural[28]),
+  NOR _216_ (
+    .A(_057_),
+    .B(_059_),
+    .Y(_000_[18])
+  );
+  NOR _217_ (
+    .A(data_out_estructural[19]),
     .B(_050_),
     .Y(_060_)
   );
-  NAND _183_ (
-    .A(_059_),
-    .B(_060_),
-    .Y(_000_[28])
-  );
-  NAND _184_ (
-    .A(data_in[5]),
-    .B(_049_),
+  NAND _218_ (
+    .A(_110_),
+    .B(_050_),
     .Y(_061_)
   );
-  NAND _185_ (
-    .A(data_out_estructural[29]),
-    .B(_050_),
+  NAND _219_ (
+    .A(reset),
+    .B(_061_),
     .Y(_062_)
   );
-  NAND _186_ (
-    .A(_061_),
+  NOR _220_ (
+    .A(_060_),
     .B(_062_),
-    .Y(_000_[29])
+    .Y(_000_[19])
   );
-  NAND _187_ (
-    .A(data_in[6]),
-    .B(_049_),
+  NOR _221_ (
+    .A(data_out_estructural[20]),
+    .B(_050_),
     .Y(_063_)
   );
-  NAND _188_ (
-    .A(data_out_estructural[30]),
+  NAND _222_ (
+    .A(_111_),
     .B(_050_),
     .Y(_064_)
   );
-  NAND _189_ (
-    .A(_063_),
+  NAND _223_ (
+    .A(reset),
     .B(_064_),
-    .Y(_000_[30])
-  );
-  NAND _190_ (
-    .A(data_in[7]),
-    .B(_049_),
     .Y(_065_)
   );
-  NAND _191_ (
-    .A(data_out_estructural[31]),
+  NOR _224_ (
+    .A(_063_),
+    .B(_065_),
+    .Y(_000_[20])
+  );
+  NOR _225_ (
+    .A(data_out_estructural[21]),
     .B(_050_),
     .Y(_066_)
   );
-  NAND _192_ (
-    .A(_065_),
-    .B(_066_),
+  NAND _226_ (
+    .A(_112_),
+    .B(_050_),
+    .Y(_067_)
+  );
+  NAND _227_ (
+    .A(reset),
+    .B(_067_),
+    .Y(_068_)
+  );
+  NOR _228_ (
+    .A(_066_),
+    .B(_068_),
+    .Y(_000_[21])
+  );
+  NOR _229_ (
+    .A(data_out_estructural[22]),
+    .B(_050_),
+    .Y(_069_)
+  );
+  NAND _230_ (
+    .A(_113_),
+    .B(_050_),
+    .Y(_070_)
+  );
+  NAND _231_ (
+    .A(reset),
+    .B(_070_),
+    .Y(_071_)
+  );
+  NOR _232_ (
+    .A(_069_),
+    .B(_071_),
+    .Y(_000_[22])
+  );
+  NOR _233_ (
+    .A(data_out_estructural[23]),
+    .B(_050_),
+    .Y(_072_)
+  );
+  NAND _234_ (
+    .A(_114_),
+    .B(_050_),
+    .Y(_073_)
+  );
+  NAND _235_ (
+    .A(reset),
+    .B(_073_),
+    .Y(_074_)
+  );
+  NOR _236_ (
+    .A(_072_),
+    .B(_074_),
+    .Y(_000_[23])
+  );
+  NOR _237_ (
+    .A(selector[0]),
+    .B(selector[1]),
+    .Y(_075_)
+  );
+  NOT _238_ (
+    .A(_075_),
+    .Y(_076_)
+  );
+  NOR _239_ (
+    .A(selector[1]),
+    .B(_116_),
+    .Y(_077_)
+  );
+  NOR _240_ (
+    .A(data_out_estructural[24]),
+    .B(_077_),
+    .Y(_078_)
+  );
+  NAND _241_ (
+    .A(_107_),
+    .B(_077_),
+    .Y(_079_)
+  );
+  NAND _242_ (
+    .A(reset),
+    .B(_079_),
+    .Y(_080_)
+  );
+  NOR _243_ (
+    .A(_078_),
+    .B(_080_),
+    .Y(_000_[24])
+  );
+  NOR _244_ (
+    .A(data_out_estructural[25]),
+    .B(_077_),
+    .Y(_081_)
+  );
+  NAND _245_ (
+    .A(_108_),
+    .B(_077_),
+    .Y(_082_)
+  );
+  NAND _246_ (
+    .A(reset),
+    .B(_082_),
+    .Y(_083_)
+  );
+  NOR _247_ (
+    .A(_081_),
+    .B(_083_),
+    .Y(_000_[25])
+  );
+  NOR _248_ (
+    .A(data_out_estructural[26]),
+    .B(_077_),
+    .Y(_084_)
+  );
+  NAND _249_ (
+    .A(_109_),
+    .B(_077_),
+    .Y(_085_)
+  );
+  NAND _250_ (
+    .A(reset),
+    .B(_085_),
+    .Y(_086_)
+  );
+  NOR _251_ (
+    .A(_084_),
+    .B(_086_),
+    .Y(_000_[26])
+  );
+  NOR _252_ (
+    .A(data_out_estructural[27]),
+    .B(_077_),
+    .Y(_087_)
+  );
+  NAND _253_ (
+    .A(_110_),
+    .B(_077_),
+    .Y(_088_)
+  );
+  NAND _254_ (
+    .A(reset),
+    .B(_088_),
+    .Y(_089_)
+  );
+  NOR _255_ (
+    .A(_087_),
+    .B(_089_),
+    .Y(_000_[27])
+  );
+  NOR _256_ (
+    .A(data_out_estructural[28]),
+    .B(_077_),
+    .Y(_090_)
+  );
+  NAND _257_ (
+    .A(_111_),
+    .B(_077_),
+    .Y(_091_)
+  );
+  NAND _258_ (
+    .A(reset),
+    .B(_091_),
+    .Y(_092_)
+  );
+  NOR _259_ (
+    .A(_090_),
+    .B(_092_),
+    .Y(_000_[28])
+  );
+  NOR _260_ (
+    .A(data_out_estructural[29]),
+    .B(_077_),
+    .Y(_093_)
+  );
+  NAND _261_ (
+    .A(_112_),
+    .B(_077_),
+    .Y(_094_)
+  );
+  NAND _262_ (
+    .A(reset),
+    .B(_094_),
+    .Y(_095_)
+  );
+  NOR _263_ (
+    .A(_093_),
+    .B(_095_),
+    .Y(_000_[29])
+  );
+  NOR _264_ (
+    .A(data_out_estructural[30]),
+    .B(_077_),
+    .Y(_096_)
+  );
+  NAND _265_ (
+    .A(_113_),
+    .B(_077_),
+    .Y(_097_)
+  );
+  NAND _266_ (
+    .A(reset),
+    .B(_097_),
+    .Y(_098_)
+  );
+  NOR _267_ (
+    .A(_096_),
+    .B(_098_),
+    .Y(_000_[30])
+  );
+  NOR _268_ (
+    .A(data_out_estructural[31]),
+    .B(_077_),
+    .Y(_099_)
+  );
+  NAND _269_ (
+    .A(_114_),
+    .B(_077_),
+    .Y(_100_)
+  );
+  NAND _270_ (
+    .A(reset),
+    .B(_100_),
+    .Y(_101_)
+  );
+  NOR _271_ (
+    .A(_099_),
+    .B(_101_),
     .Y(_000_[31])
   );
-  NAND _193_ (
-    .A(_072_),
-    .B(_032_),
+  NOR _272_ (
+    .A(_023_),
+    .B(_075_),
+    .Y(_102_)
+  );
+  NAND _273_ (
+    .A(_022_),
+    .B(_076_),
+    .Y(_103_)
+  );
+  NAND _274_ (
+    .A(valid),
+    .B(reset),
+    .Y(_104_)
+  );
+  NOR _275_ (
+    .A(_102_),
+    .B(_104_),
+    .Y(_002_)
+  );
+  NOR _276_ (
+    .A(selector[0]),
+    .B(_104_),
+    .Y(_001_[0])
+  );
+  NOR _277_ (
+    .A(_103_),
+    .B(_104_),
     .Y(_001_[1])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _194_ (
+  DFF _278_ (
     .C(clk_4f),
     .D(_001_[0]),
     .Q(selector[0])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _195_ (
+  DFF _279_ (
     .C(clk_4f),
     .D(_001_[1]),
     .Q(selector[1])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _196_ (
+  DFF _280_ (
     .C(clk_4f),
     .D(_000_[0]),
     .Q(data_out_estructural[0])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _197_ (
+  DFF _281_ (
     .C(clk_4f),
     .D(_000_[1]),
     .Q(data_out_estructural[1])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _198_ (
+  DFF _282_ (
     .C(clk_4f),
     .D(_000_[2]),
     .Q(data_out_estructural[2])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _199_ (
+  DFF _283_ (
     .C(clk_4f),
     .D(_000_[3]),
     .Q(data_out_estructural[3])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _200_ (
+  DFF _284_ (
     .C(clk_4f),
     .D(_000_[4]),
     .Q(data_out_estructural[4])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _201_ (
+  DFF _285_ (
     .C(clk_4f),
     .D(_000_[5]),
     .Q(data_out_estructural[5])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _202_ (
+  DFF _286_ (
     .C(clk_4f),
     .D(_000_[6]),
     .Q(data_out_estructural[6])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _203_ (
+  DFF _287_ (
     .C(clk_4f),
     .D(_000_[7]),
     .Q(data_out_estructural[7])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _204_ (
+  DFF _288_ (
     .C(clk_4f),
     .D(_000_[8]),
     .Q(data_out_estructural[8])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _205_ (
+  DFF _289_ (
     .C(clk_4f),
     .D(_000_[9]),
     .Q(data_out_estructural[9])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _206_ (
+  DFF _290_ (
     .C(clk_4f),
     .D(_000_[10]),
     .Q(data_out_estructural[10])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _207_ (
+  DFF _291_ (
     .C(clk_4f),
     .D(_000_[11]),
     .Q(data_out_estructural[11])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _208_ (
+  DFF _292_ (
     .C(clk_4f),
     .D(_000_[12]),
     .Q(data_out_estructural[12])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _209_ (
+  DFF _293_ (
     .C(clk_4f),
     .D(_000_[13]),
     .Q(data_out_estructural[13])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _210_ (
+  DFF _294_ (
     .C(clk_4f),
     .D(_000_[14]),
     .Q(data_out_estructural[14])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _211_ (
+  DFF _295_ (
     .C(clk_4f),
     .D(_000_[15]),
     .Q(data_out_estructural[15])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _212_ (
+  DFF _296_ (
     .C(clk_4f),
     .D(_000_[16]),
     .Q(data_out_estructural[16])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _213_ (
+  DFF _297_ (
     .C(clk_4f),
     .D(_000_[17]),
     .Q(data_out_estructural[17])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _214_ (
+  DFF _298_ (
     .C(clk_4f),
     .D(_000_[18]),
     .Q(data_out_estructural[18])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _215_ (
+  DFF _299_ (
     .C(clk_4f),
     .D(_000_[19]),
     .Q(data_out_estructural[19])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _216_ (
+  DFF _300_ (
     .C(clk_4f),
     .D(_000_[20]),
     .Q(data_out_estructural[20])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _217_ (
+  DFF _301_ (
     .C(clk_4f),
     .D(_000_[21]),
     .Q(data_out_estructural[21])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _218_ (
+  DFF _302_ (
     .C(clk_4f),
     .D(_000_[22]),
     .Q(data_out_estructural[22])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _219_ (
+  DFF _303_ (
     .C(clk_4f),
     .D(_000_[23]),
     .Q(data_out_estructural[23])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _220_ (
+  DFF _304_ (
     .C(clk_4f),
     .D(_000_[24]),
     .Q(data_out_estructural[24])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _221_ (
+  DFF _305_ (
     .C(clk_4f),
     .D(_000_[25]),
     .Q(data_out_estructural[25])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _222_ (
+  DFF _306_ (
     .C(clk_4f),
     .D(_000_[26]),
     .Q(data_out_estructural[26])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _223_ (
+  DFF _307_ (
     .C(clk_4f),
     .D(_000_[27]),
     .Q(data_out_estructural[27])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _224_ (
+  DFF _308_ (
     .C(clk_4f),
     .D(_000_[28]),
     .Q(data_out_estructural[28])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _225_ (
+  DFF _309_ (
     .C(clk_4f),
     .D(_000_[29]),
     .Q(data_out_estructural[29])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _226_ (
+  DFF _310_ (
     .C(clk_4f),
     .D(_000_[30]),
     .Q(data_out_estructural[30])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _227_ (
+  DFF _311_ (
     .C(clk_4f),
     .D(_000_[31]),
     .Q(data_out_estructural[31])
   );
   (* src = "sintetizado8a32_cmos.v:10" *)
-  DFF _228_ (
+  DFF _312_ (
     .C(clk_4f),
     .D(_002_),
     .Q(valid_out_estructural)
