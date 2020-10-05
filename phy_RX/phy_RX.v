@@ -1,5 +1,5 @@
 //`include "prueba.v"
-`include "../serial_paralelo/serial_paralelo.v"
+`include "../serial_paralelo/serial_paralelo.v "
 `include "../mux_striping/mux_striping.v"
 `include "../demux_8_32/demux_8_32.v"
 
