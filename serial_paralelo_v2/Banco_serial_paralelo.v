@@ -8,13 +8,11 @@
     module Banco_serial_paralelo;
 		wire [7:0] data2send;
         wire [7:0] data_out;
-		wire [7:0] data2send_sintetizado;
         wire [7:0]  data_out_sintetizado;
 		wire clk_4f, clk_32f, valid_out, data_in, reset, active, active_sintetizado,valid_out_sintetizado;
 
 		serial_paralelo s_p(/*AUTOINST*/
 				    // Outputs
-				    .data2send		(data2send[7:0]),
 				    .active		(active),
 				    .valid_out		(valid_out),
 				    .data_out		(data_out[7:0]),
@@ -27,7 +25,6 @@
 		sintetizado_serial_paralelo s_s_p(/*AUTOINST*/
 						  // Outputs
 						  .active		(active_sintetizado),
-						  .data2send		(data2send_sintetizado[7:0]),
 						  .data_out		(data_out_sintetizado[7:0]),
 						  .valid_out		(valid_out_sintetizado),
 						  // Inputs
@@ -45,11 +42,9 @@
 						  .clk_4f		(clk_4f),
 						  .clk_32f		(clk_32f),
 						  // Inputs
-						  .data2send		(data2send[7:0]),
 						  .data_out		(data_out[7:0]),
 						  .active		(active),
 						  .valid_out		(valid_out),
-						  .data2send_sintetizado(data2send_sintetizado[7:0]),
 						  .data_out_sintetizado	(data_out_sintetizado[7:0]),
 						  .active_sintetizado	(active_sintetizado),
 						  .valid_out_sintetizado(valid_out_sintetizado));
