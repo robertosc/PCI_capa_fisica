@@ -1,6 +1,7 @@
 `timescale 1ms/100ps
 
-`include "demux_8_32.v"
+//`include "demux_8_32.v"
+`include "demux8_32_v2.v"
 `include "probador_demux_8_32.v"
 `include "sintetizado8a32_cmos.v"
 `include "../lib/cmos_cells.v"

@@ -40,6 +40,7 @@ module demux_8_32(input clk_4f,
 				end
 			end
 			else begin
+				data_out[31:0]<=transicion[31:0];
 				valid_out <= 0;
 				transicion <=0;
 				selector <= 2'b00;
