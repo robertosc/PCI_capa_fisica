@@ -407,7 +407,7 @@ module demux_striping_sintetizado(clk_2f, data_input, valid_in, reset, lane_0, l
   );
   NOR _274_ (
     .A(_005_),
-    .B(_006_),
+    .B(sel),
     .Y(_040_)
   );
   NOR _275_ (
@@ -1052,7 +1052,7 @@ module demux_striping_sintetizado(clk_2f, data_input, valid_in, reset, lane_0, l
   );
   NOR _403_ (
     .A(_005_),
-    .B(sel),
+    .B(_006_),
     .Y(_137_)
   );
   NOR _404_ (
@@ -1702,7 +1702,7 @@ module demux_striping_sintetizado(clk_2f, data_input, valid_in, reset, lane_0, l
   );
   NAND _533_ (
     .A(reset),
-    .B(_040_),
+    .B(_137_),
     .Y(_234_)
   );
   NAND _534_ (
@@ -1725,7 +1725,7 @@ module demux_striping_sintetizado(clk_2f, data_input, valid_in, reset, lane_0, l
     .Y(_237_)
   );
   NOR _538_ (
-    .A(_137_),
+    .A(_040_),
     .B(_237_),
     .Y(_238_)
   );

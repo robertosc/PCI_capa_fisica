@@ -1,69 +1,47 @@
 module demux_8_32(input clk_4f,
+				input clk_f,
 				input [7:0] data_in,
 				input valid,
 				input reset,
 				output reg [31:0] data_out,
 				output reg valid_out); //tiene que ser reg para poder ser l-value
 
-	reg [1:0] selector;
-	reg [31:0] transicion;
-	integer contador;
+	integer contador;			
+	reg delay_valid;			//Retrasa el valid
+	reg [31:0] buffer;			//Acá se va pegando por partes
+	reg [31:0] buffer_out;		//Acá se guarda el mensaje completo
+	reg ready;
 
 	always @(posedge clk_4f) begin
 		if(reset == 0) begin
-			selector [1:0] <= 2'b00;
+			contador  <= 0;
 			valid_out <= 0;
-			transicion<=0;
+			buffer <= 0;
 			data_out <= 0;
-			contador <= 0;
+			delay_valid <= 0;
+			ready <= 0;
 		end
 		else begin
-			if (data_out[31:0]!=8'h00000000) begin
-				valid_out <= 1;
-			end
-			else begin
-				valid_out <= 0;
-			end
-			if (transicion[31:0]!=8'h00000000) begin
-				if (selector==2'b00) begin
+			delay_valid <= valid;					//Retraso de valid un ciclo y se trabaja respecto a este
+			buffer <= {buffer[23:0], data_in};		//Desplazamiento
+			if(delay_valid) begin
+				if (contador == 3) begin
+					data_out <= buffer;
 					valid_out <= 1;
+					ready <= 1;
 				end
-			end
-			else if (transicion[31:0]==8'h00000000) begin
-				if (selector==2'b00) begin
-					valid_out <= 0;
-				end
-			end
-			if(valid == 1) begin
-				if(selector == 2'b00) begin
-					transicion [31:24] <= data_in;
-					selector <= 2'b01;
-					data_out[31:0]<=transicion[31:0];
-				end
-				else if(selector == 2'b01) begin
-					transicion [23:16] <= data_in;
-					selector <= 2'b10;
-				end
-				else if(selector[1] == 1 && selector[0] == 0) begin
-					transicion [15:8] <= data_in;
-					selector <= 2'b11;
-				end
-				else if(selector == 2'b11) begin
-					transicion [7:0] <= data_in;
-					selector <= 2'b00;
+				contador <= contador + 1;
+				if(contador >= 3) begin 
 					contador <= 0;
 				end
 			end
-			else begin
-				selector <= 2'b00;
-				data_out[31:0]<=transicion[31:0];
-				transicion <= 0;
-				contador <= contador + 1;
-				if (contador == 3) begin
-					valid_out <= 0;
-					transicion <=0;
-				end
-			end
+		end
+	end
+
+	always @(posedge clk_f) begin
+		if(ready == 1) begin
+			valid_out <= delay_valid;
+			ready <= 0;
 		end
 	end
 

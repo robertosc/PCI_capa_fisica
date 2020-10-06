@@ -10,10 +10,11 @@ module banco_demux_8_32;
 
 	wire [31:0] data_out, data_out_estructural;
 	wire [7:0] data_in;
-	wire clk_2f, clk_4f, valid, valid_out, valid_out_estructural;
+	wire clk_f, clk_4f, valid, valid_out, valid_out_estructural;
 
 	demux_8_32 u_demux_8_32(
 		.clk_4f   ( clk_4f   ),
+		.clk_f (clk_f),
 		.data_in  ( data_in[7:0]),
 		.valid    ( valid    ),
 		.data_out ( data_out [31:0]),
@@ -22,6 +23,7 @@ module banco_demux_8_32;
 	);
 	sintetizado8a32_cmos u_sintetizado8a32_cmos(
 		.clk_4f               ( clk_4f               ),
+		.clk_f (clk_f),
 		.data_in              ( data_in [7:0]        ),
 		.valid                ( valid                ),
 		.data_out_estructural ( data_out_estructural [31:0] ),
@@ -37,7 +39,7 @@ module banco_demux_8_32;
 		.valid      ( valid      ),
 		.data_in ( data_in [7:0] ),
 		.clk_4f     ( clk_4f     ),
-		.clk_2f     ( clk_2f     ),
+		.clk_f     ( clk_f     ),
 		.reset (reset)
 	);
 

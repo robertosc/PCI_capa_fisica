@@ -20,24 +20,24 @@ module demux_striping(
 		end
 		else begin
 			if(valid_in == 1 && sel == 0 ) begin
-				lane_0 <= data_input;
+				lane_1 <= data_input;
 				sel <= 1;
-				valid_out0<=1;
+				valid_out1<=1;
 			end
 
 			else if(valid_in == 1 && sel == 1) begin
-				lane_1 <= data_input;
+				lane_0 <= data_input;
 				sel <= 0;
-				valid_out1<=1;
+				valid_out0<=1;
 			end
 
 			else if (valid_in == 0 && sel == 0) begin
 				sel <= 1;
-				valid_out0<=0;
+				valid_out1<=0;
 			end
 			else if (valid_in == 0 && sel == 1) begin
 				sel <= 0;
-				valid_out1<=0;
+				valid_out0<=0;
 			end
 		end
 	end

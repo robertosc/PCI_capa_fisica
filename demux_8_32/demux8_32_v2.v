@@ -24,10 +24,15 @@ module demux_8_32(input clk_4f,
 					valid_out <= 1;
 				end
 				contador <= contador + 1;
-				if(contador == 3) contador <= 0;
+
+				if(contador >= 3) contador <= 0;
 			end
 			else begin			//Caso valid 0
-				valid_out <= 0;
+				if (contador == 4) begin
+					valid_out <= 0;
+					contador <= 0;
+				end
+				contador+= 1;
 			end
 		end
 	end
