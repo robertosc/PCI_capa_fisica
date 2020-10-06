@@ -37,6 +37,7 @@ module phy(input [31:0] data_input,
 	     .serial_data_0		(serial_0),
 	     .serial_data_1		(serial_1),
 	     .reset			(reset),
+		 .clk_f (clk_f),
 	     .clk_2f			(clk_2f),
 	     .clk_4f			(clk_4f),
 	     .clk_32f			(clk_32f));
