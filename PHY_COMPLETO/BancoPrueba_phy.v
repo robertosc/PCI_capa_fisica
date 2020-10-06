@@ -12,7 +12,7 @@ module BancoPrubas_PHY;
 		// Inputs
 		.data_input		(data_input[31:0]),
 		.valid			(valid),
-		.active			(active),
+		//.active			(active),
 		.reset			(reset),
 		.clk_2f			(clk_2f),
 		.clk_f			(clk_f),
@@ -24,7 +24,7 @@ module BancoPrubas_PHY;
 
    probador_phy probador (/*AUTOINST*/
 			  // Outputs
-			  .active		(active),
+			  //.active		(active),
 			  .valid		(valid),
 			  .reset		(reset),
 			  .data_input		(data_input[31:0]),

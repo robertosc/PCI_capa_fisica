@@ -9,10 +9,12 @@ module phy_RX(	input serial_data_0,
 				input clk_2f,
 				input clk_4f,
 				input clk_32f,
+				output active_1,
+				output active_0,
 				output [31:0] data_final,
 				output valid_final);
 
-	wire data_in0, data_in1, clk_4f, clk_32f, clk_f, reset, active_0, active_1;
+	wire data_in0, data_in1, clk_4f, clk_32f, clk_f, reset;
 
 	wire [7:0] data2send_0, data2send_1;
 

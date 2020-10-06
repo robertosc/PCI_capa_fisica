@@ -1,9 +1,9 @@
 `include "../phy_RX/phy_RX.v"
 `include "../phy_TX/phy_TX.v"
+`include "../and_active/and_active.v"
 
 module phy(input [31:0] data_input,
 			input valid,
-			input active,
 			input reset,
 			input clk_2f,
 			input clk_f,
@@ -12,7 +12,7 @@ module phy(input [31:0] data_input,
 			output [31:0] data_final,
 			output valid_final);
 
-	wire serial_0, serial_1;
+	wire serial_0, serial_1, active_0_rec, active_1_rec, active_recir;
 
    phy_TX TX(/*AUTOINST*/
 	     // Outputs
@@ -21,18 +21,19 @@ module phy(input [31:0] data_input,
 	     // Inputs
 	     .data_input		(data_input[31:0]),
 	     .valid			(valid),
-	     .active			(active),
 	     .reset			(reset),
+		 .active         (active_recir),
 	     .clk_2f			(clk_2f),
 	     .clk_f			(clk_f),
 	     .clk_4f			(clk_4f),
 	     .clk_32f			(clk_32f));
 
-
 	phy_RX RX(/*AUTOINST*/
 	     // Outputs
 	     .data_final		(data_final[31:0]),
 	     .valid_final		(valid_final),
+		 .active_0 (active_0_rec),
+		 .active_1 (active_1_rec),
 	     // Inputs
 	     .serial_data_0		(serial_0),
 	     .serial_data_1		(serial_1),
@@ -41,7 +42,10 @@ module phy(input [31:0] data_input,
 	     .clk_2f			(clk_2f),
 	     .clk_4f			(clk_4f),
 	     .clk_32f			(clk_32f));
-   
+
+   	and_active AND(.active_0	(active_0_rec),
+				   .active_1	(active_1_rec),
+				   .active 		(active_recir));
    
 
 endmodule
