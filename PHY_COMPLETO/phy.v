@@ -12,7 +12,7 @@ module phy(input [31:0] data_input,
 			output [31:0] data_output,
 			output valid_out);
 
-	wire data_paralelo_serial_0, data_paralelo_serial_0, active_0_rec, active_1_rec, data_and_active;
+	wire data_paralelo_serial_0, data_paralelo_serial_1, data_and_active;
 
    phy_TX TX(/*AUTOINST*/
 	     // Outputs
@@ -44,8 +44,8 @@ module phy(input [31:0] data_input,
 		  .clk_4f		(clk_4f),
 		  .clk_32f		(clk_32f));
 
-   	and_active AND(.active_serial_paralelo_0	(active_0_rec),
-				   .active_serial_paralelo_1	(active_1_rec),
+   	and_active AND(.active_serial_paralelo_0	(active_serial_paralelo_0),
+				   .active_serial_paralelo_1	(active_serial_paralelo_1),
 				   .data_and_active 			(data_and_active));
    
 
