@@ -10,7 +10,7 @@ module BancoPrubas_PHY;
 phy_TX u_phy_TX(
     .data_input                 ( data_input [31:0]          ),
     .valid                      ( valid                      ),
-    .active                     ( active                     ),
+    .data_and_active            ( data_and_active            ),
     .reset                      ( reset                      ),
     .clk_2f                     ( clk_2f                     ),
     .clk_f                      ( clk_f                      ),
@@ -25,7 +25,7 @@ probador_TX u_probador_TX(
     .data_paralelo_serial_0     ( data_paralelo_serial_0     ),
     .data_paralelo_serial_1     ( data_paralelo_serial_1     ),
     .data_recirculador_inactive ( data_recirculador_inactive [31:0] ),
-    .active                     ( active                     ),
+    .data_and_active            ( data_and_active                     ),
     .valid                      ( valid                      ),
     .reset                      ( reset                      ),
     .data_input                 ( data_input [31:0]          ),

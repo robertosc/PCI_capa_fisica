@@ -6,7 +6,7 @@
 
 module phy_TX(input [31:0] data_input,
 			input valid,
-			input active,
+			input data_and_active,
 			input reset,
 			input clk_2f,
 			input clk_f,
@@ -18,7 +18,7 @@ module phy_TX(input [31:0] data_input,
 
 	wire [31:0] data_recirculador_active, data_demux_strp_0, data_demux_strp_1;
 	wire [7:0] data_demux_32_8_0, data_demux_32_8_1;
-	wire clk_2f, clk_f, clk_4f, valid, active, reset, valid_demux_strp_0, valid_demux_strp_1, valid_demux_32_8_0, valid_demux_32_8_1;
+	wire clk_2f, clk_f, clk_4f, valid, data_and_active, reset, valid_demux_strp_0, valid_demux_strp_1, valid_demux_32_8_0, valid_demux_32_8_1;
 	wire valid_recirculador;
 
 	recirculador recirculador_inicial(

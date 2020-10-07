@@ -14,15 +14,15 @@ module paralelo_serial(input clk_4f,
             if(valid_demux_32_8 == 1) begin
                 selector <= 0;
                 case (selector_2)
-                    0: data_paralelo_serial <= data_in[7];
-                    1: data_paralelo_serial <= data_in[6];
-                    2: data_paralelo_serial <= data_in[5];
-                    3: data_paralelo_serial <= data_in[4];
-                    4: data_paralelo_serial <= data_in[3];
-                    5: data_paralelo_serial <= data_in[2];
-                    6: data_paralelo_serial <= data_in[1];
+                    0: data_paralelo_serial <= data_demux_32_8[7];
+                    1: data_paralelo_serial <= data_demux_32_8[6];
+                    2: data_paralelo_serial <= data_demux_32_8[5];
+                    3: data_paralelo_serial <= data_demux_32_8[4];
+                    4: data_paralelo_serial <= data_demux_32_8[3];
+                    5: data_paralelo_serial <= data_demux_32_8[2];
+                    6: data_paralelo_serial <= data_demux_32_8[1];
                     7: begin
-                        data_paralelo_serial <= data_in[0];
+                        data_paralelo_serial <= data_demux_32_8[0];
                         selector_2 <= 0;
                     end
                 endcase
