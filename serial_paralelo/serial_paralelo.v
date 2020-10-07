@@ -29,7 +29,6 @@ module serial_paralelo(
 			if (BC_counter == 4 && counter == 1) begin		//Si BC counter en 4, saca los datos cuando contador llega a 0
 				active_serial_paralelo <= 1;
 				if (buffer == 8'hBC && buffer_pasado != 8'hBC) begin 
-					BC_counter <= 0;
 					valid_serial_paralelo <= 0;
 				end
 				else if (buffer != 8'hBC) begin

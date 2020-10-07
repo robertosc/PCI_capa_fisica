@@ -11,9 +11,10 @@ module phy(input [31:0] data_input,
 			input clk_32f,
 			output [31:0] data_recirculador_inactive,
 			output [31:0] data_output,
-			output valid_out);
+			output valid_out,
+			output data_and_active);
 
-	wire data_paralelo_serial_0, data_paralelo_serial_1, data_and_active;
+	wire data_paralelo_serial_0, data_paralelo_serial_1;
 
    phy_TX TX(/*AUTOINST*/
 	     // Outputs

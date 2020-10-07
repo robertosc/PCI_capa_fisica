@@ -2,6 +2,7 @@ module probador_phy(	input [31:0] data_output,
 						input [31:0] data_output_sintetizado,
 						input valid_out,
 						input valid_out_sintetizado,
+						input data_and_active,
 						output reg active,
 						output reg valid,
 						output reg reset,
@@ -25,6 +26,8 @@ module probador_phy(	input [31:0] data_output,
 	data_input <= 32'hFFFFEEEE;
 
 	@(posedge clk_2f);
+	@(posedge clk_2f);
+	@(posedge clk_2f);
 	//active <= 1;
 	valid <= 1;
 	reset <= 1;
@@ -42,21 +45,47 @@ module probador_phy(	input [31:0] data_output,
 	data_input <= 32'hFAFAFA01;
 
 	@(posedge clk_2f);
-	// active <= 1;
 	valid <= 1;
 	data_input <= 32'hAAAA1234;
 
 	@(posedge clk_2f);
-	// active <= 1;
 	valid <= 1;
 	data_input <= 32'h12345678;
 
 	@(posedge clk_2f);
-	// active <= 0;
 	valid <= 1;
+	data_input <= 32'h3498AABB;
+
+	@(posedge clk_2f);
+	data_input <= 32'hBCBCBCBC;
+	valid <= 1;
+
+	@(posedge clk_2f);
+	data_input <= 32'hBCBCBCBC;
+
+	@(posedge clk_2f);
+	valid <= 1;
+	data_input <= 32'hF0001234;
+
+	@(posedge clk_2f);
+	valid <= 1;
+	data_input <= 32'h56780000;
+
+	@(posedge clk_2f);
+	data_input <= 32'hFFFFFFFF;
+
+	@(posedge clk_2f);
+	data_input <= 32'hFAFEBACC;
+
+	@(posedge clk_2f);
+	valid <= 0;
 	data_input <= 32'hBBBBAAAA;
 
 	@(posedge clk_2f);
+	data_input <= 32'hFFFFFFFF;
+	valid <= 1;
+	@(posedge clk_2f);
+	data_input <= 32'hF0001234;
 
 	@(posedge clk_2f);
 
@@ -65,11 +94,8 @@ module probador_phy(	input [31:0] data_output,
 	@(posedge clk_2f);
 
 	@(posedge clk_2f);
-
 	@(posedge clk_2f);
 
-	@(posedge clk_2f);
-	@(posedge clk_2f);
 	$finish;
 	end
 	

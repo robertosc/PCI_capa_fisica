@@ -10,7 +10,8 @@ module demux_8_32(input clk_4f,
 	reg delay_valid;			//Retrasa el valid_serial_paralelo
 	reg [31:0] buffer;			//Acá se va pegando por partes
 	reg [31:0] buffer_out;		//Acá se guarda el mensaje completo
-	reg ready;
+	reg ready, ready2;
+
 
 	always @(posedge clk_4f) begin
 		if(reset == 0) begin
@@ -35,13 +36,17 @@ module demux_8_32(input clk_4f,
 					contador <= 0;
 				end
 			end
-		end
-	end
+			else begin
+				contador <= 0;
+				ready <= 0;
+			end
+			if (ready) valid_demux_8_32 <= delay_valid;
 
-	always @(posedge clk_f) begin
-		if(ready == 1) begin
-			valid_demux_8_32 <= delay_valid;
-			ready <= 0;
+			//if (delay == 2'b01) begin
+			//	valid_demux_8_32 <= delay_valid;
+			//	delay <= 0;
+			//	ready <= 0;
+			//end
 		end
 	end
 

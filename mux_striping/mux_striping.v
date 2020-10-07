@@ -39,7 +39,7 @@ module mux_striping(
 					valid_out<=0;
 				end
 			end	
-
+			if (valid_demux_8_32_0 == 0 && valid_demux_8_32_1 == 0) data_output <= 0;
 		end
 	end
 

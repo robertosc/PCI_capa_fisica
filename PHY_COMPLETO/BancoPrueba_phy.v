@@ -5,7 +5,7 @@
 
 module BancoPrueba_phy;
 
-	wire [31:0] data_input, data_output, data_output_sintetizado;
+	wire [31:0] data_input, data_output, data_output_sintetizado, data_and_active;
 	wire valid_out, valid_out_sintetizado;
    phy completo(/*AUTOINST*/
 		// Outputs
@@ -19,7 +19,8 @@ module BancoPrueba_phy;
 		.clk_2f			(clk_2f),
 		.clk_f			(clk_f),
 		.clk_4f			(clk_4f),
-		.clk_32f		(clk_32f));
+		.clk_32f		(clk_32f),
+		.data_and_active(data_and_active));
 
 	PHY_COMPLETO_sintetizado sintetizado(/*AUTOINST*/
 		// Outputs
@@ -50,7 +51,8 @@ module BancoPrueba_phy;
 			  .data_output		(data_output[31:0]),
 			  .valid_out		(valid_out),
 			  .data_output_sintetizado (data_output_sintetizado[31:0]),
-			  .valid_out_sintetizado (valid_out_sintetizado));
+			  .valid_out_sintetizado (valid_out_sintetizado),
+			  .data_and_active (data_and_active));
 
 
 
