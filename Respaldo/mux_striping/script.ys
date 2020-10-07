@@ -1,0 +1,13 @@
+read_verilog mux_striping.v
+
+proc; opt; memory; opt; fsm; opt;
+
+techmap; opt;
+
+dfflibmap -liberty ./cmos_cells.lib
+
+abc -liberty ./cmos_cells.lib
+
+clean
+
+write_verilog mux_striping_sintetizado.v
