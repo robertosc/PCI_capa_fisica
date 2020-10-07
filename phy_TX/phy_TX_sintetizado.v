@@ -2673,7 +2673,7 @@ endmodule
 
 (* cells_not_processed =  1  *)
 (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:1" *)
-module paralelo_serial_sintetizado(clk_4f, clk_32f, data_demux_32_8_sintetizado, valid_in, reset, data_paralelo_serial_sintetizado);
+module paralelo_serial_sintetizado(clk_4f, clk_32f, data_demux_32_8_sintetizado, valid_demux_32_8_sintetizado, reset, data_paralelo_serial_sintetizado);
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:11" *)
   wire _00_;
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:11" *)
@@ -2708,7 +2708,7 @@ module paralelo_serial_sintetizado(clk_4f, clk_32f, data_demux_32_8_sintetizado,
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:8" *)
   wire [2:0] selector;
   (* src = "../paralelo_serial_sintetizado/paralelo_serial_sintetizado.v:4" *)
-  input valid_in;
+  input valid_demux_32_8_sintetizado;
   NOT _19_ (
     .A(selector[1]),
     .Y(_02_)
@@ -2722,7 +2722,7 @@ module paralelo_serial_sintetizado(clk_4f, clk_32f, data_demux_32_8_sintetizado,
     .Y(_04_)
   );
   NOR _22_ (
-    .A(valid_in),
+    .A(valid_demux_32_8_sintetizado),
     .B(_04_),
     .Y(_05_)
   );

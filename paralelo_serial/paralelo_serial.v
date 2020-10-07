@@ -1,7 +1,7 @@
 module paralelo_serial(input clk_4f,
                         input clk_32f,
                         input [7:0] data_demux_32_8,
-                        input valid_in,
+                        input valid_demux_32_8,
                         input reset,
                         output reg data_paralelo_serial);
 
@@ -11,7 +11,7 @@ module paralelo_serial(input clk_4f,
     always @(posedge clk_32f) begin
 
         if (reset == 1) begin
-            if(valid_in == 1) begin
+            if(valid_demux_32_8 == 1) begin
                 selector <= 0;
                 case (selector_2)
                     0: data_paralelo_serial <= data_in[7];

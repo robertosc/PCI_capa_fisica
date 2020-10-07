@@ -49,8 +49,8 @@ module phy_TX(input [31:0] data_input,
 	demux_32_8 demux_lane_0(
 		/*AUTOINST*/
 				// Outputs
-				.data_demux_32_8(data_demux_32_8[7:0]),
-				.valid_demux_32_8(valid_demux_32_8),
+				.data_demux_32_8(data_demux_32_8_0[7:0]),
+				.valid_demux_32_8(valid_demux_32_8_0),
 				// Inputs
 				.clk_4f		(clk_4f),
 				.data_demux_strp(data_demux_strp[31:0]),
@@ -60,12 +60,12 @@ module phy_TX(input [31:0] data_input,
 	paralelo_serial paralelo_serial0(
 		/*AUTOINST*/
 					 // Outputs
-					 .data_paralelo_serial	(data_paralelo_serial),
+					 .data_paralelo_serial	(data_paralelo_serial_0),
 					 // Inputs
 					 .clk_4f		(clk_4f),
 					 .clk_32f		(clk_32f),
-					 .data_demux_32_8	(data_demux_32_8[7:0]),
-					 .valid_in		(valid_in),
+					 .data_demux_32_8	(data_demux_32_8_0[7:0]),
+					 .valid_demux_32_8		(valid_demux_32_8_0),
 					 .reset			(reset));
 	
 	demux_32_8 demux_lane_1(
@@ -82,12 +82,12 @@ module phy_TX(input [31:0] data_input,
 	paralelo_serial paralelo_serial1(
 		/*AUTOINST*/
 					 // Outputs
-					 .data_paralelo_serial	(data_paralelo_serial),
+					 .data_paralelo_serial	(data_paralelo_serial_1),
 					 // Inputs
 					 .clk_4f		(clk_4f),
 					 .clk_32f		(clk_32f),
-					 .data_demux_32_8	(data_demux_32_8[7:0]),
-					 .valid_in		(valid_in),
+					 .data_demux_32_8	(data_demux_32_8_1[7:0]),
+					 .valid_demux_32_8		(valid_demux_32_8_1),
 					 .reset			(reset));
 
 
