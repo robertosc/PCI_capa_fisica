@@ -1,8 +1,8 @@
-module and_active(  input active_0,
-                    input active_1,
-                    output reg active ); 
+module and_active(  input active_serial_paralelo_0,
+                    input active_serial_paralelo_1,
+                    output reg data_and_active ); 
         always@(*)begin
-        active <= active_0 && active_1;
+        data_and_active <= active_serial_paralelo_0 && active_serial_paralelo_1;
         end
 
 endmodule
