@@ -1,6 +1,6 @@
 `include "../serial_paralelo/serial_paralelo.v"
-`include "mux_striping.v"
-`include "demux_8_32.v"
+`include "../mux_striping/mux_striping.v"
+`include "../demux_8_32/demux_8_32.v"
 
 module phy_RX(	input data_paralelo_serial_0,
 				input data_paralelo_serial_1,

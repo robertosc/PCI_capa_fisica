@@ -555,17 +555,17 @@ module demux_32_8_sintetizado(clk_4f, data_demux_strp, valid_demux_strp, reset, 
 endmodule
 
 (* cells_not_processed =  1  *)
-(* src = "demux_8_32_sintetizado.v:1" *)
-module demux_8_32_sintetizado(clk_4f, data_serial_paralelo_sintetizado, valid_serial_paralelo_sintetizado, reset, data_demux_8_32_sintetizado, valid_demux_8_32_sintetizado);
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  (* unused_bits = "24 25 26 27 28 29 30 31" *)
+(* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:1" *)
+module demux_8_32_sintetizado(clk_4f, clk_f, data_serial_paralelo_sintetizado, valid_serial_paralelo_sintetizado, reset, data_demux_8_32_sintetizado, valid_demux_8_32_sintetizado);
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   wire [31:0] _000_;
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   wire [31:0] _001_;
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   wire [31:0] _002_;
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   wire _003_;
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   wire _004_;
   wire _005_;
   wire _006_;
@@ -962,2932 +962,2968 @@ module demux_8_32_sintetizado(clk_4f, data_serial_paralelo_sintetizado, valid_se
   wire _397_;
   wire _398_;
   wire _399_;
-  wire _400_;
-  wire _401_;
-  wire _402_;
-  wire _403_;
-  (* src = "demux_8_32_sintetizado.v:8" *)
-  (* unused_bits = "24 25 26 27 28 29 30 31" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:11" *)
   wire [31:0] buffer;
-  (* src = "demux_8_32_sintetizado.v:1" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:1" *)
   input clk_4f;
-  (* src = "demux_8_32_sintetizado.v:9" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:2" *)
+  input clk_f;
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:9" *)
   wire [31:0] contador;
-  (* src = "demux_8_32_sintetizado.v:5" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:6" *)
   output [31:0] data_demux_8_32_sintetizado;
-  (* src = "demux_8_32_sintetizado.v:2" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:3" *)
   input [7:0] data_serial_paralelo_sintetizado;
-  (* src = "demux_8_32_sintetizado.v:4" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:10" *)
+  wire delay_valid;
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:13" *)
+  wire ready;
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:5" *)
   input reset;
-  (* src = "demux_8_32_sintetizado.v:6" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:7" *)
   output valid_demux_8_32_sintetizado;
-  (* src = "demux_8_32_sintetizado.v:3" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:4" *)
   input valid_serial_paralelo_sintetizado;
-  NOT _404_ (
+  NOT _400_ (
     .A(contador[2]),
-    .Y(_004_)
-  );
-  NOT _405_ (
-    .A(contador[3]),
     .Y(_005_)
   );
-  NOT _406_ (
-    .A(contador[4]),
+  NOT _401_ (
+    .A(contador[3]),
     .Y(_006_)
   );
-  NOT _407_ (
-    .A(contador[5]),
+  NOT _402_ (
+    .A(contador[4]),
     .Y(_007_)
   );
-  NOT _408_ (
-    .A(contador[6]),
+  NOT _403_ (
+    .A(contador[5]),
     .Y(_008_)
   );
-  NOT _409_ (
+  NOT _404_ (
     .A(contador[7]),
     .Y(_009_)
   );
-  NOT _410_ (
+  NOT _405_ (
     .A(contador[8]),
     .Y(_010_)
   );
-  NOT _411_ (
-    .A(contador[9]),
+  NOT _406_ (
+    .A(contador[10]),
     .Y(_011_)
   );
-  NOT _412_ (
-    .A(contador[10]),
+  NOT _407_ (
+    .A(contador[11]),
     .Y(_012_)
   );
-  NOT _413_ (
-    .A(contador[11]),
+  NOT _408_ (
+    .A(contador[12]),
     .Y(_013_)
   );
-  NOT _414_ (
-    .A(contador[12]),
+  NOT _409_ (
+    .A(contador[13]),
     .Y(_014_)
   );
-  NOT _415_ (
-    .A(contador[13]),
+  NOT _410_ (
+    .A(contador[14]),
     .Y(_015_)
   );
-  NOT _416_ (
-    .A(contador[14]),
+  NOT _411_ (
+    .A(contador[15]),
     .Y(_016_)
   );
-  NOT _417_ (
-    .A(contador[15]),
+  NOT _412_ (
+    .A(contador[16]),
     .Y(_017_)
   );
-  NOT _418_ (
-    .A(contador[16]),
+  NOT _413_ (
+    .A(contador[17]),
     .Y(_018_)
   );
-  NOT _419_ (
-    .A(contador[17]),
+  NOT _414_ (
+    .A(contador[18]),
     .Y(_019_)
   );
-  NOT _420_ (
-    .A(contador[18]),
+  NOT _415_ (
+    .A(contador[19]),
     .Y(_020_)
   );
-  NOT _421_ (
-    .A(contador[19]),
+  NOT _416_ (
+    .A(contador[20]),
     .Y(_021_)
   );
-  NOT _422_ (
-    .A(contador[20]),
+  NOT _417_ (
+    .A(contador[21]),
     .Y(_022_)
   );
-  NOT _423_ (
-    .A(contador[21]),
+  NOT _418_ (
+    .A(contador[23]),
     .Y(_023_)
   );
-  NOT _424_ (
-    .A(contador[22]),
+  NOT _419_ (
+    .A(contador[24]),
     .Y(_024_)
   );
-  NOT _425_ (
-    .A(contador[23]),
+  NOT _420_ (
+    .A(contador[25]),
     .Y(_025_)
   );
-  NOT _426_ (
-    .A(contador[24]),
+  NOT _421_ (
+    .A(contador[26]),
     .Y(_026_)
   );
-  NOT _427_ (
-    .A(contador[25]),
+  NOT _422_ (
+    .A(contador[28]),
     .Y(_027_)
   );
-  NOT _428_ (
-    .A(contador[26]),
+  NOT _423_ (
+    .A(contador[30]),
     .Y(_028_)
   );
-  NOT _429_ (
-    .A(contador[28]),
+  NOT _424_ (
+    .A(contador[0]),
     .Y(_029_)
   );
-  NOT _430_ (
-    .A(contador[30]),
+  NOT _425_ (
+    .A(delay_valid),
     .Y(_030_)
   );
-  NOT _431_ (
-    .A(contador[31]),
+  NOT _426_ (
+    .A(contador[1]),
     .Y(_031_)
   );
-  NOT _432_ (
-    .A(valid_serial_paralelo_sintetizado),
+  NOT _427_ (
+    .A(reset),
     .Y(_032_)
   );
-  NOT _433_ (
+  NOT _428_ (
     .A(buffer[0]),
     .Y(_033_)
   );
-  NOT _434_ (
-    .A(data_serial_paralelo_sintetizado[0]),
+  NOT _429_ (
+    .A(buffer[1]),
     .Y(_034_)
   );
-  NOT _435_ (
-    .A(buffer[1]),
+  NOT _430_ (
+    .A(buffer[2]),
     .Y(_035_)
   );
-  NOT _436_ (
-    .A(data_serial_paralelo_sintetizado[1]),
+  NOT _431_ (
+    .A(buffer[3]),
     .Y(_036_)
   );
-  NOT _437_ (
-    .A(buffer[2]),
+  NOT _432_ (
+    .A(buffer[4]),
     .Y(_037_)
   );
-  NOT _438_ (
-    .A(data_serial_paralelo_sintetizado[2]),
+  NOT _433_ (
+    .A(buffer[5]),
     .Y(_038_)
   );
-  NOT _439_ (
-    .A(buffer[3]),
+  NOT _434_ (
+    .A(buffer[6]),
     .Y(_039_)
   );
-  NOT _440_ (
-    .A(data_serial_paralelo_sintetizado[3]),
+  NOT _435_ (
+    .A(buffer[7]),
     .Y(_040_)
   );
-  NOT _441_ (
-    .A(buffer[4]),
+  NOT _436_ (
+    .A(buffer[8]),
     .Y(_041_)
   );
-  NOT _442_ (
-    .A(data_serial_paralelo_sintetizado[4]),
+  NOT _437_ (
+    .A(buffer[9]),
     .Y(_042_)
   );
-  NOT _443_ (
-    .A(buffer[5]),
+  NOT _438_ (
+    .A(buffer[10]),
     .Y(_043_)
   );
-  NOT _444_ (
-    .A(data_serial_paralelo_sintetizado[5]),
+  NOT _439_ (
+    .A(buffer[11]),
     .Y(_044_)
   );
-  NOT _445_ (
-    .A(buffer[6]),
+  NOT _440_ (
+    .A(buffer[12]),
     .Y(_045_)
   );
-  NOT _446_ (
-    .A(data_serial_paralelo_sintetizado[6]),
+  NOT _441_ (
+    .A(buffer[13]),
     .Y(_046_)
   );
-  NOT _447_ (
-    .A(buffer[7]),
+  NOT _442_ (
+    .A(buffer[14]),
     .Y(_047_)
   );
-  NOT _448_ (
-    .A(data_serial_paralelo_sintetizado[7]),
+  NOT _443_ (
+    .A(buffer[15]),
     .Y(_048_)
   );
-  NOT _449_ (
-    .A(buffer[8]),
+  NOT _444_ (
+    .A(buffer[16]),
     .Y(_049_)
   );
-  NOT _450_ (
-    .A(buffer[9]),
+  NOT _445_ (
+    .A(buffer[17]),
     .Y(_050_)
   );
-  NOT _451_ (
-    .A(buffer[10]),
+  NOT _446_ (
+    .A(buffer[18]),
     .Y(_051_)
   );
-  NOT _452_ (
-    .A(buffer[11]),
+  NOT _447_ (
+    .A(buffer[19]),
     .Y(_052_)
   );
-  NOT _453_ (
-    .A(buffer[12]),
+  NOT _448_ (
+    .A(buffer[20]),
     .Y(_053_)
   );
-  NOT _454_ (
-    .A(buffer[13]),
+  NOT _449_ (
+    .A(buffer[21]),
     .Y(_054_)
   );
-  NOT _455_ (
-    .A(buffer[14]),
+  NOT _450_ (
+    .A(buffer[22]),
     .Y(_055_)
   );
-  NOT _456_ (
-    .A(buffer[15]),
+  NOT _451_ (
+    .A(buffer[23]),
     .Y(_056_)
   );
-  NOT _457_ (
-    .A(buffer[16]),
+  NOT _452_ (
+    .A(buffer[24]),
     .Y(_057_)
   );
-  NOT _458_ (
-    .A(buffer[17]),
+  NOT _453_ (
+    .A(buffer[25]),
     .Y(_058_)
   );
-  NOT _459_ (
-    .A(buffer[18]),
+  NOT _454_ (
+    .A(buffer[26]),
     .Y(_059_)
   );
-  NOT _460_ (
-    .A(buffer[19]),
+  NOT _455_ (
+    .A(buffer[27]),
     .Y(_060_)
   );
-  NOT _461_ (
-    .A(buffer[20]),
+  NOT _456_ (
+    .A(buffer[28]),
     .Y(_061_)
   );
-  NOT _462_ (
-    .A(buffer[21]),
+  NOT _457_ (
+    .A(buffer[29]),
     .Y(_062_)
   );
-  NOT _463_ (
-    .A(buffer[22]),
+  NOT _458_ (
+    .A(buffer[30]),
     .Y(_063_)
   );
-  NOT _464_ (
-    .A(buffer[23]),
+  NOT _459_ (
+    .A(buffer[31]),
     .Y(_064_)
   );
-  NOR _465_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[0]),
+  NOR _460_ (
+    .A(contador[28]),
+    .B(contador[29]),
     .Y(_065_)
   );
-  NAND _466_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_034_),
+  NAND _461_ (
+    .A(_028_),
+    .B(_065_),
     .Y(_066_)
   );
-  NAND _467_ (
-    .A(reset),
-    .B(_066_),
+  NOR _462_ (
+    .A(contador[24]),
+    .B(contador[25]),
     .Y(_067_)
   );
-  NOR _468_ (
-    .A(_065_),
-    .B(_067_),
-    .Y(_000_[0])
-  );
-  NOR _469_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[1]),
+  NOR _463_ (
+    .A(contador[26]),
+    .B(contador[27]),
     .Y(_068_)
   );
-  NAND _470_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_036_),
+  NAND _464_ (
+    .A(_067_),
+    .B(_068_),
     .Y(_069_)
   );
-  NAND _471_ (
-    .A(reset),
+  NOR _465_ (
+    .A(_066_),
     .B(_069_),
     .Y(_070_)
   );
-  NOR _472_ (
-    .A(_068_),
-    .B(_070_),
-    .Y(_000_[1])
-  );
-  NOR _473_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[2]),
+  NOR _466_ (
+    .A(contador[20]),
+    .B(contador[21]),
     .Y(_071_)
   );
-  NAND _474_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_038_),
+  NOR _467_ (
+    .A(contador[22]),
+    .B(contador[23]),
     .Y(_072_)
   );
-  NAND _475_ (
-    .A(reset),
+  NAND _468_ (
+    .A(_071_),
     .B(_072_),
     .Y(_073_)
   );
-  NOR _476_ (
-    .A(_071_),
-    .B(_073_),
-    .Y(_000_[2])
-  );
-  NOR _477_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[3]),
+  NOR _469_ (
+    .A(contador[16]),
+    .B(contador[17]),
     .Y(_074_)
   );
-  NAND _478_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_040_),
+  NOR _470_ (
+    .A(contador[18]),
+    .B(contador[19]),
     .Y(_075_)
   );
-  NAND _479_ (
-    .A(reset),
+  NAND _471_ (
+    .A(_074_),
     .B(_075_),
     .Y(_076_)
   );
-  NOR _480_ (
-    .A(_074_),
+  NOR _472_ (
+    .A(_073_),
     .B(_076_),
-    .Y(_000_[3])
-  );
-  NOR _481_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[4]),
     .Y(_077_)
   );
-  NAND _482_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_042_),
+  NAND _473_ (
+    .A(_005_),
+    .B(_006_),
     .Y(_078_)
   );
-  NAND _483_ (
-    .A(reset),
-    .B(_078_),
+  NOR _474_ (
+    .A(contador[5]),
+    .B(contador[6]),
     .Y(_079_)
   );
-  NOR _484_ (
-    .A(_077_),
-    .B(_079_),
-    .Y(_000_[4])
-  );
-  NOR _485_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[5]),
+  NAND _475_ (
+    .A(_007_),
+    .B(_009_),
     .Y(_080_)
   );
-  NAND _486_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_044_),
+  NOR _476_ (
+    .A(_078_),
+    .B(_080_),
     .Y(_081_)
   );
-  NAND _487_ (
-    .A(reset),
+  NAND _477_ (
+    .A(_079_),
     .B(_081_),
     .Y(_082_)
   );
-  NOR _488_ (
-    .A(_080_),
-    .B(_082_),
-    .Y(_000_[5])
-  );
-  NOR _489_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[6]),
+  NAND _478_ (
+    .A(_014_),
+    .B(_015_),
     .Y(_083_)
   );
-  NAND _490_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_046_),
+  NAND _479_ (
+    .A(_013_),
+    .B(_016_),
     .Y(_084_)
   );
-  NAND _491_ (
-    .A(reset),
+  NOR _480_ (
+    .A(_083_),
     .B(_084_),
     .Y(_085_)
   );
-  NOR _492_ (
-    .A(_083_),
-    .B(_085_),
-    .Y(_000_[6])
-  );
-  NOR _493_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[7]),
+  NOR _481_ (
+    .A(contador[9]),
+    .B(contador[10]),
     .Y(_086_)
   );
-  NAND _494_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_048_),
+  NOR _482_ (
+    .A(contador[8]),
+    .B(contador[11]),
     .Y(_087_)
   );
-  NAND _495_ (
-    .A(reset),
+  NAND _483_ (
+    .A(_085_),
     .B(_087_),
     .Y(_088_)
   );
-  NOR _496_ (
-    .A(_086_),
+  NOR _484_ (
+    .A(_082_),
     .B(_088_),
-    .Y(_000_[7])
-  );
-  NOR _497_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[8]),
     .Y(_089_)
   );
-  NAND _498_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_033_),
+  NAND _485_ (
+    .A(_070_),
+    .B(_089_),
     .Y(_090_)
   );
-  NAND _499_ (
-    .A(reset),
-    .B(_090_),
+  NAND _486_ (
+    .A(_077_),
+    .B(_086_),
     .Y(_091_)
   );
-  NOR _500_ (
-    .A(_089_),
+  NOR _487_ (
+    .A(_090_),
     .B(_091_),
-    .Y(_000_[8])
-  );
-  NOR _501_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[9]),
     .Y(_092_)
   );
-  NAND _502_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_035_),
+  NOT _488_ (
+    .A(_092_),
     .Y(_093_)
   );
-  NAND _503_ (
-    .A(reset),
-    .B(_093_),
+  NOR _489_ (
+    .A(contador[31]),
+    .B(_030_),
     .Y(_094_)
   );
-  NOR _504_ (
-    .A(_092_),
-    .B(_094_),
-    .Y(_000_[9])
-  );
-  NOR _505_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[10]),
+  NOR _490_ (
+    .A(_029_),
+    .B(_031_),
     .Y(_095_)
   );
-  NAND _506_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_037_),
+  NAND _491_ (
+    .A(contador[0]),
+    .B(contador[1]),
     .Y(_096_)
   );
-  NAND _507_ (
-    .A(reset),
-    .B(_096_),
+  NAND _492_ (
+    .A(contador[0]),
+    .B(delay_valid),
     .Y(_097_)
   );
-  NOR _508_ (
-    .A(_095_),
-    .B(_097_),
-    .Y(_000_[10])
-  );
-  NOR _509_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[11]),
+  NAND _493_ (
+    .A(delay_valid),
+    .B(_095_),
     .Y(_098_)
   );
-  NAND _510_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_039_),
+  NOT _494_ (
+    .A(_098_),
     .Y(_099_)
   );
-  NAND _511_ (
-    .A(reset),
-    .B(_099_),
+  NOR _495_ (
+    .A(contador[31]),
+    .B(_098_),
     .Y(_100_)
   );
-  NOR _512_ (
-    .A(_098_),
-    .B(_100_),
-    .Y(_000_[11])
-  );
-  NOR _513_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[12]),
+  NOT _496_ (
+    .A(_100_),
     .Y(_101_)
   );
-  NAND _514_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_041_),
+  NAND _497_ (
+    .A(_092_),
+    .B(_096_),
     .Y(_102_)
   );
-  NAND _515_ (
-    .A(reset),
+  NAND _498_ (
+    .A(delay_valid),
     .B(_102_),
     .Y(_103_)
   );
-  NOR _516_ (
-    .A(_101_),
+  NOR _499_ (
+    .A(contador[31]),
     .B(_103_),
-    .Y(_000_[12])
-  );
-  NOR _517_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[13]),
     .Y(_104_)
   );
-  NAND _518_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_043_),
+  NAND _500_ (
+    .A(_094_),
+    .B(_102_),
     .Y(_105_)
   );
-  NAND _519_ (
-    .A(reset),
-    .B(_105_),
+  NOR _501_ (
+    .A(_032_),
+    .B(_104_),
     .Y(_106_)
   );
-  NOR _520_ (
-    .A(_104_),
-    .B(_106_),
-    .Y(_000_[13])
-  );
-  NOR _521_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[14]),
+  NAND _502_ (
+    .A(reset),
+    .B(_105_),
     .Y(_107_)
   );
-  NAND _522_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_045_),
+  NAND _503_ (
+    .A(_029_),
+    .B(_030_),
     .Y(_108_)
   );
-  NAND _523_ (
-    .A(reset),
+  NAND _504_ (
+    .A(_097_),
     .B(_108_),
     .Y(_109_)
   );
-  NOR _524_ (
+  NOR _505_ (
     .A(_107_),
     .B(_109_),
-    .Y(_000_[14])
+    .Y(_001_[0])
   );
-  NOR _525_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[15]),
+  NAND _506_ (
+    .A(_031_),
+    .B(_097_),
     .Y(_110_)
   );
-  NAND _526_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_047_),
+  NAND _507_ (
+    .A(_098_),
+    .B(_110_),
     .Y(_111_)
   );
-  NAND _527_ (
-    .A(reset),
+  NOR _508_ (
+    .A(_107_),
     .B(_111_),
+    .Y(_001_[1])
+  );
+  NAND _509_ (
+    .A(contador[2]),
+    .B(_099_),
     .Y(_112_)
   );
-  NOR _528_ (
-    .A(_110_),
-    .B(_112_),
-    .Y(_000_[15])
-  );
-  NOR _529_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[16]),
+  NOT _510_ (
+    .A(_112_),
     .Y(_113_)
   );
-  NAND _530_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_049_),
+  NAND _511_ (
+    .A(_005_),
+    .B(_098_),
     .Y(_114_)
   );
-  NAND _531_ (
-    .A(reset),
+  NAND _512_ (
+    .A(_112_),
     .B(_114_),
     .Y(_115_)
   );
-  NOR _532_ (
-    .A(_113_),
+  NOR _513_ (
+    .A(_107_),
     .B(_115_),
-    .Y(_000_[16])
+    .Y(_001_[2])
   );
-  NOR _533_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[17]),
+  NAND _514_ (
+    .A(contador[3]),
+    .B(_113_),
     .Y(_116_)
   );
-  NAND _534_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_050_),
+  NAND _515_ (
+    .A(_006_),
+    .B(_112_),
     .Y(_117_)
   );
-  NAND _535_ (
-    .A(reset),
+  NAND _516_ (
+    .A(_116_),
     .B(_117_),
     .Y(_118_)
   );
-  NOR _536_ (
-    .A(_116_),
+  NOR _517_ (
+    .A(_107_),
     .B(_118_),
-    .Y(_000_[17])
+    .Y(_001_[3])
   );
-  NOR _537_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[18]),
+  NOR _518_ (
+    .A(_006_),
+    .B(_007_),
     .Y(_119_)
   );
-  NAND _538_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_051_),
+  NAND _519_ (
+    .A(contador[3]),
+    .B(contador[4]),
     .Y(_120_)
   );
-  NAND _539_ (
-    .A(reset),
-    .B(_120_),
+  NAND _520_ (
+    .A(_113_),
+    .B(_119_),
     .Y(_121_)
   );
-  NOR _540_ (
-    .A(_119_),
-    .B(_121_),
-    .Y(_000_[18])
-  );
-  NOR _541_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[19]),
+  NAND _521_ (
+    .A(_007_),
+    .B(_116_),
     .Y(_122_)
   );
-  NAND _542_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_052_),
+  NAND _522_ (
+    .A(_121_),
+    .B(_122_),
     .Y(_123_)
   );
-  NAND _543_ (
-    .A(reset),
+  NOR _523_ (
+    .A(_107_),
     .B(_123_),
+    .Y(_001_[4])
+  );
+  NOR _524_ (
+    .A(_008_),
+    .B(_121_),
     .Y(_124_)
   );
-  NOR _544_ (
-    .A(_122_),
-    .B(_124_),
-    .Y(_000_[19])
-  );
-  NOR _545_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[20]),
+  NAND _525_ (
+    .A(_008_),
+    .B(_121_),
     .Y(_125_)
   );
-  NAND _546_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_053_),
+  NAND _526_ (
+    .A(_106_),
+    .B(_125_),
     .Y(_126_)
   );
-  NAND _547_ (
-    .A(reset),
+  NOR _527_ (
+    .A(_124_),
     .B(_126_),
-    .Y(_127_)
+    .Y(_001_[5])
   );
-  NOR _548_ (
-    .A(_125_),
-    .B(_127_),
-    .Y(_000_[20])
-  );
-  NOR _549_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[21]),
-    .Y(_128_)
-  );
-  NAND _550_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_054_),
-    .Y(_129_)
-  );
-  NAND _551_ (
-    .A(reset),
-    .B(_129_),
-    .Y(_130_)
-  );
-  NOR _552_ (
-    .A(_128_),
-    .B(_130_),
-    .Y(_000_[21])
-  );
-  NOR _553_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[22]),
-    .Y(_131_)
-  );
-  NAND _554_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_055_),
-    .Y(_132_)
-  );
-  NAND _555_ (
-    .A(reset),
-    .B(_132_),
-    .Y(_133_)
-  );
-  NOR _556_ (
-    .A(_131_),
-    .B(_133_),
-    .Y(_000_[22])
-  );
-  NOR _557_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(buffer[23]),
-    .Y(_134_)
-  );
-  NAND _558_ (
-    .A(valid_serial_paralelo_sintetizado),
-    .B(_056_),
-    .Y(_135_)
-  );
-  NAND _559_ (
-    .A(reset),
-    .B(_135_),
-    .Y(_136_)
-  );
-  NOR _560_ (
-    .A(_134_),
-    .B(_136_),
-    .Y(_000_[23])
-  );
-  NAND _561_ (
-    .A(contador[0]),
-    .B(contador[1]),
-    .Y(_137_)
-  );
-  NAND _562_ (
-    .A(_031_),
-    .B(valid_serial_paralelo_sintetizado),
-    .Y(_138_)
-  );
-  NOR _563_ (
-    .A(_032_),
-    .B(_137_),
-    .Y(_139_)
-  );
-  NAND _564_ (
-    .A(_031_),
-    .B(_139_),
-    .Y(_140_)
-  );
-  NOR _565_ (
-    .A(contador[29]),
-    .B(contador[30]),
-    .Y(_141_)
-  );
-  NOR _566_ (
-    .A(contador[19]),
-    .B(contador[20]),
-    .Y(_142_)
-  );
-  NAND _567_ (
-    .A(_011_),
-    .B(_012_),
-    .Y(_143_)
-  );
-  NOR _568_ (
+  NAND _528_ (
     .A(contador[5]),
     .B(contador[6]),
+    .Y(_127_)
+  );
+  NOT _529_ (
+    .A(_127_),
+    .Y(_128_)
+  );
+  NAND _530_ (
+    .A(contador[6]),
+    .B(_124_),
+    .Y(_129_)
+  );
+  NOR _531_ (
+    .A(contador[6]),
+    .B(_124_),
+    .Y(_130_)
+  );
+  NAND _532_ (
+    .A(_106_),
+    .B(_129_),
+    .Y(_131_)
+  );
+  NOR _533_ (
+    .A(_130_),
+    .B(_131_),
+    .Y(_001_[6])
+  );
+  NOR _534_ (
+    .A(_009_),
+    .B(_127_),
+    .Y(_132_)
+  );
+  NAND _535_ (
+    .A(contador[7]),
+    .B(_128_),
+    .Y(_133_)
+  );
+  NOR _536_ (
+    .A(_120_),
+    .B(_133_),
+    .Y(_134_)
+  );
+  NAND _537_ (
+    .A(_119_),
+    .B(_132_),
+    .Y(_135_)
+  );
+  NAND _538_ (
+    .A(_113_),
+    .B(_134_),
+    .Y(_136_)
+  );
+  NAND _539_ (
+    .A(_009_),
+    .B(_129_),
+    .Y(_137_)
+  );
+  NAND _540_ (
+    .A(_136_),
+    .B(_137_),
+    .Y(_138_)
+  );
+  NOR _541_ (
+    .A(_107_),
+    .B(_138_),
+    .Y(_001_[7])
+  );
+  NOR _542_ (
+    .A(_010_),
+    .B(_136_),
+    .Y(_139_)
+  );
+  NAND _543_ (
+    .A(_010_),
+    .B(_136_),
+    .Y(_140_)
+  );
+  NAND _544_ (
+    .A(_106_),
+    .B(_140_),
+    .Y(_141_)
+  );
+  NOR _545_ (
+    .A(_139_),
+    .B(_141_),
+    .Y(_001_[8])
+  );
+  NOR _546_ (
+    .A(contador[9]),
+    .B(_139_),
+    .Y(_142_)
+  );
+  NAND _547_ (
+    .A(contador[6]),
+    .B(contador[7]),
+    .Y(_143_)
+  );
+  NAND _548_ (
+    .A(contador[8]),
+    .B(contador[9]),
     .Y(_144_)
   );
-  NAND _569_ (
-    .A(_015_),
-    .B(_016_),
+  NOR _549_ (
+    .A(_143_),
+    .B(_144_),
     .Y(_145_)
   );
-  NAND _570_ (
-    .A(_014_),
-    .B(_017_),
+  NOT _550_ (
+    .A(_145_),
     .Y(_146_)
   );
-  NOR _571_ (
-    .A(_145_),
-    .B(_146_),
+  NAND _551_ (
+    .A(contador[2]),
+    .B(contador[3]),
     .Y(_147_)
   );
-  NAND _572_ (
-    .A(_144_),
-    .B(_147_),
+  NAND _552_ (
+    .A(contador[4]),
+    .B(contador[5]),
     .Y(_148_)
   );
-  NOR _573_ (
-    .A(contador[4]),
-    .B(contador[7]),
+  NOR _553_ (
+    .A(_147_),
+    .B(_148_),
     .Y(_149_)
   );
-  NAND _574_ (
-    .A(_010_),
-    .B(_013_),
+  NAND _554_ (
+    .A(_095_),
+    .B(_149_),
     .Y(_150_)
   );
-  NOR _575_ (
-    .A(_143_),
+  NOR _555_ (
+    .A(_146_),
     .B(_150_),
     .Y(_151_)
   );
-  NAND _576_ (
-    .A(_149_),
-    .B(_151_),
+  NAND _556_ (
+    .A(contador[2]),
+    .B(contador[9]),
     .Y(_152_)
   );
-  NOR _577_ (
-    .A(_148_),
+  NOR _557_ (
+    .A(_010_),
     .B(_152_),
     .Y(_153_)
   );
-  NAND _578_ (
-    .A(_005_),
-    .B(_153_),
+  NAND _558_ (
+    .A(contador[8]),
+    .B(_095_),
     .Y(_154_)
   );
-  NOT _579_ (
-    .A(_154_),
+  NOR _559_ (
+    .A(_152_),
+    .B(_154_),
     .Y(_155_)
   );
-  NOR _580_ (
-    .A(contador[17]),
-    .B(contador[21]),
+  NAND _560_ (
+    .A(_095_),
+    .B(_153_),
     .Y(_156_)
   );
-  NOR _581_ (
-    .A(contador[24]),
-    .B(contador[28]),
+  NOR _561_ (
+    .A(_135_),
+    .B(_156_),
     .Y(_157_)
   );
-  NAND _582_ (
-    .A(_027_),
-    .B(_157_),
+  NAND _562_ (
+    .A(_134_),
+    .B(_155_),
     .Y(_158_)
   );
-  NOR _583_ (
-    .A(contador[26]),
-    .B(contador[27]),
+  NAND _563_ (
+    .A(delay_valid),
+    .B(_157_),
     .Y(_159_)
   );
-  NAND _584_ (
-    .A(_020_),
-    .B(_159_),
+  NOT _564_ (
+    .A(_159_),
     .Y(_160_)
   );
-  NOR _585_ (
-    .A(_158_),
-    .B(_160_),
+  NAND _565_ (
+    .A(_106_),
+    .B(_159_),
     .Y(_161_)
   );
-  NAND _586_ (
-    .A(_156_),
+  NOR _566_ (
+    .A(_142_),
     .B(_161_),
+    .Y(_001_[9])
+  );
+  NAND _567_ (
+    .A(_011_),
+    .B(_159_),
     .Y(_162_)
   );
-  NOR _587_ (
-    .A(contador[16]),
-    .B(contador[23]),
+  NAND _568_ (
+    .A(contador[10]),
+    .B(_160_),
     .Y(_163_)
   );
-  NAND _588_ (
-    .A(_142_),
-    .B(_163_),
+  NOT _569_ (
+    .A(_163_),
     .Y(_164_)
   );
-  NOR _589_ (
-    .A(contador[22]),
-    .B(_164_),
+  NAND _570_ (
+    .A(_162_),
+    .B(_163_),
     .Y(_165_)
   );
-  NAND _590_ (
-    .A(_141_),
+  NOR _571_ (
+    .A(_107_),
     .B(_165_),
+    .Y(_001_[10])
+  );
+  NAND _572_ (
+    .A(_012_),
+    .B(_163_),
     .Y(_166_)
   );
-  NOR _591_ (
-    .A(_162_),
-    .B(_166_),
+  NAND _573_ (
+    .A(contador[10]),
+    .B(contador[11]),
     .Y(_167_)
   );
-  NOT _592_ (
-    .A(_167_),
+  NAND _574_ (
+    .A(contador[11]),
+    .B(_164_),
     .Y(_168_)
   );
-  NOR _593_ (
-    .A(contador[2]),
-    .B(_168_),
+  NOT _575_ (
+    .A(_168_),
     .Y(_169_)
   );
-  NAND _594_ (
-    .A(_155_),
-    .B(_169_),
+  NAND _576_ (
+    .A(_106_),
+    .B(_166_),
     .Y(_170_)
   );
-  NOT _595_ (
-    .A(_170_),
+  NOR _577_ (
+    .A(_169_),
+    .B(_170_),
+    .Y(_001_[11])
+  );
+  NAND _578_ (
+    .A(_013_),
+    .B(_168_),
     .Y(_171_)
   );
-  NOR _596_ (
-    .A(_138_),
+  NAND _579_ (
+    .A(_106_),
     .B(_171_),
     .Y(_172_)
   );
-  NAND _597_ (
-    .A(reset),
-    .B(_140_),
+  NOR _580_ (
+    .A(_013_),
+    .B(_168_),
     .Y(_173_)
   );
-  NOR _598_ (
+  NOR _581_ (
     .A(_172_),
+    .B(_173_),
+    .Y(_001_[12])
+  );
+  NOR _582_ (
+    .A(contador[13]),
     .B(_173_),
     .Y(_174_)
   );
-  NOT _599_ (
-    .A(_174_),
+  NOR _583_ (
+    .A(_013_),
+    .B(_014_),
     .Y(_175_)
   );
-  NOR _600_ (
-    .A(contador[0]),
-    .B(_175_),
-    .Y(_001_[0])
-  );
-  NOR _601_ (
-    .A(contador[0]),
-    .B(contador[1]),
+  NAND _584_ (
+    .A(contador[13]),
+    .B(_173_),
     .Y(_176_)
   );
-  NOT _602_ (
+  NOT _585_ (
     .A(_176_),
     .Y(_177_)
   );
-  NAND _603_ (
-    .A(_137_),
-    .B(_177_),
+  NOR _586_ (
+    .A(_107_),
+    .B(_174_),
     .Y(_178_)
   );
-  NOR _604_ (
-    .A(_175_),
-    .B(_178_),
-    .Y(_001_[1])
-  );
-  NOR _605_ (
-    .A(_004_),
-    .B(_137_),
+  NOT _587_ (
+    .A(_178_),
     .Y(_179_)
   );
-  NOT _606_ (
-    .A(_179_),
+  NOR _588_ (
+    .A(_177_),
+    .B(_179_),
+    .Y(_001_[13])
+  );
+  NAND _589_ (
+    .A(_015_),
+    .B(_176_),
     .Y(_180_)
   );
-  NAND _607_ (
-    .A(_004_),
-    .B(_137_),
+  NAND _590_ (
+    .A(_106_),
+    .B(_180_),
     .Y(_181_)
   );
-  NAND _608_ (
-    .A(_180_),
-    .B(_181_),
+  NAND _591_ (
+    .A(contador[14]),
+    .B(_175_),
     .Y(_182_)
   );
-  NOR _609_ (
-    .A(_175_),
-    .B(_182_),
-    .Y(_001_[2])
-  );
-  NAND _610_ (
-    .A(_005_),
-    .B(_180_),
+  NOR _592_ (
+    .A(_015_),
+    .B(_167_),
     .Y(_183_)
   );
-  NOR _611_ (
-    .A(_005_),
-    .B(_180_),
+  NOR _593_ (
+    .A(_167_),
+    .B(_182_),
     .Y(_184_)
   );
-  NAND _612_ (
-    .A(contador[3]),
-    .B(_179_),
+  NAND _594_ (
+    .A(_175_),
+    .B(_183_),
     .Y(_185_)
   );
-  NAND _613_ (
-    .A(_183_),
+  NOR _595_ (
+    .A(_159_),
     .B(_185_),
     .Y(_186_)
   );
-  NOR _614_ (
-    .A(_175_),
+  NOR _596_ (
+    .A(_181_),
     .B(_186_),
-    .Y(_001_[3])
+    .Y(_001_[14])
   );
-  NAND _615_ (
-    .A(_006_),
-    .B(_185_),
+  NOR _597_ (
+    .A(contador[15]),
+    .B(_186_),
     .Y(_187_)
   );
-  NOR _616_ (
-    .A(_006_),
-    .B(_185_),
+  NOR _598_ (
+    .A(_107_),
+    .B(_187_),
     .Y(_188_)
   );
-  NAND _617_ (
-    .A(contador[4]),
-    .B(_184_),
+  NAND _599_ (
+    .A(contador[15]),
+    .B(_186_),
     .Y(_189_)
   );
-  NAND _618_ (
-    .A(_187_),
-    .B(_189_),
+  NOT _600_ (
+    .A(_189_),
     .Y(_190_)
   );
-  NOR _619_ (
-    .A(_175_),
-    .B(_190_),
-    .Y(_001_[4])
-  );
-  NAND _620_ (
-    .A(_007_),
+  NAND _601_ (
+    .A(_188_),
     .B(_189_),
     .Y(_191_)
   );
-  NOR _621_ (
-    .A(_007_),
+  NOT _602_ (
+    .A(_191_),
+    .Y(_001_[15])
+  );
+  NAND _603_ (
+    .A(_017_),
     .B(_189_),
     .Y(_192_)
   );
-  NAND _622_ (
-    .A(contador[5]),
-    .B(_188_),
+  NOR _604_ (
+    .A(_016_),
+    .B(_017_),
     .Y(_193_)
   );
-  NAND _623_ (
-    .A(_191_),
-    .B(_193_),
+  NOR _605_ (
+    .A(_017_),
+    .B(_189_),
     .Y(_194_)
   );
-  NOR _624_ (
-    .A(_175_),
-    .B(_194_),
-    .Y(_001_[5])
-  );
-  NAND _625_ (
-    .A(_008_),
-    .B(_193_),
+  NAND _606_ (
+    .A(contador[16]),
+    .B(_190_),
     .Y(_195_)
   );
-  NOR _626_ (
-    .A(_008_),
-    .B(_193_),
+  NAND _607_ (
+    .A(_192_),
+    .B(_195_),
     .Y(_196_)
   );
-  NAND _627_ (
-    .A(contador[6]),
-    .B(_192_),
+  NOR _608_ (
+    .A(_107_),
+    .B(_196_),
+    .Y(_001_[16])
+  );
+  NAND _609_ (
+    .A(_018_),
+    .B(_195_),
     .Y(_197_)
   );
-  NAND _628_ (
-    .A(_195_),
-    .B(_197_),
+  NAND _610_ (
+    .A(contador[17]),
+    .B(_194_),
     .Y(_198_)
   );
-  NOR _629_ (
-    .A(_175_),
-    .B(_198_),
-    .Y(_001_[6])
-  );
-  NAND _630_ (
-    .A(_009_),
-    .B(_197_),
+  NOT _611_ (
+    .A(_198_),
     .Y(_199_)
   );
-  NOR _631_ (
-    .A(_009_),
-    .B(_197_),
+  NAND _612_ (
+    .A(_197_),
+    .B(_198_),
     .Y(_200_)
   );
-  NAND _632_ (
-    .A(contador[7]),
-    .B(_196_),
+  NOR _613_ (
+    .A(_107_),
+    .B(_200_),
+    .Y(_001_[17])
+  );
+  NOR _614_ (
+    .A(contador[18]),
+    .B(_199_),
     .Y(_201_)
   );
-  NAND _633_ (
-    .A(_199_),
-    .B(_201_),
+  NAND _615_ (
+    .A(contador[17]),
+    .B(contador[18]),
     .Y(_202_)
   );
-  NOR _634_ (
-    .A(_175_),
-    .B(_202_),
-    .Y(_001_[7])
-  );
-  NAND _635_ (
-    .A(_010_),
-    .B(_201_),
+  NOR _616_ (
+    .A(_019_),
+    .B(_198_),
     .Y(_203_)
   );
-  NOR _636_ (
-    .A(_010_),
-    .B(_201_),
+  NOR _617_ (
+    .A(_201_),
+    .B(_203_),
     .Y(_204_)
   );
-  NAND _637_ (
-    .A(contador[8]),
-    .B(_200_),
+  NAND _618_ (
+    .A(_106_),
+    .B(_204_),
     .Y(_205_)
   );
-  NAND _638_ (
-    .A(_203_),
-    .B(_205_),
+  NOT _619_ (
+    .A(_205_),
+    .Y(_001_[18])
+  );
+  NOR _620_ (
+    .A(contador[19]),
+    .B(_203_),
     .Y(_206_)
   );
-  NOR _639_ (
-    .A(_175_),
-    .B(_206_),
-    .Y(_001_[8])
-  );
-  NOR _640_ (
-    .A(_011_),
-    .B(_205_),
+  NOR _621_ (
+    .A(_020_),
+    .B(_202_),
     .Y(_207_)
   );
-  NAND _641_ (
-    .A(contador[9]),
-    .B(_204_),
+  NAND _622_ (
+    .A(contador[19]),
+    .B(_193_),
     .Y(_208_)
   );
-  NAND _642_ (
-    .A(_011_),
-    .B(_205_),
+  NOR _623_ (
+    .A(_202_),
+    .B(_208_),
     .Y(_209_)
   );
-  NAND _643_ (
-    .A(_208_),
-    .B(_209_),
+  NAND _624_ (
+    .A(_193_),
+    .B(_207_),
     .Y(_210_)
   );
-  NOR _644_ (
-    .A(_175_),
-    .B(_210_),
-    .Y(_001_[9])
-  );
-  NOR _645_ (
-    .A(_012_),
-    .B(_208_),
+  NAND _625_ (
+    .A(_186_),
+    .B(_209_),
     .Y(_211_)
   );
-  NAND _646_ (
-    .A(contador[10]),
-    .B(_207_),
+  NOT _626_ (
+    .A(_211_),
     .Y(_212_)
   );
-  NAND _647_ (
-    .A(_012_),
-    .B(_208_),
+  NAND _627_ (
+    .A(_106_),
+    .B(_211_),
     .Y(_213_)
   );
-  NAND _648_ (
-    .A(_212_),
+  NOR _628_ (
+    .A(_206_),
     .B(_213_),
+    .Y(_001_[19])
+  );
+  NOR _629_ (
+    .A(contador[20]),
+    .B(_212_),
     .Y(_214_)
   );
-  NOR _649_ (
-    .A(_175_),
-    .B(_214_),
-    .Y(_001_[10])
-  );
-  NOR _650_ (
-    .A(_013_),
-    .B(_212_),
+  NOR _630_ (
+    .A(_021_),
+    .B(_211_),
     .Y(_215_)
   );
-  NAND _651_ (
-    .A(contador[11]),
-    .B(_211_),
+  NOR _631_ (
+    .A(_214_),
+    .B(_215_),
     .Y(_216_)
   );
-  NAND _652_ (
-    .A(_013_),
-    .B(_212_),
+  NOT _632_ (
+    .A(_216_),
     .Y(_217_)
   );
-  NAND _653_ (
-    .A(_174_),
+  NOR _633_ (
+    .A(_107_),
     .B(_217_),
+    .Y(_001_[20])
+  );
+  NOR _634_ (
+    .A(_021_),
+    .B(_030_),
     .Y(_218_)
   );
-  NOR _654_ (
-    .A(_215_),
-    .B(_218_),
-    .Y(_001_[11])
-  );
-  NOR _655_ (
-    .A(_014_),
-    .B(_216_),
+  NAND _635_ (
+    .A(contador[20]),
+    .B(delay_valid),
     .Y(_219_)
   );
-  NAND _656_ (
-    .A(contador[12]),
-    .B(_215_),
+  NOR _636_ (
+    .A(_185_),
+    .B(_210_),
     .Y(_220_)
   );
-  NOR _657_ (
-    .A(contador[12]),
-    .B(_215_),
+  NAND _637_ (
+    .A(_184_),
+    .B(_209_),
     .Y(_221_)
   );
-  NOR _658_ (
-    .A(_175_),
-    .B(_221_),
+  NAND _638_ (
+    .A(_151_),
+    .B(_220_),
     .Y(_222_)
   );
-  NAND _659_ (
-    .A(_220_),
-    .B(_222_),
+  NOR _639_ (
+    .A(_158_),
+    .B(_221_),
     .Y(_223_)
   );
-  NOT _660_ (
-    .A(_223_),
-    .Y(_001_[12])
-  );
-  NOR _661_ (
-    .A(_015_),
+  NAND _640_ (
+    .A(_157_),
     .B(_220_),
     .Y(_224_)
   );
-  NAND _662_ (
-    .A(contador[13]),
-    .B(_219_),
+  NAND _641_ (
+    .A(_218_),
+    .B(_223_),
     .Y(_225_)
   );
-  NAND _663_ (
-    .A(_015_),
-    .B(_220_),
+  NAND _642_ (
+    .A(_022_),
+    .B(_225_),
     .Y(_226_)
   );
-  NAND _664_ (
-    .A(_174_),
+  NAND _643_ (
+    .A(_106_),
     .B(_226_),
     .Y(_227_)
   );
-  NOR _665_ (
-    .A(_224_),
-    .B(_227_),
-    .Y(_001_[13])
-  );
-  NOR _666_ (
-    .A(_016_),
+  NOR _644_ (
+    .A(_022_),
     .B(_225_),
     .Y(_228_)
   );
-  NAND _667_ (
-    .A(contador[14]),
-    .B(_224_),
+  NOR _645_ (
+    .A(_227_),
+    .B(_228_),
+    .Y(_001_[21])
+  );
+  NOR _646_ (
+    .A(contador[22]),
+    .B(_228_),
     .Y(_229_)
   );
-  NOR _668_ (
-    .A(contador[14]),
-    .B(_224_),
+  NOT _647_ (
+    .A(_229_),
     .Y(_230_)
   );
-  NOT _669_ (
-    .A(_230_),
+  NAND _648_ (
+    .A(contador[22]),
+    .B(_228_),
     .Y(_231_)
   );
-  NAND _670_ (
-    .A(_174_),
+  NAND _649_ (
+    .A(_230_),
     .B(_231_),
     .Y(_232_)
   );
-  NOR _671_ (
-    .A(_228_),
+  NOR _650_ (
+    .A(_107_),
     .B(_232_),
-    .Y(_001_[14])
+    .Y(_001_[22])
   );
-  NOR _672_ (
-    .A(_017_),
-    .B(_229_),
+  NAND _651_ (
+    .A(_023_),
+    .B(_231_),
     .Y(_233_)
   );
-  NAND _673_ (
-    .A(contador[15]),
-    .B(_228_),
+  NAND _652_ (
+    .A(contador[21]),
+    .B(contador[23]),
     .Y(_234_)
   );
-  NAND _674_ (
-    .A(_017_),
-    .B(_229_),
+  NOR _653_ (
+    .A(_219_),
+    .B(_234_),
     .Y(_235_)
   );
-  NAND _675_ (
-    .A(_174_),
+  NAND _654_ (
+    .A(contador[22]),
     .B(_235_),
     .Y(_236_)
   );
-  NOR _676_ (
-    .A(_233_),
+  NOR _655_ (
+    .A(_222_),
     .B(_236_),
-    .Y(_001_[15])
-  );
-  NOR _677_ (
-    .A(_018_),
-    .B(_234_),
     .Y(_237_)
   );
-  NAND _678_ (
-    .A(contador[16]),
-    .B(_233_),
+  NOR _656_ (
+    .A(_224_),
+    .B(_236_),
     .Y(_238_)
   );
-  NAND _679_ (
-    .A(_018_),
-    .B(_234_),
+  NAND _657_ (
+    .A(_106_),
+    .B(_233_),
     .Y(_239_)
   );
-  NAND _680_ (
-    .A(_174_),
+  NOR _658_ (
+    .A(_238_),
     .B(_239_),
+    .Y(_001_[23])
+  );
+  NOR _659_ (
+    .A(contador[24]),
+    .B(_238_),
     .Y(_240_)
   );
-  NOR _681_ (
-    .A(_237_),
+  NOR _660_ (
+    .A(_107_),
     .B(_240_),
-    .Y(_001_[16])
-  );
-  NOR _682_ (
-    .A(_019_),
-    .B(_238_),
     .Y(_241_)
   );
-  NAND _683_ (
-    .A(contador[17]),
-    .B(_237_),
+  NAND _661_ (
+    .A(contador[24]),
+    .B(_238_),
     .Y(_242_)
   );
-  NAND _684_ (
-    .A(_019_),
-    .B(_238_),
+  NAND _662_ (
+    .A(_241_),
+    .B(_242_),
     .Y(_243_)
   );
-  NAND _685_ (
-    .A(_174_),
-    .B(_243_),
+  NOT _663_ (
+    .A(_243_),
+    .Y(_001_[24])
+  );
+  NAND _664_ (
+    .A(_025_),
+    .B(_242_),
     .Y(_244_)
   );
-  NOR _686_ (
-    .A(_241_),
-    .B(_244_),
-    .Y(_001_[17])
-  );
-  NOR _687_ (
-    .A(_020_),
-    .B(_242_),
+  NOR _665_ (
+    .A(_024_),
+    .B(_025_),
     .Y(_245_)
   );
-  NAND _688_ (
-    .A(contador[18]),
-    .B(_241_),
+  NAND _666_ (
+    .A(_237_),
+    .B(_245_),
     .Y(_246_)
   );
-  NAND _689_ (
-    .A(_020_),
-    .B(_242_),
+  NAND _667_ (
+    .A(_238_),
+    .B(_245_),
     .Y(_247_)
   );
-  NAND _690_ (
-    .A(_174_),
+  NAND _668_ (
+    .A(_244_),
     .B(_247_),
     .Y(_248_)
   );
-  NOR _691_ (
-    .A(_245_),
+  NOR _669_ (
+    .A(_107_),
     .B(_248_),
-    .Y(_001_[18])
+    .Y(_001_[25])
   );
-  NOR _692_ (
-    .A(_021_),
+  NAND _670_ (
+    .A(_026_),
     .B(_246_),
     .Y(_249_)
   );
-  NAND _693_ (
-    .A(contador[19]),
-    .B(_245_),
+  NOR _671_ (
+    .A(_026_),
+    .B(_246_),
     .Y(_250_)
   );
-  NAND _694_ (
-    .A(_021_),
-    .B(_246_),
+  NOR _672_ (
+    .A(_107_),
+    .B(_250_),
     .Y(_251_)
   );
-  NAND _695_ (
-    .A(_174_),
-    .B(_251_),
+  NOR _673_ (
+    .A(_026_),
+    .B(_247_),
     .Y(_252_)
   );
-  NOR _696_ (
+  NAND _674_ (
     .A(_249_),
-    .B(_252_),
-    .Y(_001_[19])
-  );
-  NOR _697_ (
-    .A(_022_),
-    .B(_250_),
+    .B(_251_),
     .Y(_253_)
   );
-  NAND _698_ (
-    .A(contador[20]),
-    .B(_249_),
+  NOT _675_ (
+    .A(_253_),
+    .Y(_001_[26])
+  );
+  NAND _676_ (
+    .A(contador[27]),
+    .B(_250_),
     .Y(_254_)
   );
-  NAND _699_ (
-    .A(_022_),
+  NOR _677_ (
+    .A(contador[27]),
     .B(_250_),
     .Y(_255_)
   );
-  NAND _700_ (
-    .A(_174_),
-    .B(_255_),
+  NAND _678_ (
+    .A(contador[27]),
+    .B(_252_),
     .Y(_256_)
   );
-  NOR _701_ (
-    .A(_253_),
+  NAND _679_ (
+    .A(_106_),
     .B(_256_),
-    .Y(_001_[20])
-  );
-  NOR _702_ (
-    .A(_023_),
-    .B(_254_),
     .Y(_257_)
   );
-  NAND _703_ (
-    .A(contador[21]),
-    .B(_253_),
+  NOR _680_ (
+    .A(_255_),
+    .B(_257_),
+    .Y(_001_[27])
+  );
+  NAND _681_ (
+    .A(_027_),
+    .B(_254_),
     .Y(_258_)
   );
-  NAND _704_ (
-    .A(_023_),
-    .B(_254_),
+  NAND _682_ (
+    .A(_106_),
+    .B(_258_),
     .Y(_259_)
   );
-  NAND _705_ (
-    .A(_174_),
-    .B(_259_),
+  NOR _683_ (
+    .A(_027_),
+    .B(_254_),
     .Y(_260_)
   );
-  NOR _706_ (
-    .A(_257_),
+  NOR _684_ (
+    .A(_259_),
     .B(_260_),
-    .Y(_001_[21])
+    .Y(_001_[28])
   );
-  NOR _707_ (
-    .A(_024_),
-    .B(_258_),
+  NOR _685_ (
+    .A(contador[29]),
+    .B(_260_),
     .Y(_261_)
   );
-  NAND _708_ (
-    .A(contador[22]),
-    .B(_257_),
+  NOR _686_ (
+    .A(_107_),
+    .B(_261_),
     .Y(_262_)
   );
-  NAND _709_ (
-    .A(_024_),
-    .B(_258_),
+  NAND _687_ (
+    .A(contador[29]),
+    .B(_260_),
     .Y(_263_)
   );
-  NAND _710_ (
-    .A(_174_),
+  NAND _688_ (
+    .A(_262_),
     .B(_263_),
     .Y(_264_)
   );
-  NOR _711_ (
-    .A(_261_),
-    .B(_264_),
-    .Y(_001_[22])
+  NOT _689_ (
+    .A(_264_),
+    .Y(_001_[29])
   );
-  NOR _712_ (
-    .A(_025_),
-    .B(_262_),
+  NAND _690_ (
+    .A(_028_),
+    .B(_263_),
     .Y(_265_)
   );
-  NAND _713_ (
-    .A(contador[23]),
-    .B(_261_),
+  NAND _691_ (
+    .A(_106_),
+    .B(_265_),
     .Y(_266_)
   );
-  NAND _714_ (
-    .A(_025_),
-    .B(_262_),
+  NOR _692_ (
+    .A(_028_),
+    .B(_263_),
     .Y(_267_)
   );
-  NAND _715_ (
-    .A(_174_),
+  NOR _693_ (
+    .A(_266_),
     .B(_267_),
+    .Y(_001_[30])
+  );
+  NAND _694_ (
+    .A(contador[31]),
+    .B(reset),
     .Y(_268_)
   );
-  NOR _716_ (
-    .A(_265_),
+  NOR _695_ (
+    .A(_267_),
     .B(_268_),
-    .Y(_001_[23])
+    .Y(_001_[31])
   );
-  NOR _717_ (
-    .A(_026_),
-    .B(_266_),
+  NOR _696_ (
+    .A(_093_),
+    .B(_101_),
     .Y(_269_)
   );
-  NAND _718_ (
-    .A(contador[24]),
-    .B(_265_),
+  NOR _697_ (
+    .A(valid_demux_8_32_sintetizado),
+    .B(_269_),
     .Y(_270_)
   );
-  NAND _719_ (
-    .A(_026_),
-    .B(_266_),
+  NOR _698_ (
+    .A(_032_),
+    .B(_270_),
+    .Y(_004_)
+  );
+  NOR _699_ (
+    .A(data_demux_8_32_sintetizado[0]),
+    .B(_269_),
     .Y(_271_)
   );
-  NAND _720_ (
-    .A(_174_),
-    .B(_271_),
+  NAND _700_ (
+    .A(_033_),
+    .B(_269_),
     .Y(_272_)
   );
-  NOR _721_ (
-    .A(_269_),
+  NAND _701_ (
+    .A(reset),
     .B(_272_),
-    .Y(_001_[24])
-  );
-  NOR _722_ (
-    .A(_027_),
-    .B(_270_),
     .Y(_273_)
   );
-  NAND _723_ (
-    .A(contador[25]),
+  NOR _702_ (
+    .A(_271_),
+    .B(_273_),
+    .Y(_002_[0])
+  );
+  NOR _703_ (
+    .A(data_demux_8_32_sintetizado[1]),
     .B(_269_),
     .Y(_274_)
   );
-  NAND _724_ (
-    .A(_027_),
-    .B(_270_),
+  NAND _704_ (
+    .A(_034_),
+    .B(_269_),
     .Y(_275_)
   );
-  NAND _725_ (
-    .A(_174_),
+  NAND _705_ (
+    .A(reset),
     .B(_275_),
     .Y(_276_)
   );
-  NOR _726_ (
-    .A(_273_),
+  NOR _706_ (
+    .A(_274_),
     .B(_276_),
-    .Y(_001_[25])
+    .Y(_002_[1])
   );
-  NOR _727_ (
-    .A(_028_),
-    .B(_274_),
+  NOR _707_ (
+    .A(data_demux_8_32_sintetizado[2]),
+    .B(_269_),
     .Y(_277_)
   );
-  NAND _728_ (
-    .A(_028_),
-    .B(_274_),
+  NAND _708_ (
+    .A(_035_),
+    .B(_269_),
     .Y(_278_)
   );
-  NAND _729_ (
-    .A(_174_),
+  NAND _709_ (
+    .A(reset),
     .B(_278_),
     .Y(_279_)
   );
-  NOR _730_ (
+  NOR _710_ (
     .A(_277_),
     .B(_279_),
-    .Y(_001_[26])
+    .Y(_002_[2])
   );
-  NAND _731_ (
-    .A(contador[27]),
-    .B(_277_),
+  NOR _711_ (
+    .A(data_demux_8_32_sintetizado[3]),
+    .B(_269_),
     .Y(_280_)
   );
-  NOT _732_ (
-    .A(_280_),
+  NAND _712_ (
+    .A(_036_),
+    .B(_269_),
     .Y(_281_)
   );
-  NOR _733_ (
-    .A(contador[27]),
-    .B(_277_),
+  NAND _713_ (
+    .A(reset),
+    .B(_281_),
     .Y(_282_)
   );
-  NOT _734_ (
-    .A(_282_),
+  NOR _714_ (
+    .A(_280_),
+    .B(_282_),
+    .Y(_002_[3])
+  );
+  NOR _715_ (
+    .A(data_demux_8_32_sintetizado[4]),
+    .B(_269_),
     .Y(_283_)
   );
-  NAND _735_ (
-    .A(_174_),
-    .B(_283_),
+  NAND _716_ (
+    .A(_037_),
+    .B(_269_),
     .Y(_284_)
   );
-  NOR _736_ (
-    .A(_281_),
+  NAND _717_ (
+    .A(reset),
     .B(_284_),
-    .Y(_001_[27])
-  );
-  NOR _737_ (
-    .A(_029_),
-    .B(_280_),
     .Y(_285_)
   );
-  NAND _738_ (
-    .A(_029_),
-    .B(_280_),
+  NOR _718_ (
+    .A(_283_),
+    .B(_285_),
+    .Y(_002_[4])
+  );
+  NOR _719_ (
+    .A(data_demux_8_32_sintetizado[5]),
+    .B(_269_),
     .Y(_286_)
   );
-  NAND _739_ (
-    .A(_174_),
-    .B(_286_),
+  NAND _720_ (
+    .A(_038_),
+    .B(_269_),
     .Y(_287_)
   );
-  NOR _740_ (
-    .A(_285_),
+  NAND _721_ (
+    .A(reset),
     .B(_287_),
-    .Y(_001_[28])
-  );
-  NAND _741_ (
-    .A(contador[29]),
-    .B(_285_),
     .Y(_288_)
   );
-  NOT _742_ (
-    .A(_288_),
+  NOR _722_ (
+    .A(_286_),
+    .B(_288_),
+    .Y(_002_[5])
+  );
+  NOR _723_ (
+    .A(data_demux_8_32_sintetizado[6]),
+    .B(_269_),
     .Y(_289_)
   );
-  NOR _743_ (
-    .A(contador[29]),
-    .B(_285_),
+  NAND _724_ (
+    .A(_039_),
+    .B(_269_),
     .Y(_290_)
   );
-  NOT _744_ (
-    .A(_290_),
+  NAND _725_ (
+    .A(reset),
+    .B(_290_),
     .Y(_291_)
   );
-  NAND _745_ (
-    .A(_174_),
+  NOR _726_ (
+    .A(_289_),
     .B(_291_),
+    .Y(_002_[6])
+  );
+  NOR _727_ (
+    .A(data_demux_8_32_sintetizado[7]),
+    .B(_269_),
     .Y(_292_)
   );
-  NOR _746_ (
-    .A(_289_),
-    .B(_292_),
-    .Y(_001_[29])
-  );
-  NOR _747_ (
-    .A(_030_),
-    .B(_288_),
+  NAND _728_ (
+    .A(_040_),
+    .B(_269_),
     .Y(_293_)
   );
-  NAND _748_ (
-    .A(_030_),
-    .B(_288_),
+  NAND _729_ (
+    .A(reset),
+    .B(_293_),
     .Y(_294_)
   );
-  NAND _749_ (
-    .A(_174_),
+  NOR _730_ (
+    .A(_292_),
     .B(_294_),
+    .Y(_002_[7])
+  );
+  NOR _731_ (
+    .A(data_demux_8_32_sintetizado[8]),
+    .B(_269_),
     .Y(_295_)
   );
-  NOR _750_ (
-    .A(_293_),
-    .B(_295_),
-    .Y(_001_[30])
-  );
-  NAND _751_ (
-    .A(_031_),
-    .B(_032_),
+  NAND _732_ (
+    .A(_041_),
+    .B(_269_),
     .Y(_296_)
   );
-  NOR _752_ (
-    .A(contador[31]),
-    .B(_293_),
+  NAND _733_ (
+    .A(reset),
+    .B(_296_),
     .Y(_297_)
   );
-  NAND _753_ (
-    .A(_293_),
-    .B(_296_),
+  NOR _734_ (
+    .A(_295_),
+    .B(_297_),
+    .Y(_002_[8])
+  );
+  NOR _735_ (
+    .A(data_demux_8_32_sintetizado[9]),
+    .B(_269_),
     .Y(_298_)
   );
-  NAND _754_ (
-    .A(reset),
-    .B(_298_),
+  NAND _736_ (
+    .A(_042_),
+    .B(_269_),
     .Y(_299_)
   );
-  NOR _755_ (
-    .A(_297_),
+  NAND _737_ (
+    .A(reset),
     .B(_299_),
-    .Y(_001_[31])
-  );
-  NOR _756_ (
-    .A(_140_),
-    .B(_170_),
     .Y(_300_)
   );
-  NOR _757_ (
-    .A(valid_demux_8_32_sintetizado),
+  NOR _738_ (
+    .A(_298_),
     .B(_300_),
+    .Y(_002_[9])
+  );
+  NOR _739_ (
+    .A(data_demux_8_32_sintetizado[10]),
+    .B(_269_),
     .Y(_301_)
   );
-  NOT _758_ (
-    .A(_301_),
+  NAND _740_ (
+    .A(_043_),
+    .B(_269_),
     .Y(_302_)
   );
-  NAND _759_ (
-    .A(contador[2]),
-    .B(_176_),
+  NAND _741_ (
+    .A(reset),
+    .B(_302_),
     .Y(_303_)
   );
-  NOR _760_ (
-    .A(_296_),
+  NOR _742_ (
+    .A(_301_),
     .B(_303_),
+    .Y(_002_[10])
+  );
+  NOR _743_ (
+    .A(data_demux_8_32_sintetizado[11]),
+    .B(_269_),
     .Y(_304_)
+  );
+  NAND _744_ (
+    .A(_044_),
+    .B(_269_),
+    .Y(_305_)
+  );
+  NAND _745_ (
+    .A(reset),
+    .B(_305_),
+    .Y(_306_)
+  );
+  NOR _746_ (
+    .A(_304_),
+    .B(_306_),
+    .Y(_002_[11])
+  );
+  NOR _747_ (
+    .A(data_demux_8_32_sintetizado[12]),
+    .B(_269_),
+    .Y(_307_)
+  );
+  NAND _748_ (
+    .A(_045_),
+    .B(_269_),
+    .Y(_308_)
+  );
+  NAND _749_ (
+    .A(reset),
+    .B(_308_),
+    .Y(_309_)
+  );
+  NOR _750_ (
+    .A(_307_),
+    .B(_309_),
+    .Y(_002_[12])
+  );
+  NOR _751_ (
+    .A(data_demux_8_32_sintetizado[13]),
+    .B(_269_),
+    .Y(_310_)
+  );
+  NAND _752_ (
+    .A(_046_),
+    .B(_269_),
+    .Y(_311_)
+  );
+  NAND _753_ (
+    .A(reset),
+    .B(_311_),
+    .Y(_312_)
+  );
+  NOR _754_ (
+    .A(_310_),
+    .B(_312_),
+    .Y(_002_[13])
+  );
+  NOR _755_ (
+    .A(data_demux_8_32_sintetizado[14]),
+    .B(_269_),
+    .Y(_313_)
+  );
+  NAND _756_ (
+    .A(_047_),
+    .B(_269_),
+    .Y(_314_)
+  );
+  NAND _757_ (
+    .A(reset),
+    .B(_314_),
+    .Y(_315_)
+  );
+  NOR _758_ (
+    .A(_313_),
+    .B(_315_),
+    .Y(_002_[14])
+  );
+  NOR _759_ (
+    .A(data_demux_8_32_sintetizado[15]),
+    .B(_269_),
+    .Y(_316_)
+  );
+  NAND _760_ (
+    .A(_048_),
+    .B(_269_),
+    .Y(_317_)
   );
   NAND _761_ (
     .A(reset),
-    .B(_302_),
-    .Y(_305_)
-  );
-  NAND _762_ (
-    .A(_167_),
-    .B(_304_),
-    .Y(_306_)
-  );
-  NOR _763_ (
-    .A(_154_),
-    .B(_306_),
-    .Y(_307_)
-  );
-  NOR _764_ (
-    .A(_305_),
-    .B(_307_),
-    .Y(_003_)
-  );
-  NOR _765_ (
-    .A(data_demux_8_32_sintetizado[0]),
-    .B(_300_),
-    .Y(_308_)
-  );
-  NAND _766_ (
-    .A(_034_),
-    .B(_300_),
-    .Y(_309_)
-  );
-  NAND _767_ (
-    .A(reset),
-    .B(_309_),
-    .Y(_310_)
-  );
-  NOR _768_ (
-    .A(_308_),
-    .B(_310_),
-    .Y(_002_[0])
-  );
-  NOR _769_ (
-    .A(data_demux_8_32_sintetizado[1]),
-    .B(_300_),
-    .Y(_311_)
-  );
-  NAND _770_ (
-    .A(_036_),
-    .B(_300_),
-    .Y(_312_)
-  );
-  NAND _771_ (
-    .A(reset),
-    .B(_312_),
-    .Y(_313_)
-  );
-  NOR _772_ (
-    .A(_311_),
-    .B(_313_),
-    .Y(_002_[1])
-  );
-  NOR _773_ (
-    .A(data_demux_8_32_sintetizado[2]),
-    .B(_300_),
-    .Y(_314_)
-  );
-  NAND _774_ (
-    .A(_038_),
-    .B(_300_),
-    .Y(_315_)
-  );
-  NAND _775_ (
-    .A(reset),
-    .B(_315_),
-    .Y(_316_)
-  );
-  NOR _776_ (
-    .A(_314_),
-    .B(_316_),
-    .Y(_002_[2])
-  );
-  NOR _777_ (
-    .A(data_demux_8_32_sintetizado[3]),
-    .B(_300_),
-    .Y(_317_)
-  );
-  NAND _778_ (
-    .A(_040_),
-    .B(_300_),
+    .B(_317_),
     .Y(_318_)
   );
-  NAND _779_ (
-    .A(reset),
+  NOR _762_ (
+    .A(_316_),
     .B(_318_),
+    .Y(_002_[15])
+  );
+  NOR _763_ (
+    .A(data_demux_8_32_sintetizado[16]),
+    .B(_269_),
     .Y(_319_)
   );
-  NOR _780_ (
-    .A(_317_),
-    .B(_319_),
-    .Y(_002_[3])
-  );
-  NOR _781_ (
-    .A(data_demux_8_32_sintetizado[4]),
-    .B(_300_),
+  NAND _764_ (
+    .A(_049_),
+    .B(_269_),
     .Y(_320_)
   );
-  NAND _782_ (
-    .A(_042_),
-    .B(_300_),
+  NAND _765_ (
+    .A(reset),
+    .B(_320_),
     .Y(_321_)
   );
-  NAND _783_ (
-    .A(reset),
+  NOR _766_ (
+    .A(_319_),
     .B(_321_),
+    .Y(_002_[16])
+  );
+  NOR _767_ (
+    .A(data_demux_8_32_sintetizado[17]),
+    .B(_269_),
     .Y(_322_)
   );
-  NOR _784_ (
-    .A(_320_),
-    .B(_322_),
-    .Y(_002_[4])
-  );
-  NOR _785_ (
-    .A(data_demux_8_32_sintetizado[5]),
-    .B(_300_),
+  NAND _768_ (
+    .A(_050_),
+    .B(_269_),
     .Y(_323_)
   );
-  NAND _786_ (
-    .A(_044_),
-    .B(_300_),
+  NAND _769_ (
+    .A(reset),
+    .B(_323_),
     .Y(_324_)
   );
-  NAND _787_ (
-    .A(reset),
+  NOR _770_ (
+    .A(_322_),
     .B(_324_),
+    .Y(_002_[17])
+  );
+  NOR _771_ (
+    .A(data_demux_8_32_sintetizado[18]),
+    .B(_269_),
     .Y(_325_)
   );
-  NOR _788_ (
-    .A(_323_),
-    .B(_325_),
-    .Y(_002_[5])
-  );
-  NOR _789_ (
-    .A(data_demux_8_32_sintetizado[6]),
-    .B(_300_),
+  NAND _772_ (
+    .A(_051_),
+    .B(_269_),
     .Y(_326_)
   );
-  NAND _790_ (
-    .A(_046_),
-    .B(_300_),
+  NAND _773_ (
+    .A(reset),
+    .B(_326_),
     .Y(_327_)
   );
-  NAND _791_ (
-    .A(reset),
+  NOR _774_ (
+    .A(_325_),
     .B(_327_),
+    .Y(_002_[18])
+  );
+  NOR _775_ (
+    .A(data_demux_8_32_sintetizado[19]),
+    .B(_269_),
     .Y(_328_)
   );
-  NOR _792_ (
-    .A(_326_),
-    .B(_328_),
-    .Y(_002_[6])
-  );
-  NOR _793_ (
-    .A(data_demux_8_32_sintetizado[7]),
-    .B(_300_),
+  NAND _776_ (
+    .A(_052_),
+    .B(_269_),
     .Y(_329_)
   );
-  NAND _794_ (
-    .A(_048_),
-    .B(_300_),
+  NAND _777_ (
+    .A(reset),
+    .B(_329_),
     .Y(_330_)
   );
-  NAND _795_ (
-    .A(reset),
+  NOR _778_ (
+    .A(_328_),
     .B(_330_),
+    .Y(_002_[19])
+  );
+  NOR _779_ (
+    .A(data_demux_8_32_sintetizado[20]),
+    .B(_269_),
     .Y(_331_)
   );
-  NOR _796_ (
-    .A(_329_),
-    .B(_331_),
-    .Y(_002_[7])
-  );
-  NOR _797_ (
-    .A(data_demux_8_32_sintetizado[8]),
-    .B(_300_),
+  NAND _780_ (
+    .A(_053_),
+    .B(_269_),
     .Y(_332_)
   );
-  NAND _798_ (
-    .A(_033_),
-    .B(_300_),
+  NAND _781_ (
+    .A(reset),
+    .B(_332_),
     .Y(_333_)
   );
-  NAND _799_ (
-    .A(reset),
+  NOR _782_ (
+    .A(_331_),
     .B(_333_),
+    .Y(_002_[20])
+  );
+  NOR _783_ (
+    .A(data_demux_8_32_sintetizado[21]),
+    .B(_269_),
     .Y(_334_)
   );
-  NOR _800_ (
-    .A(_332_),
-    .B(_334_),
-    .Y(_002_[8])
-  );
-  NOR _801_ (
-    .A(data_demux_8_32_sintetizado[9]),
-    .B(_300_),
+  NAND _784_ (
+    .A(_054_),
+    .B(_269_),
     .Y(_335_)
   );
-  NAND _802_ (
-    .A(_035_),
-    .B(_300_),
+  NAND _785_ (
+    .A(reset),
+    .B(_335_),
     .Y(_336_)
   );
-  NAND _803_ (
-    .A(reset),
+  NOR _786_ (
+    .A(_334_),
     .B(_336_),
+    .Y(_002_[21])
+  );
+  NOR _787_ (
+    .A(data_demux_8_32_sintetizado[22]),
+    .B(_269_),
     .Y(_337_)
   );
-  NOR _804_ (
-    .A(_335_),
-    .B(_337_),
-    .Y(_002_[9])
-  );
-  NOR _805_ (
-    .A(data_demux_8_32_sintetizado[10]),
-    .B(_300_),
+  NAND _788_ (
+    .A(_055_),
+    .B(_269_),
     .Y(_338_)
   );
-  NAND _806_ (
-    .A(_037_),
-    .B(_300_),
+  NAND _789_ (
+    .A(reset),
+    .B(_338_),
     .Y(_339_)
   );
-  NAND _807_ (
-    .A(reset),
+  NOR _790_ (
+    .A(_337_),
     .B(_339_),
+    .Y(_002_[22])
+  );
+  NOR _791_ (
+    .A(data_demux_8_32_sintetizado[23]),
+    .B(_269_),
     .Y(_340_)
   );
-  NOR _808_ (
-    .A(_338_),
-    .B(_340_),
-    .Y(_002_[10])
-  );
-  NOR _809_ (
-    .A(data_demux_8_32_sintetizado[11]),
-    .B(_300_),
+  NAND _792_ (
+    .A(_056_),
+    .B(_269_),
     .Y(_341_)
   );
-  NAND _810_ (
-    .A(_039_),
-    .B(_300_),
+  NAND _793_ (
+    .A(reset),
+    .B(_341_),
     .Y(_342_)
   );
-  NAND _811_ (
-    .A(reset),
+  NOR _794_ (
+    .A(_340_),
     .B(_342_),
+    .Y(_002_[23])
+  );
+  NOR _795_ (
+    .A(data_demux_8_32_sintetizado[24]),
+    .B(_269_),
     .Y(_343_)
   );
-  NOR _812_ (
-    .A(_341_),
-    .B(_343_),
-    .Y(_002_[11])
-  );
-  NOR _813_ (
-    .A(data_demux_8_32_sintetizado[12]),
-    .B(_300_),
+  NAND _796_ (
+    .A(_057_),
+    .B(_269_),
     .Y(_344_)
   );
-  NAND _814_ (
-    .A(_041_),
-    .B(_300_),
+  NAND _797_ (
+    .A(reset),
+    .B(_344_),
     .Y(_345_)
   );
-  NAND _815_ (
-    .A(reset),
+  NOR _798_ (
+    .A(_343_),
     .B(_345_),
+    .Y(_002_[24])
+  );
+  NOR _799_ (
+    .A(data_demux_8_32_sintetizado[25]),
+    .B(_269_),
     .Y(_346_)
   );
-  NOR _816_ (
-    .A(_344_),
-    .B(_346_),
-    .Y(_002_[12])
-  );
-  NOR _817_ (
-    .A(data_demux_8_32_sintetizado[13]),
-    .B(_300_),
+  NAND _800_ (
+    .A(_058_),
+    .B(_269_),
     .Y(_347_)
   );
-  NAND _818_ (
-    .A(_043_),
-    .B(_300_),
+  NAND _801_ (
+    .A(reset),
+    .B(_347_),
     .Y(_348_)
   );
-  NAND _819_ (
-    .A(reset),
+  NOR _802_ (
+    .A(_346_),
     .B(_348_),
+    .Y(_002_[25])
+  );
+  NOR _803_ (
+    .A(data_demux_8_32_sintetizado[26]),
+    .B(_269_),
     .Y(_349_)
   );
-  NOR _820_ (
-    .A(_347_),
-    .B(_349_),
-    .Y(_002_[13])
-  );
-  NOR _821_ (
-    .A(data_demux_8_32_sintetizado[14]),
-    .B(_300_),
+  NAND _804_ (
+    .A(_059_),
+    .B(_269_),
     .Y(_350_)
   );
-  NAND _822_ (
-    .A(_045_),
-    .B(_300_),
+  NAND _805_ (
+    .A(reset),
+    .B(_350_),
     .Y(_351_)
   );
-  NAND _823_ (
-    .A(reset),
+  NOR _806_ (
+    .A(_349_),
     .B(_351_),
+    .Y(_002_[26])
+  );
+  NOR _807_ (
+    .A(data_demux_8_32_sintetizado[27]),
+    .B(_269_),
     .Y(_352_)
   );
-  NOR _824_ (
-    .A(_350_),
-    .B(_352_),
-    .Y(_002_[14])
-  );
-  NOR _825_ (
-    .A(data_demux_8_32_sintetizado[15]),
-    .B(_300_),
+  NAND _808_ (
+    .A(_060_),
+    .B(_269_),
     .Y(_353_)
   );
-  NAND _826_ (
-    .A(_047_),
-    .B(_300_),
+  NAND _809_ (
+    .A(reset),
+    .B(_353_),
     .Y(_354_)
+  );
+  NOR _810_ (
+    .A(_352_),
+    .B(_354_),
+    .Y(_002_[27])
+  );
+  NOR _811_ (
+    .A(data_demux_8_32_sintetizado[28]),
+    .B(_269_),
+    .Y(_355_)
+  );
+  NAND _812_ (
+    .A(_061_),
+    .B(_269_),
+    .Y(_356_)
+  );
+  NAND _813_ (
+    .A(reset),
+    .B(_356_),
+    .Y(_357_)
+  );
+  NOR _814_ (
+    .A(_355_),
+    .B(_357_),
+    .Y(_002_[28])
+  );
+  NOR _815_ (
+    .A(data_demux_8_32_sintetizado[29]),
+    .B(_269_),
+    .Y(_358_)
+  );
+  NAND _816_ (
+    .A(_062_),
+    .B(_269_),
+    .Y(_359_)
+  );
+  NAND _817_ (
+    .A(reset),
+    .B(_359_),
+    .Y(_360_)
+  );
+  NOR _818_ (
+    .A(_358_),
+    .B(_360_),
+    .Y(_002_[29])
+  );
+  NOR _819_ (
+    .A(data_demux_8_32_sintetizado[30]),
+    .B(_269_),
+    .Y(_361_)
+  );
+  NAND _820_ (
+    .A(_063_),
+    .B(_269_),
+    .Y(_362_)
+  );
+  NAND _821_ (
+    .A(reset),
+    .B(_362_),
+    .Y(_363_)
+  );
+  NOR _822_ (
+    .A(_361_),
+    .B(_363_),
+    .Y(_002_[30])
+  );
+  NOR _823_ (
+    .A(data_demux_8_32_sintetizado[31]),
+    .B(_269_),
+    .Y(_364_)
+  );
+  NAND _824_ (
+    .A(_064_),
+    .B(_269_),
+    .Y(_365_)
+  );
+  NAND _825_ (
+    .A(reset),
+    .B(_365_),
+    .Y(_366_)
+  );
+  NOR _826_ (
+    .A(_364_),
+    .B(_366_),
+    .Y(_002_[31])
   );
   NAND _827_ (
     .A(reset),
-    .B(_354_),
-    .Y(_355_)
+    .B(valid_serial_paralelo_sintetizado),
+    .Y(_367_)
   );
-  NOR _828_ (
-    .A(_353_),
-    .B(_355_),
-    .Y(_002_[15])
+  NOT _828_ (
+    .A(_367_),
+    .Y(_003_)
   );
-  NOR _829_ (
-    .A(data_demux_8_32_sintetizado[16]),
-    .B(_300_),
-    .Y(_356_)
+  NAND _829_ (
+    .A(reset),
+    .B(data_serial_paralelo_sintetizado[0]),
+    .Y(_368_)
   );
-  NAND _830_ (
-    .A(_049_),
-    .B(_300_),
-    .Y(_357_)
+  NOT _830_ (
+    .A(_368_),
+    .Y(_000_[0])
   );
   NAND _831_ (
     .A(reset),
-    .B(_357_),
-    .Y(_358_)
+    .B(data_serial_paralelo_sintetizado[1]),
+    .Y(_369_)
   );
-  NOR _832_ (
-    .A(_356_),
-    .B(_358_),
-    .Y(_002_[16])
+  NOT _832_ (
+    .A(_369_),
+    .Y(_000_[1])
   );
-  NOR _833_ (
-    .A(data_demux_8_32_sintetizado[17]),
-    .B(_300_),
-    .Y(_359_)
+  NAND _833_ (
+    .A(reset),
+    .B(data_serial_paralelo_sintetizado[2]),
+    .Y(_370_)
   );
-  NAND _834_ (
-    .A(_050_),
-    .B(_300_),
-    .Y(_360_)
+  NOT _834_ (
+    .A(_370_),
+    .Y(_000_[2])
   );
   NAND _835_ (
     .A(reset),
-    .B(_360_),
-    .Y(_361_)
+    .B(data_serial_paralelo_sintetizado[3]),
+    .Y(_371_)
   );
-  NOR _836_ (
-    .A(_359_),
-    .B(_361_),
-    .Y(_002_[17])
+  NOT _836_ (
+    .A(_371_),
+    .Y(_000_[3])
   );
-  NOR _837_ (
-    .A(data_demux_8_32_sintetizado[18]),
-    .B(_300_),
-    .Y(_362_)
+  NAND _837_ (
+    .A(reset),
+    .B(data_serial_paralelo_sintetizado[4]),
+    .Y(_372_)
   );
-  NAND _838_ (
-    .A(_051_),
-    .B(_300_),
-    .Y(_363_)
+  NOT _838_ (
+    .A(_372_),
+    .Y(_000_[4])
   );
   NAND _839_ (
     .A(reset),
-    .B(_363_),
-    .Y(_364_)
+    .B(data_serial_paralelo_sintetizado[5]),
+    .Y(_373_)
   );
-  NOR _840_ (
-    .A(_362_),
-    .B(_364_),
-    .Y(_002_[18])
+  NOT _840_ (
+    .A(_373_),
+    .Y(_000_[5])
   );
-  NOR _841_ (
-    .A(data_demux_8_32_sintetizado[19]),
-    .B(_300_),
-    .Y(_365_)
+  NAND _841_ (
+    .A(reset),
+    .B(data_serial_paralelo_sintetizado[6]),
+    .Y(_374_)
   );
-  NAND _842_ (
-    .A(_052_),
-    .B(_300_),
-    .Y(_366_)
+  NOT _842_ (
+    .A(_374_),
+    .Y(_000_[6])
   );
   NAND _843_ (
     .A(reset),
-    .B(_366_),
-    .Y(_367_)
+    .B(data_serial_paralelo_sintetizado[7]),
+    .Y(_375_)
   );
-  NOR _844_ (
-    .A(_365_),
-    .B(_367_),
-    .Y(_002_[19])
+  NOT _844_ (
+    .A(_375_),
+    .Y(_000_[7])
   );
-  NOR _845_ (
-    .A(data_demux_8_32_sintetizado[20]),
-    .B(_300_),
-    .Y(_368_)
+  NAND _845_ (
+    .A(reset),
+    .B(buffer[0]),
+    .Y(_376_)
   );
-  NAND _846_ (
-    .A(_053_),
-    .B(_300_),
-    .Y(_369_)
+  NOT _846_ (
+    .A(_376_),
+    .Y(_000_[8])
   );
   NAND _847_ (
     .A(reset),
-    .B(_369_),
-    .Y(_370_)
+    .B(buffer[1]),
+    .Y(_377_)
   );
-  NOR _848_ (
-    .A(_368_),
-    .B(_370_),
-    .Y(_002_[20])
+  NOT _848_ (
+    .A(_377_),
+    .Y(_000_[9])
   );
-  NOR _849_ (
-    .A(data_demux_8_32_sintetizado[21]),
-    .B(_300_),
-    .Y(_371_)
+  NAND _849_ (
+    .A(reset),
+    .B(buffer[2]),
+    .Y(_378_)
   );
-  NAND _850_ (
-    .A(_054_),
-    .B(_300_),
-    .Y(_372_)
+  NOT _850_ (
+    .A(_378_),
+    .Y(_000_[10])
   );
   NAND _851_ (
     .A(reset),
-    .B(_372_),
-    .Y(_373_)
+    .B(buffer[3]),
+    .Y(_379_)
   );
-  NOR _852_ (
-    .A(_371_),
-    .B(_373_),
-    .Y(_002_[21])
+  NOT _852_ (
+    .A(_379_),
+    .Y(_000_[11])
   );
-  NOR _853_ (
-    .A(data_demux_8_32_sintetizado[22]),
-    .B(_300_),
-    .Y(_374_)
+  NAND _853_ (
+    .A(reset),
+    .B(buffer[4]),
+    .Y(_380_)
   );
-  NAND _854_ (
-    .A(_055_),
-    .B(_300_),
-    .Y(_375_)
+  NOT _854_ (
+    .A(_380_),
+    .Y(_000_[12])
   );
   NAND _855_ (
     .A(reset),
-    .B(_375_),
-    .Y(_376_)
+    .B(buffer[5]),
+    .Y(_381_)
   );
-  NOR _856_ (
-    .A(_374_),
-    .B(_376_),
-    .Y(_002_[22])
+  NOT _856_ (
+    .A(_381_),
+    .Y(_000_[13])
   );
-  NOR _857_ (
-    .A(data_demux_8_32_sintetizado[23]),
-    .B(_300_),
-    .Y(_377_)
+  NAND _857_ (
+    .A(reset),
+    .B(buffer[6]),
+    .Y(_382_)
   );
-  NAND _858_ (
-    .A(_056_),
-    .B(_300_),
-    .Y(_378_)
+  NOT _858_ (
+    .A(_382_),
+    .Y(_000_[14])
   );
   NAND _859_ (
     .A(reset),
-    .B(_378_),
-    .Y(_379_)
+    .B(buffer[7]),
+    .Y(_383_)
   );
-  NOR _860_ (
-    .A(_377_),
-    .B(_379_),
-    .Y(_002_[23])
+  NOT _860_ (
+    .A(_383_),
+    .Y(_000_[15])
   );
-  NOR _861_ (
-    .A(data_demux_8_32_sintetizado[24]),
-    .B(_300_),
-    .Y(_380_)
+  NAND _861_ (
+    .A(reset),
+    .B(buffer[8]),
+    .Y(_384_)
   );
-  NAND _862_ (
-    .A(_057_),
-    .B(_300_),
-    .Y(_381_)
+  NOT _862_ (
+    .A(_384_),
+    .Y(_000_[16])
   );
   NAND _863_ (
     .A(reset),
-    .B(_381_),
-    .Y(_382_)
+    .B(buffer[9]),
+    .Y(_385_)
   );
-  NOR _864_ (
-    .A(_380_),
-    .B(_382_),
-    .Y(_002_[24])
+  NOT _864_ (
+    .A(_385_),
+    .Y(_000_[17])
   );
-  NOR _865_ (
-    .A(data_demux_8_32_sintetizado[25]),
-    .B(_300_),
-    .Y(_383_)
+  NAND _865_ (
+    .A(reset),
+    .B(buffer[10]),
+    .Y(_386_)
   );
-  NAND _866_ (
-    .A(_058_),
-    .B(_300_),
-    .Y(_384_)
+  NOT _866_ (
+    .A(_386_),
+    .Y(_000_[18])
   );
   NAND _867_ (
     .A(reset),
-    .B(_384_),
-    .Y(_385_)
-  );
-  NOR _868_ (
-    .A(_383_),
-    .B(_385_),
-    .Y(_002_[25])
-  );
-  NOR _869_ (
-    .A(data_demux_8_32_sintetizado[26]),
-    .B(_300_),
-    .Y(_386_)
-  );
-  NAND _870_ (
-    .A(_059_),
-    .B(_300_),
+    .B(buffer[11]),
     .Y(_387_)
+  );
+  NOT _868_ (
+    .A(_387_),
+    .Y(_000_[19])
+  );
+  NAND _869_ (
+    .A(reset),
+    .B(buffer[12]),
+    .Y(_388_)
+  );
+  NOT _870_ (
+    .A(_388_),
+    .Y(_000_[20])
   );
   NAND _871_ (
     .A(reset),
-    .B(_387_),
-    .Y(_388_)
-  );
-  NOR _872_ (
-    .A(_386_),
-    .B(_388_),
-    .Y(_002_[26])
-  );
-  NOR _873_ (
-    .A(data_demux_8_32_sintetizado[27]),
-    .B(_300_),
+    .B(buffer[13]),
     .Y(_389_)
   );
-  NAND _874_ (
-    .A(_060_),
-    .B(_300_),
+  NOT _872_ (
+    .A(_389_),
+    .Y(_000_[21])
+  );
+  NAND _873_ (
+    .A(reset),
+    .B(buffer[14]),
     .Y(_390_)
+  );
+  NOT _874_ (
+    .A(_390_),
+    .Y(_000_[22])
   );
   NAND _875_ (
     .A(reset),
-    .B(_390_),
+    .B(buffer[15]),
     .Y(_391_)
   );
-  NOR _876_ (
-    .A(_389_),
-    .B(_391_),
-    .Y(_002_[27])
+  NOT _876_ (
+    .A(_391_),
+    .Y(_000_[23])
   );
-  NOR _877_ (
-    .A(data_demux_8_32_sintetizado[28]),
-    .B(_300_),
+  NAND _877_ (
+    .A(reset),
+    .B(buffer[16]),
     .Y(_392_)
   );
-  NAND _878_ (
-    .A(_061_),
-    .B(_300_),
-    .Y(_393_)
+  NOT _878_ (
+    .A(_392_),
+    .Y(_000_[24])
   );
   NAND _879_ (
     .A(reset),
-    .B(_393_),
+    .B(buffer[17]),
+    .Y(_393_)
+  );
+  NOT _880_ (
+    .A(_393_),
+    .Y(_000_[25])
+  );
+  NAND _881_ (
+    .A(reset),
+    .B(buffer[18]),
     .Y(_394_)
   );
-  NOR _880_ (
-    .A(_392_),
-    .B(_394_),
-    .Y(_002_[28])
-  );
-  NOR _881_ (
-    .A(data_demux_8_32_sintetizado[29]),
-    .B(_300_),
-    .Y(_395_)
-  );
-  NAND _882_ (
-    .A(_062_),
-    .B(_300_),
-    .Y(_396_)
+  NOT _882_ (
+    .A(_394_),
+    .Y(_000_[26])
   );
   NAND _883_ (
     .A(reset),
-    .B(_396_),
-    .Y(_397_)
+    .B(buffer[19]),
+    .Y(_395_)
   );
-  NOR _884_ (
+  NOT _884_ (
     .A(_395_),
-    .B(_397_),
-    .Y(_002_[29])
+    .Y(_000_[27])
   );
-  NOR _885_ (
-    .A(data_demux_8_32_sintetizado[30]),
-    .B(_300_),
-    .Y(_398_)
+  NAND _885_ (
+    .A(reset),
+    .B(buffer[20]),
+    .Y(_396_)
   );
-  NAND _886_ (
-    .A(_063_),
-    .B(_300_),
-    .Y(_399_)
+  NOT _886_ (
+    .A(_396_),
+    .Y(_000_[28])
   );
   NAND _887_ (
     .A(reset),
-    .B(_399_),
-    .Y(_400_)
+    .B(buffer[21]),
+    .Y(_397_)
   );
-  NOR _888_ (
+  NOT _888_ (
+    .A(_397_),
+    .Y(_000_[29])
+  );
+  NAND _889_ (
+    .A(reset),
+    .B(buffer[22]),
+    .Y(_398_)
+  );
+  NOT _890_ (
     .A(_398_),
-    .B(_400_),
-    .Y(_002_[30])
-  );
-  NOR _889_ (
-    .A(data_demux_8_32_sintetizado[31]),
-    .B(_300_),
-    .Y(_401_)
-  );
-  NAND _890_ (
-    .A(_064_),
-    .B(_300_),
-    .Y(_402_)
+    .Y(_000_[30])
   );
   NAND _891_ (
     .A(reset),
-    .B(_402_),
-    .Y(_403_)
+    .B(buffer[23]),
+    .Y(_399_)
   );
-  NOR _892_ (
-    .A(_401_),
-    .B(_403_),
-    .Y(_002_[31])
+  NOT _892_ (
+    .A(_399_),
+    .Y(_000_[31])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _893_ (
     .C(clk_4f),
     .D(_000_[0]),
     .Q(buffer[0])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _894_ (
     .C(clk_4f),
     .D(_000_[1]),
     .Q(buffer[1])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _895_ (
     .C(clk_4f),
     .D(_000_[2]),
     .Q(buffer[2])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _896_ (
     .C(clk_4f),
     .D(_000_[3]),
     .Q(buffer[3])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _897_ (
     .C(clk_4f),
     .D(_000_[4]),
     .Q(buffer[4])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _898_ (
     .C(clk_4f),
     .D(_000_[5]),
     .Q(buffer[5])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _899_ (
     .C(clk_4f),
     .D(_000_[6]),
     .Q(buffer[6])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _900_ (
     .C(clk_4f),
     .D(_000_[7]),
     .Q(buffer[7])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _901_ (
     .C(clk_4f),
     .D(_000_[8]),
     .Q(buffer[8])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _902_ (
     .C(clk_4f),
     .D(_000_[9]),
     .Q(buffer[9])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _903_ (
     .C(clk_4f),
     .D(_000_[10]),
     .Q(buffer[10])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _904_ (
     .C(clk_4f),
     .D(_000_[11]),
     .Q(buffer[11])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _905_ (
     .C(clk_4f),
     .D(_000_[12]),
     .Q(buffer[12])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _906_ (
     .C(clk_4f),
     .D(_000_[13]),
     .Q(buffer[13])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _907_ (
     .C(clk_4f),
     .D(_000_[14]),
     .Q(buffer[14])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _908_ (
     .C(clk_4f),
     .D(_000_[15]),
     .Q(buffer[15])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _909_ (
     .C(clk_4f),
     .D(_000_[16]),
     .Q(buffer[16])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _910_ (
     .C(clk_4f),
     .D(_000_[17]),
     .Q(buffer[17])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _911_ (
     .C(clk_4f),
     .D(_000_[18]),
     .Q(buffer[18])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _912_ (
     .C(clk_4f),
     .D(_000_[19]),
     .Q(buffer[19])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _913_ (
     .C(clk_4f),
     .D(_000_[20]),
     .Q(buffer[20])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _914_ (
     .C(clk_4f),
     .D(_000_[21]),
     .Q(buffer[21])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _915_ (
     .C(clk_4f),
     .D(_000_[22]),
     .Q(buffer[22])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _916_ (
     .C(clk_4f),
     .D(_000_[23]),
     .Q(buffer[23])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
   DFF _917_ (
+    .C(clk_4f),
+    .D(_000_[24]),
+    .Q(buffer[24])
+  );
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _918_ (
+    .C(clk_4f),
+    .D(_000_[25]),
+    .Q(buffer[25])
+  );
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _919_ (
+    .C(clk_4f),
+    .D(_000_[26]),
+    .Q(buffer[26])
+  );
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _920_ (
+    .C(clk_4f),
+    .D(_000_[27]),
+    .Q(buffer[27])
+  );
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _921_ (
+    .C(clk_4f),
+    .D(_000_[28]),
+    .Q(buffer[28])
+  );
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _922_ (
+    .C(clk_4f),
+    .D(_000_[29]),
+    .Q(buffer[29])
+  );
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _923_ (
+    .C(clk_4f),
+    .D(_000_[30]),
+    .Q(buffer[30])
+  );
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _924_ (
+    .C(clk_4f),
+    .D(_000_[31]),
+    .Q(buffer[31])
+  );
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _925_ (
+    .C(clk_4f),
+    .D(_003_),
+    .Q(delay_valid)
+  );
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _926_ (
     .C(clk_4f),
     .D(_002_[0]),
     .Q(data_demux_8_32_sintetizado[0])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _918_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _927_ (
     .C(clk_4f),
     .D(_002_[1]),
     .Q(data_demux_8_32_sintetizado[1])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _919_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _928_ (
     .C(clk_4f),
     .D(_002_[2]),
     .Q(data_demux_8_32_sintetizado[2])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _920_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _929_ (
     .C(clk_4f),
     .D(_002_[3]),
     .Q(data_demux_8_32_sintetizado[3])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _921_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _930_ (
     .C(clk_4f),
     .D(_002_[4]),
     .Q(data_demux_8_32_sintetizado[4])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _922_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _931_ (
     .C(clk_4f),
     .D(_002_[5]),
     .Q(data_demux_8_32_sintetizado[5])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _923_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _932_ (
     .C(clk_4f),
     .D(_002_[6]),
     .Q(data_demux_8_32_sintetizado[6])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _924_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _933_ (
     .C(clk_4f),
     .D(_002_[7]),
     .Q(data_demux_8_32_sintetizado[7])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _925_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _934_ (
     .C(clk_4f),
     .D(_002_[8]),
     .Q(data_demux_8_32_sintetizado[8])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _926_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _935_ (
     .C(clk_4f),
     .D(_002_[9]),
     .Q(data_demux_8_32_sintetizado[9])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _927_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _936_ (
     .C(clk_4f),
     .D(_002_[10]),
     .Q(data_demux_8_32_sintetizado[10])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _928_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _937_ (
     .C(clk_4f),
     .D(_002_[11]),
     .Q(data_demux_8_32_sintetizado[11])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _929_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _938_ (
     .C(clk_4f),
     .D(_002_[12]),
     .Q(data_demux_8_32_sintetizado[12])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _930_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _939_ (
     .C(clk_4f),
     .D(_002_[13]),
     .Q(data_demux_8_32_sintetizado[13])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _931_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _940_ (
     .C(clk_4f),
     .D(_002_[14]),
     .Q(data_demux_8_32_sintetizado[14])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _932_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _941_ (
     .C(clk_4f),
     .D(_002_[15]),
     .Q(data_demux_8_32_sintetizado[15])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _933_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _942_ (
     .C(clk_4f),
     .D(_002_[16]),
     .Q(data_demux_8_32_sintetizado[16])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _934_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _943_ (
     .C(clk_4f),
     .D(_002_[17]),
     .Q(data_demux_8_32_sintetizado[17])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _935_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _944_ (
     .C(clk_4f),
     .D(_002_[18]),
     .Q(data_demux_8_32_sintetizado[18])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _936_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _945_ (
     .C(clk_4f),
     .D(_002_[19]),
     .Q(data_demux_8_32_sintetizado[19])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _937_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _946_ (
     .C(clk_4f),
     .D(_002_[20]),
     .Q(data_demux_8_32_sintetizado[20])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _938_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _947_ (
     .C(clk_4f),
     .D(_002_[21]),
     .Q(data_demux_8_32_sintetizado[21])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _939_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _948_ (
     .C(clk_4f),
     .D(_002_[22]),
     .Q(data_demux_8_32_sintetizado[22])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _940_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _949_ (
     .C(clk_4f),
     .D(_002_[23]),
     .Q(data_demux_8_32_sintetizado[23])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _941_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _950_ (
     .C(clk_4f),
     .D(_002_[24]),
     .Q(data_demux_8_32_sintetizado[24])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _942_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _951_ (
     .C(clk_4f),
     .D(_002_[25]),
     .Q(data_demux_8_32_sintetizado[25])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _943_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _952_ (
     .C(clk_4f),
     .D(_002_[26]),
     .Q(data_demux_8_32_sintetizado[26])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _944_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _953_ (
     .C(clk_4f),
     .D(_002_[27]),
     .Q(data_demux_8_32_sintetizado[27])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _945_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _954_ (
     .C(clk_4f),
     .D(_002_[28]),
     .Q(data_demux_8_32_sintetizado[28])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _946_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _955_ (
     .C(clk_4f),
     .D(_002_[29]),
     .Q(data_demux_8_32_sintetizado[29])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _947_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _956_ (
     .C(clk_4f),
     .D(_002_[30]),
     .Q(data_demux_8_32_sintetizado[30])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _948_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _957_ (
     .C(clk_4f),
     .D(_002_[31]),
     .Q(data_demux_8_32_sintetizado[31])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _949_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _958_ (
     .C(clk_4f),
-    .D(_003_),
+    .D(_004_),
     .Q(valid_demux_8_32_sintetizado)
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _950_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _959_ (
     .C(clk_4f),
     .D(_001_[0]),
     .Q(contador[0])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _951_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _960_ (
     .C(clk_4f),
     .D(_001_[1]),
     .Q(contador[1])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _952_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _961_ (
     .C(clk_4f),
     .D(_001_[2]),
     .Q(contador[2])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _953_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _962_ (
     .C(clk_4f),
     .D(_001_[3]),
     .Q(contador[3])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _954_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _963_ (
     .C(clk_4f),
     .D(_001_[4]),
     .Q(contador[4])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _955_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _964_ (
     .C(clk_4f),
     .D(_001_[5]),
     .Q(contador[5])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _956_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _965_ (
     .C(clk_4f),
     .D(_001_[6]),
     .Q(contador[6])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _957_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _966_ (
     .C(clk_4f),
     .D(_001_[7]),
     .Q(contador[7])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _958_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _967_ (
     .C(clk_4f),
     .D(_001_[8]),
     .Q(contador[8])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _959_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _968_ (
     .C(clk_4f),
     .D(_001_[9]),
     .Q(contador[9])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _960_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _969_ (
     .C(clk_4f),
     .D(_001_[10]),
     .Q(contador[10])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _961_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _970_ (
     .C(clk_4f),
     .D(_001_[11]),
     .Q(contador[11])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _962_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _971_ (
     .C(clk_4f),
     .D(_001_[12]),
     .Q(contador[12])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _963_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _972_ (
     .C(clk_4f),
     .D(_001_[13]),
     .Q(contador[13])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _964_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _973_ (
     .C(clk_4f),
     .D(_001_[14]),
     .Q(contador[14])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _965_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _974_ (
     .C(clk_4f),
     .D(_001_[15]),
     .Q(contador[15])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _966_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _975_ (
     .C(clk_4f),
     .D(_001_[16]),
     .Q(contador[16])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _967_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _976_ (
     .C(clk_4f),
     .D(_001_[17]),
     .Q(contador[17])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _968_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _977_ (
     .C(clk_4f),
     .D(_001_[18]),
     .Q(contador[18])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _969_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _978_ (
     .C(clk_4f),
     .D(_001_[19]),
     .Q(contador[19])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _970_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _979_ (
     .C(clk_4f),
     .D(_001_[20]),
     .Q(contador[20])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _971_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _980_ (
     .C(clk_4f),
     .D(_001_[21]),
     .Q(contador[21])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _972_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _981_ (
     .C(clk_4f),
     .D(_001_[22]),
     .Q(contador[22])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _973_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _982_ (
     .C(clk_4f),
     .D(_001_[23]),
     .Q(contador[23])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _974_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _983_ (
     .C(clk_4f),
     .D(_001_[24]),
     .Q(contador[24])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _975_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _984_ (
     .C(clk_4f),
     .D(_001_[25]),
     .Q(contador[25])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _976_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _985_ (
     .C(clk_4f),
     .D(_001_[26]),
     .Q(contador[26])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _977_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _986_ (
     .C(clk_4f),
     .D(_001_[27]),
     .Q(contador[27])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _978_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _987_ (
     .C(clk_4f),
     .D(_001_[28]),
     .Q(contador[28])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _979_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _988_ (
     .C(clk_4f),
     .D(_001_[29]),
     .Q(contador[29])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _980_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _989_ (
     .C(clk_4f),
     .D(_001_[30]),
     .Q(contador[30])
   );
-  (* src = "demux_8_32_sintetizado.v:12" *)
-  DFF _981_ (
+  (* src = "../demux_8_32_sintetizado/demux_8_32_sintetizado.v:15" *)
+  DFF _990_ (
     .C(clk_4f),
     .D(_001_[31]),
     .Q(contador[31])
   );
+  assign ready = 1'h0;
 endmodule
 
 (* cells_not_processed =  1  *)
@@ -6029,13 +6065,13 @@ module demux_striping_sintetizado_sintetizado(clk_2f, data_recirculador_sintetiz
 endmodule
 
 (* cells_not_processed =  1  *)
-(* src = "mux_striping_sintetizado.v:1" *)
+(* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:1" *)
 module mux_striping_sintetizado(clk_2f, data_demux_8_32_sintetizado_0, data_demux_8_32_sintetizado_1, valid_demux_8_32_sintetizado_0, valid_demux_8_32_sintetizado_1, reset, data_output_sintetizado, valid_out_sintetizado);
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   wire [31:0] _000_;
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   wire _001_;
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   wire _002_;
   wire _003_;
   wire _004_;
@@ -6273,44 +6309,44 @@ module mux_striping_sintetizado(clk_2f, data_demux_8_32_sintetizado_0, data_demu
   wire _236_;
   wire _237_;
   wire _238_;
-  (* src = "mux_striping_sintetizado.v:2" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:2" *)
   input clk_2f;
-  (* src = "mux_striping_sintetizado.v:3" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:3" *)
   input [31:0] data_demux_8_32_sintetizado_0;
-  (* src = "mux_striping_sintetizado.v:4" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:4" *)
   input [31:0] data_demux_8_32_sintetizado_1;
-  (* src = "mux_striping_sintetizado.v:8" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:8" *)
   output [31:0] data_output_sintetizado;
-  (* src = "mux_striping_sintetizado.v:7" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:7" *)
   input reset;
-  (* src = "mux_striping_sintetizado.v:11" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:11" *)
   wire sel;
-  (* src = "mux_striping_sintetizado.v:5" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:5" *)
   input valid_demux_8_32_sintetizado_0;
-  (* src = "mux_striping_sintetizado.v:6" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:6" *)
   input valid_demux_8_32_sintetizado_1;
-  (* src = "mux_striping_sintetizado.v:9" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:9" *)
   output valid_out_sintetizado;
   NOT _239_ (
-    .A(valid_demux_8_32_sintetizado_1),
+    .A(valid_demux_8_32_sintetizado_0),
     .Y(_003_)
   );
   NOT _240_ (
-    .A(valid_demux_8_32_sintetizado_0),
+    .A(sel),
     .Y(_004_)
   );
   NOT _241_ (
-    .A(sel),
+    .A(valid_demux_8_32_sintetizado_1),
     .Y(_005_)
   );
   NOR _242_ (
-    .A(_003_),
+    .A(_004_),
     .B(_005_),
     .Y(_006_)
   );
   NAND _243_ (
-    .A(valid_demux_8_32_sintetizado_1),
-    .B(sel),
+    .A(sel),
+    .B(valid_demux_8_32_sintetizado_1),
     .Y(_007_)
   );
   NOR _244_ (
@@ -6328,13 +6364,13 @@ module mux_striping_sintetizado(clk_2f, data_demux_8_32_sintetizado_0, data_demu
     .Y(_010_)
   );
   NOR _247_ (
-    .A(_004_),
+    .A(_003_),
     .B(sel),
     .Y(_011_)
   );
   NAND _248_ (
     .A(valid_demux_8_32_sintetizado_0),
-    .B(_005_),
+    .B(_004_),
     .Y(_012_)
   );
   NOR _249_ (
@@ -7604,205 +7640,205 @@ module mux_striping_sintetizado(clk_2f, data_demux_8_32_sintetizado_0, data_demu
     .B(_238_),
     .Y(_000_[31])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _509_ (
     .C(clk_2f),
     .D(_000_[0]),
     .Q(data_output_sintetizado[0])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _510_ (
     .C(clk_2f),
     .D(_000_[1]),
     .Q(data_output_sintetizado[1])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _511_ (
     .C(clk_2f),
     .D(_000_[2]),
     .Q(data_output_sintetizado[2])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _512_ (
     .C(clk_2f),
     .D(_000_[3]),
     .Q(data_output_sintetizado[3])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _513_ (
     .C(clk_2f),
     .D(_000_[4]),
     .Q(data_output_sintetizado[4])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _514_ (
     .C(clk_2f),
     .D(_000_[5]),
     .Q(data_output_sintetizado[5])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _515_ (
     .C(clk_2f),
     .D(_000_[6]),
     .Q(data_output_sintetizado[6])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _516_ (
     .C(clk_2f),
     .D(_000_[7]),
     .Q(data_output_sintetizado[7])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _517_ (
     .C(clk_2f),
     .D(_000_[8]),
     .Q(data_output_sintetizado[8])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _518_ (
     .C(clk_2f),
     .D(_000_[9]),
     .Q(data_output_sintetizado[9])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _519_ (
     .C(clk_2f),
     .D(_000_[10]),
     .Q(data_output_sintetizado[10])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _520_ (
     .C(clk_2f),
     .D(_000_[11]),
     .Q(data_output_sintetizado[11])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _521_ (
     .C(clk_2f),
     .D(_000_[12]),
     .Q(data_output_sintetizado[12])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _522_ (
     .C(clk_2f),
     .D(_000_[13]),
     .Q(data_output_sintetizado[13])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _523_ (
     .C(clk_2f),
     .D(_000_[14]),
     .Q(data_output_sintetizado[14])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _524_ (
     .C(clk_2f),
     .D(_000_[15]),
     .Q(data_output_sintetizado[15])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _525_ (
     .C(clk_2f),
     .D(_000_[16]),
     .Q(data_output_sintetizado[16])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _526_ (
     .C(clk_2f),
     .D(_000_[17]),
     .Q(data_output_sintetizado[17])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _527_ (
     .C(clk_2f),
     .D(_000_[18]),
     .Q(data_output_sintetizado[18])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _528_ (
     .C(clk_2f),
     .D(_000_[19]),
     .Q(data_output_sintetizado[19])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _529_ (
     .C(clk_2f),
     .D(_000_[20]),
     .Q(data_output_sintetizado[20])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _530_ (
     .C(clk_2f),
     .D(_000_[21]),
     .Q(data_output_sintetizado[21])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _531_ (
     .C(clk_2f),
     .D(_000_[22]),
     .Q(data_output_sintetizado[22])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _532_ (
     .C(clk_2f),
     .D(_000_[23]),
     .Q(data_output_sintetizado[23])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _533_ (
     .C(clk_2f),
     .D(_000_[24]),
     .Q(data_output_sintetizado[24])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _534_ (
     .C(clk_2f),
     .D(_000_[25]),
     .Q(data_output_sintetizado[25])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _535_ (
     .C(clk_2f),
     .D(_000_[26]),
     .Q(data_output_sintetizado[26])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _536_ (
     .C(clk_2f),
     .D(_000_[27]),
     .Q(data_output_sintetizado[27])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _537_ (
     .C(clk_2f),
     .D(_000_[28]),
     .Q(data_output_sintetizado[28])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _538_ (
     .C(clk_2f),
     .D(_000_[29]),
     .Q(data_output_sintetizado[29])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _539_ (
     .C(clk_2f),
     .D(_000_[30]),
     .Q(data_output_sintetizado[30])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _540_ (
     .C(clk_2f),
     .D(_000_[31]),
     .Q(data_output_sintetizado[31])
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _541_ (
     .C(clk_2f),
     .D(_002_),
     .Q(valid_out_sintetizado)
   );
-  (* src = "mux_striping_sintetizado.v:13" *)
+  (* src = "../mux_striping_sintetizado/mux_striping_sintetizado.v:13" *)
   DFF _542_ (
     .C(clk_2f),
     .D(_001_),

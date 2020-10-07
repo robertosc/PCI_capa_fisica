@@ -8,7 +8,7 @@ phy_RX:
 	sed -i "s/serial_paralelo/serial_paralelo_sintetizado/g" phy_RX_sintetizado.v
 	sed -i "s/demux_8_32/demux_8_32_sintetizado/g" phy_RX_sintetizado.v
 	sed -i "s/mux_striping/mux_striping_sintetizado/g" phy_RX_sintetizado.v
-	iverilog BancoPrueba_RX.v -o banco cmos_cells.v
+	iverilog BancoPrueba_RX.v -o banco
 	vvp banco
 	rm banco
 	gtkwave RX.vcd

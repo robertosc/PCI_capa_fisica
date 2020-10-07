@@ -2,6 +2,7 @@
 `include "phy_RX.v"
 //`include "phy_RX_sintetizado.v"
 `include "probador_RX.v"
+`include "../lib/cmos_cells.v"
 
 module BancoPrueba_RX;
 
