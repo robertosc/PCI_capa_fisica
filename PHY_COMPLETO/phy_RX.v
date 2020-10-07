@@ -48,7 +48,7 @@ module phy_RX(	input data_paralelo_serial_0,
 			     .clk_32f		(clk_32f),
 			     .data_paralelo_serial(data_paralelo_serial_1));
 
-	demux_8_32 demux_final_0 (/*AUTOINST*/
+	demux8_32_v2 demux_final_0 (/*AUTOINST*/
 				    // Outputs
 				    .data_demux_8_32	(data_demux_8_32_0[31:0]),
 				    .valid_demux_8_32	(valid_demux_8_32_0),
@@ -58,7 +58,7 @@ module phy_RX(	input data_paralelo_serial_0,
 				    .valid_serial_paralelo(valid_serial_paralelo_0),
 				    .reset		(reset));
 
-   	demux_8_32 demux_final_1 (/*AUTOINST*/
+   	demux8_32_v2 demux_final_1 (/*AUTOINST*/
 				    // Outputs
 				    .data_demux_8_32	(data_demux_8_32_1[31:0]),
 				    .valid_demux_8_32	(valid_demux_8_32_1),

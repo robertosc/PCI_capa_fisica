@@ -2,14 +2,14 @@
 `include "phy.v"
 `include "PHY_COMPLETO_sintetizado.v"
 //`include "phy_sintetizado.v"
-module BancoPrubas_PHY;
+module BancoPrueba_phy;
 
-	wire [31:0] data_input, data_final, data_final_sintetizado;
-	wire valid_final, valid_final_sintetizado;
+	wire [31:0] data_input, data_output, data_output_sintetizado;
+	wire valid_out, valid_out_sintetizado;
    phy completo(/*AUTOINST*/
 		// Outputs
-		.data_final		(data_final[31:0]),
-		.valid_final		(valid_final),
+		.data_output		(data_output[31:0]),
+		.valid_out		(valid_out),
 		// Inputs
 		.data_input		(data_input[31:0]),
 		.valid			(valid),
@@ -21,8 +21,8 @@ module BancoPrubas_PHY;
 		.clk_32f		(clk_32f));
 	PHY_COMPLETO_sintetizado sintetizado(/*AUTOINST*/
 		// Outputs
-		.data_final_sintetizado		(data_final_sintetizado[31:0]),
-		.valid_final_sintetizado		(valid_final_sintetizado),
+		.data_output_sintetizado		(data_output_sintetizado[31:0]),
+		.valid_out_sintetizado		(valid_out_sintetizado),
 		// Inputs
 		.data_input		(data_input[31:0]),
 		.valid			(valid),
@@ -32,7 +32,6 @@ module BancoPrubas_PHY;
 		.clk_f			(clk_f),
 		.clk_4f			(clk_4f),
 		.clk_32f		(clk_32f));
-
 
 
    probador_phy probador (/*AUTOINST*/
@@ -46,8 +45,10 @@ module BancoPrubas_PHY;
 			  .clk_4f		(clk_4f),
 			  .clk_32f		(clk_32f),
 			  // Inputs
-			  .data_final		(data_final[31:0]),
-			  .valid_final		(valid_final));
+			  .data_output		(data_output[31:0]),
+			  .valid_out		(valid_out),
+			  .data_output_sintetizado (data_output_sintetizado[31:0]),
+			  .valid_out_sintetizado (valid_out_sintetizado));
 
 
 

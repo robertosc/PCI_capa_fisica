@@ -32,7 +32,7 @@ module demux_8_32(input clk_4f,
 					valid_demux_8_32 <= 0;
 					contador <= 0;
 				end
-				contador+= 1;
+				contador= contador + 1;
 			end
 		end
 	end

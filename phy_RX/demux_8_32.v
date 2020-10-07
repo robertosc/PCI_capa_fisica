@@ -1,4 +1,4 @@
-module demux8_32_v2(input clk_4f,
+module demux_8_32(input clk_4f,
 				input [7:0] data_serial_paralelo,
 				input valid_serial_paralelo,
 				input reset,
@@ -32,7 +32,7 @@ module demux8_32_v2(input clk_4f,
 					valid_demux_8_32 <= 0;
 					contador <= 0;
 				end
-				contador+= 1;
+				contador= contador + 1;
 			end
 		end
 	end
