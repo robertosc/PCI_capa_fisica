@@ -1,4 +1,4 @@
-`include "serial_paralelo.v"
+`include "../serial_paralelo/serial_paralelo.v"
 `include "mux_striping.v"
 `include "demux_8_32.v"
 
@@ -14,7 +14,7 @@ module phy_RX(	input data_paralelo_serial_0,
 				output [31:0] data_output,
 				output valid_out);
 
-	wire data_in0, data_in1, clk_4f, clk_32f, clk_f, reset;
+	wire clk_4f, clk_32f, clk_f, reset;
 
 	wire [7:0] data2send_0, data2send_1;
 

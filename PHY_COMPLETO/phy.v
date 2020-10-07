@@ -9,6 +9,7 @@ module phy(input [31:0] data_input,
 			input clk_f,
 			input clk_4f,
 			input clk_32f,
+			output [31:0] data_recirculador_inactive,
 			output [31:0] data_output,
 			output valid_out);
 

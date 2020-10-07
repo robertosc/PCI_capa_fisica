@@ -2,6 +2,7 @@ all: phy_completo
 
 phy_completo:
 	yosys -s PHY_COMPLETO.ys
+
 	sed -i "s/phy/PHY_COMPLETO_sintetizado/g" PHY_COMPLETO_sintetizado.v
 	sed -i "s/data_output/data_output_sintetizado/g" PHY_COMPLETO_sintetizado.v
 	sed -i "s/valid_out/valid_out_sintetizado/g" PHY_COMPLETO_sintetizado.v
@@ -16,7 +17,8 @@ phy_completo:
 	sed -i "s/phy_TX/phy_TX_sintetizado/g" PHY_COMPLETO_sintetizado.v
 	sed -i "s/recirculador/recirculador_sintetizado/g" PHY_COMPLETO_sintetizado.v
 	sed -i "s/serial_paralelo/serial_paralelo_sintetizado/g" PHY_COMPLETO_sintetizado.v
-	iverilog BancoPrueba_phy.v -o banco cmos_cells.v
+	
+	iverilog BancoPrueba_phy.v -o banco
 	vvp banco
 	rm banco
 	gtkwave completo.vcd

@@ -1,7 +1,8 @@
 `include "probador_phy.v"
 `include "phy.v"
 `include "PHY_COMPLETO_sintetizado.v"
-//`include "phy_sintetizado.v"
+`include "../lib/cmos_cells.v"
+
 module BancoPrueba_phy;
 
 	wire [31:0] data_input, data_output, data_output_sintetizado;
@@ -19,6 +20,7 @@ module BancoPrueba_phy;
 		.clk_f			(clk_f),
 		.clk_4f			(clk_4f),
 		.clk_32f		(clk_32f));
+
 	PHY_COMPLETO_sintetizado sintetizado(/*AUTOINST*/
 		// Outputs
 		.data_output_sintetizado		(data_output_sintetizado[31:0]),
