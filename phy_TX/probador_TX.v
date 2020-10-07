@@ -1,7 +1,6 @@
-module probador_TX(		input [7:0] data_out_ps0,
-						input [7:0] data_out_ps0_sintetizado,
-						input [7:0] data_out_ps1,
-						input [7:0] data_out_ps1_sintetizado,
+module probador_TX(		input [7:0] data_paralelo_serial_0,
+						input [7:0] data_paralelo_serial_1,
+						input [31:0] data_recirculador_inactive,
 						output reg active,
 						output reg valid,
 						output reg reset,
@@ -10,6 +9,7 @@ module probador_TX(		input [7:0] data_out_ps0,
 						output reg clk_2f,
 						output reg clk_4f,
 						output reg clk_32f);
+
 	initial begin
 	$dumpfile("TX.vcd");
 	$dumpvars;
