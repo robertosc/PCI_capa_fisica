@@ -43,9 +43,9 @@ module phy(input [31:0] data_input,
 	     .clk_4f			(clk_4f),
 	     .clk_32f			(clk_32f));
 
-   	and_active AND(.active_0	(active_0_rec),
-				   .active_1	(active_1_rec),
-				   .active 		(active_recir));
+   	and_active AND(.active_serial_paralelo_0	(active_0_rec),
+				   .active_serial_paralelo_1	(active_1_rec),
+				   .data_and_active 		(active_recir));
    
 
 endmodule

@@ -1,5 +1,5 @@
 $date
-	Tue Oct  6 08:44:05 2020
+	Wed Oct  7 12:28:02 2020
 $end
 $version
 	Icarus Verilog
@@ -39,9 +39,9 @@ $var wire 1 2 active_recir $end
 $var wire 1 3 active_1_rec $end
 $var wire 1 4 active_0_rec $end
 $scope module AND $end
-$var wire 1 3 active_1 $end
-$var wire 1 4 active_0 $end
-$var reg 1 2 active $end
+$var wire 1 3 active_serial_paralelo_1 $end
+$var wire 1 4 active_serial_paralelo_0 $end
+$var reg 1 2 data_and_active $end
 $upscope $end
 $scope module RX $end
 $var wire 1 5 valid_sp_1 $end
@@ -240,9 +240,9 @@ $var wire 1 "" active_recir $end
 $var wire 1 #" active_1_rec $end
 $var wire 1 $" active_0_rec $end
 $scope module AND $end
-$var wire 1 #" active_1 $end
-$var wire 1 $" active_0 $end
-$var wire 1 "" active $end
+$var wire 1 "" data_and_active_sintetizado $end
+$var wire 1 #" active_serial_paralelo_sintetizado_1 $end
+$var wire 1 $" active_serial_paralelo_sintetizado_0 $end
 $var wire 1 %" _0_ $end
 $scope module _1_ $end
 $var wire 1 %" Y $end

@@ -2,22 +2,22 @@
 
 (* cells_not_processed =  1  *)
 (* src = "../and_active_sintetizado/and_active_sintetizado.v:1" *)
-module and_active_sintetizado(active_0, active_1, active);
+module and_active_sintetizado(active_serial_paralelo_sintetizado_0, active_serial_paralelo_sintetizado_1, data_and_active_sintetizado);
   wire _0_;
-  (* src = "../and_active_sintetizado/and_active_sintetizado.v:3" *)
-  output active;
   (* src = "../and_active_sintetizado/and_active_sintetizado.v:1" *)
-  input active_0;
+  input active_serial_paralelo_sintetizado_0;
   (* src = "../and_active_sintetizado/and_active_sintetizado.v:2" *)
-  input active_1;
+  input active_serial_paralelo_sintetizado_1;
+  (* src = "../and_active_sintetizado/and_active_sintetizado.v:3" *)
+  output data_and_active_sintetizado;
   NAND _1_ (
-    .A(active_0),
-    .B(active_1),
+    .A(active_serial_paralelo_sintetizado_0),
+    .B(active_serial_paralelo_sintetizado_1),
     .Y(_0_)
   );
   NOT _2_ (
     .A(_0_),
-    .Y(active)
+    .Y(data_and_active_sintetizado)
   );
 endmodule
 
@@ -8195,9 +8195,9 @@ module PHY_COMPLETO_sintetizado(data_input, valid, reset, clk_2f, clk_f, clk_4f,
   (* module_not_derived = 32'd1 *)
   (* src = "PHY_COMPLETO_sintetizado.v:46" *)
   and_active_sintetizado AND (
-    .active(active_recir),
-    .active_0(active_0_rec),
-    .active_1(active_1_rec)
+    .active_serial_paralelo_sintetizado_0(active_0_rec),
+    .active_serial_paralelo_sintetizado_1(active_1_rec),
+    .data_and_active_sintetizado(active_recir)
   );
   (* module_not_derived = 32'd1 *)
   (* src = "PHY_COMPLETO_sintetizado.v:31" *)

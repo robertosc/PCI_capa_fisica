@@ -1,18 +1,18 @@
-`include "../serial_paralelo_v2/serial_paralelo.v"
-`include "../mux_striping/mux_striping.v"
-`include "../demux_8_32/demux_8_32.v"
+`include "serial_paralelo.v"
+`include "mux_striping.v"
+`include "demux8_32_v2.v"
 
-module phy_RX(	input serial_data_0,
-				input serial_data_1,
+module phy_RX(	input data_paralelo_serial_0,
+				input data_paralelo_serial_1,
 				input reset,
 				input clk_f,
 				input clk_2f,
 				input clk_4f,
 				input clk_32f,
-				output active_1,
-				output active_0,
-				output [31:0] data_final,
-				output valid_final);
+				output active_serial_paralelo_1,
+				output active_serial_paralelo_0,
+				output [31:0] data_output,
+				output valid_out);
 
 	wire data_in0, data_in1, clk_4f, clk_32f, clk_f, reset;
 
@@ -20,66 +20,64 @@ module phy_RX(	input serial_data_0,
 
 	wire [7:0] data_out_0, data_out_1;
 
-	wire [7:0] data_out_sp_0, data_out_sp_1;
+	wire [7:0] data_serial_paralelo_0, data_serial_paralelo_1;
 
-	wire valid_sp_0, valid_sp_1, valid_demux_0, valid_demux_1;
+	wire valid_serial_paralelo_0, valid_serial_paralelo_1, valid_demux_8_32_0, valid_demux_8_32_1;
 	
-	wire [31:0] demux_out_0, demux_out_1;
+	wire [31:0] data_demux_8_32_0, data_demux_8_32_1;
 
-   serial_paralelo sp0 (/*AUTOINST*/
-			// Outputs
-			.active		(active_0),
-			.valid_out	(valid_sp_0),
-			.data_out	(data_out_sp_0[7:0]),
-			// Inputs
-			.reset		(reset),
-			.clk_4f		(clk_4f),
-			.clk_32f	(clk_32f),
-			.data_in	(serial_data_0));
-
-   serial_paralelo sp1 (/*AUTOINST*/
-			// Outputs
-			.active		(active_1),
-			.valid_out	(valid_sp_1),
-			.data_out	(data_out_sp_1[7:0]),
-			// Inputs
-			.reset		(reset),
-			.clk_4f		(clk_4f),
-			.clk_32f	(clk_32f),
-			.data_in	(serial_data_1));
-
-	demux_8_32 demux_final_0 (/*AUTOINST*/
-				// Outputs
-				.data_out		(demux_out_0[31:0]),
-				.valid_out		(valid_demux_0),
-				// Inputs
-				.clk_4f		(clk_4f),
-				.clk_f (clk_f),
-				.data_in		(data_out_sp_0[7:0]),
-				.valid		(valid_sp_0),
-				.reset		(reset));
-
-   demux_8_32 demux_final_1 (/*AUTOINST*/
+   	serial_paralelo sp0 (/*AUTOINST*/
 			     // Outputs
-			     .data_out		(demux_out_1[31:0]),
-			     .valid_out		(valid_demux_1),
+			     .active_serial_paralelo(active_serial_paralelo_0),
+			     .valid_serial_paralelo(valid_serial_paralelo_0),
+			     .data_serial_paralelo(data_serial_paralelo_0[7:0]),
 			     // Inputs
+			     .reset		(reset),
 			     .clk_4f		(clk_4f),
-				 .clk_f (clk_f),
-			     .data_in		(data_out_sp_1[7:0]),
-			     .valid		(valid_sp_1),
-			     .reset		(reset));
+			     .clk_32f		(clk_32f),
+			     .data_paralelo_serial(data_paralelo_serial_0));
+
+   	serial_paralelo sp1 (/*AUTOINST*/
+			     // Outputs
+			     .active_serial_paralelo(active_serial_paralelo_1),
+			     .valid_serial_paralelo(valid_serial_paralelo_1),
+			     .data_serial_paralelo(data_serial_paralelo_1[7:0]),
+			     // Inputs
+			     .reset		(reset),
+			     .clk_4f		(clk_4f),
+			     .clk_32f		(clk_32f),
+			     .data_paralelo_serial(data_paralelo_serial_1));
+
+	demux8_32_v2 demux_final_0 (/*AUTOINST*/
+				    // Outputs
+				    .data_demux_8_32	(data_demux_8_32_0[31:0]),
+				    .valid_demux_8_32	(valid_demux_8_32_0),
+				    // Inputs
+				    .clk_4f		(clk_4f),
+				    .data_serial_paralelo(data_serial_paralelo_0[7:0]),
+				    .valid_serial_paralelo(valid_serial_paralelo_0),
+				    .reset		(reset));
+
+   	demux8_32_v2 demux_final_1 (/*AUTOINST*/
+				    // Outputs
+				    .data_demux_8_32	(data_demux_8_32_1[31:0]),
+				    .valid_demux_8_32	(valid_demux_8_32_1),
+				    // Inputs
+				    .clk_4f		(clk_4f),
+				    .data_serial_paralelo(data_serial_paralelo_1[7:0]),
+				    .valid_serial_paralelo(valid_serial_paralelo_1),
+				    .reset		(reset));
    
-   mux_striping mux_stp(/*AUTOINST*/
-			  // Outputs
-			  .data_output		(data_final[31:0]),
-			  .valid_out		(valid_final),
-			  // Inputs
-			  .clk_2f		(clk_2f),
-			  .lane_0		(demux_out_0[31:0]),
-			  .lane_1		(demux_out_1[31:0]),
-			  .valid_0		(valid_demux_0),
-			  .valid_1		(valid_demux_1),
-			  .reset		(reset));
+   	mux_striping mux_stp(/*AUTOINST*/
+			     // Outputs
+			     .data_output	(data_output[31:0]),
+			     .valid_out		(valid_out),
+			     // Inputs
+			     .clk_2f		(clk_2f),
+			     .data_demux_8_32_0	(data_demux_8_32_0[31:0]),
+			     .data_demux_8_32_1	(data_demux_8_32_1[31:0]),
+			     .valid_demux_8_32_0(valid_demux_8_32_0),
+			     .valid_demux_8_32_1(valid_demux_8_32_1),
+			     .reset		(reset));
    
 endmodule
